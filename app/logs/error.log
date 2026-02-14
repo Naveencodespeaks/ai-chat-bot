@@ -1,0 +1,2 @@
+2026-02-14 11:53:46.219 | ERROR    | app.api.auth:register:72 | Error registering user: When initializing mapper Mapper[User(users)], expression 'UserRole' failed to locate a name ('UserRole'). If this is a class name, consider adding this relationship() to the <class 'app.models.user.User'> class after both dependent classes have been defined.
+2026-02-14 11:53:46.222 | ERROR    | app.db.deps:get_db:8 | Database session error: 500: Registration failed

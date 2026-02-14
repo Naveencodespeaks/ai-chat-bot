@@ -1,0 +1,1144 @@
+2026-02-14 10:49:41.256 | INFO     | app.core.logging:log_startup_info:157 | ================================================================================
+2026-02-14 10:49:41.271 | INFO     | app.core.logging:log_startup_info:158 | AI RAG Sentiment Bot - Startup
+2026-02-14 10:49:41.272 | INFO     | app.core.logging:log_startup_info:159 | ================================================================================
+2026-02-14 10:49:41.272 | INFO     | app.core.logging:log_startup_info:160 | Environment: dev
+2026-02-14 10:49:41.272 | INFO     | app.core.logging:log_startup_info:161 | Log Level: INFO
+2026-02-14 10:49:41.286 | INFO     | app.core.logging:log_startup_info:162 | Logs Directory: E:\MAHAVIR-GROUP-SOFTWARE-DEVELOPMENT\ai_rag_sentiment_bot\app\logs
+2026-02-14 10:49:41.293 | INFO     | app.core.logging:log_startup_info:163 | Timestamp: 2026-02-14T10:49:41.293586
+2026-02-14 10:49:41.294 | INFO     | app.core.logging:log_startup_info:164 | ================================================================================
+2026-02-14 10:49:43.271 | INFO     | app.sentiment.strategies:__init__:137 | LexiconStrategy initialized
+2026-02-14 10:49:43.281 | INFO     | app.sentiment.strategies:__init__:190 | PatternStrategy initialized
+2026-02-14 10:49:43.287 | INFO     | app.sentiment.strategies:__init__:296 | StatisticalStrategy initialized
+2026-02-14 10:49:43.290 | INFO     | app.sentiment.rules:__init__:125 | SentimentRulesEngine initialized
+2026-02-14 10:49:43.292 | INFO     | app.sentiment.analyzer:__init__:37 | SentimentAnalyzer initialized
+2026-02-14 10:49:53.476 | INFO     | app.core.logging:log_startup_info:157 | ================================================================================
+2026-02-14 10:49:53.481 | INFO     | app.core.logging:log_startup_info:158 | AI RAG Sentiment Bot - Startup
+2026-02-14 10:49:53.489 | INFO     | app.core.logging:log_startup_info:159 | ================================================================================
+2026-02-14 10:49:53.490 | INFO     | app.core.logging:log_startup_info:160 | Environment: dev
+2026-02-14 10:49:53.496 | INFO     | app.core.logging:log_startup_info:161 | Log Level: INFO
+2026-02-14 10:49:53.501 | INFO     | app.core.logging:log_startup_info:162 | Logs Directory: E:\MAHAVIR-GROUP-SOFTWARE-DEVELOPMENT\ai_rag_sentiment_bot\app\logs
+2026-02-14 10:49:53.562 | INFO     | app.core.logging:log_startup_info:163 | Timestamp: 2026-02-14T10:49:53.562789
+2026-02-14 10:49:53.625 | INFO     | app.core.logging:log_startup_info:164 | ================================================================================
+2026-02-14 10:49:55.676 | INFO     | app.sentiment.strategies:__init__:137 | LexiconStrategy initialized
+2026-02-14 10:49:55.678 | INFO     | app.sentiment.strategies:__init__:190 | PatternStrategy initialized
+2026-02-14 10:49:55.679 | INFO     | app.sentiment.strategies:__init__:296 | StatisticalStrategy initialized
+2026-02-14 10:49:55.681 | INFO     | app.sentiment.rules:__init__:125 | SentimentRulesEngine initialized
+2026-02-14 10:49:55.688 | INFO     | app.sentiment.analyzer:__init__:37 | SentimentAnalyzer initialized
+2026-02-14 10:52:10.571 | INFO     | app.core.logging:log_startup_info:157 | ================================================================================
+2026-02-14 10:52:10.603 | INFO     | app.core.logging:log_startup_info:158 | AI RAG Sentiment Bot - Startup
+2026-02-14 10:52:10.620 | INFO     | app.core.logging:log_startup_info:159 | ================================================================================
+2026-02-14 10:52:10.622 | INFO     | app.core.logging:log_startup_info:160 | Environment: dev
+2026-02-14 10:52:10.755 | INFO     | app.core.logging:log_startup_info:161 | Log Level: INFO
+2026-02-14 10:52:10.851 | INFO     | app.core.logging:log_startup_info:162 | Logs Directory: E:\MAHAVIR-GROUP-SOFTWARE-DEVELOPMENT\ai_rag_sentiment_bot\app\logs
+2026-02-14 10:52:10.978 | INFO     | app.core.logging:log_startup_info:163 | Timestamp: 2026-02-14T10:52:10.978920
+2026-02-14 10:52:11.026 | INFO     | app.core.logging:log_startup_info:164 | ================================================================================
+2026-02-14 10:52:12.801 | INFO     | app.sentiment.strategies:__init__:137 | LexiconStrategy initialized
+2026-02-14 10:52:12.802 | INFO     | app.sentiment.strategies:__init__:190 | PatternStrategy initialized
+2026-02-14 10:52:12.803 | INFO     | app.sentiment.strategies:__init__:296 | StatisticalStrategy initialized
+2026-02-14 10:52:12.822 | INFO     | app.sentiment.rules:__init__:125 | SentimentRulesEngine initialized
+2026-02-14 10:52:12.828 | INFO     | app.sentiment.analyzer:__init__:37 | SentimentAnalyzer initialized
+2026-02-14 10:52:16.597 | INFO     | app.core.logging:log_startup_info:157 | ================================================================================
+2026-02-14 10:52:16.598 | INFO     | app.core.logging:log_startup_info:158 | AI RAG Sentiment Bot - Startup
+2026-02-14 10:52:16.599 | INFO     | app.core.logging:log_startup_info:159 | ================================================================================
+2026-02-14 10:52:16.600 | INFO     | app.core.logging:log_startup_info:160 | Environment: dev
+2026-02-14 10:52:16.603 | INFO     | app.core.logging:log_startup_info:161 | Log Level: INFO
+2026-02-14 10:52:16.605 | INFO     | app.core.logging:log_startup_info:162 | Logs Directory: E:\MAHAVIR-GROUP-SOFTWARE-DEVELOPMENT\ai_rag_sentiment_bot\app\logs
+2026-02-14 10:52:16.605 | INFO     | app.core.logging:log_startup_info:163 | Timestamp: 2026-02-14T10:52:16.605289
+2026-02-14 10:52:16.605 | INFO     | app.core.logging:log_startup_info:164 | ================================================================================
+2026-02-14 10:52:17.605 | INFO     | app.sentiment.strategies:__init__:137 | LexiconStrategy initialized
+2026-02-14 10:52:17.614 | INFO     | app.sentiment.strategies:__init__:190 | PatternStrategy initialized
+2026-02-14 10:52:17.643 | INFO     | app.sentiment.strategies:__init__:296 | StatisticalStrategy initialized
+2026-02-14 10:52:17.679 | INFO     | app.sentiment.rules:__init__:125 | SentimentRulesEngine initialized
+2026-02-14 10:52:17.681 | INFO     | app.sentiment.analyzer:__init__:37 | SentimentAnalyzer initialized
+2026-02-14 10:54:47.248 | INFO     | app.core.logging:log_startup_info:157 | ================================================================================
+2026-02-14 10:54:47.250 | INFO     | app.core.logging:log_startup_info:158 | AI RAG Sentiment Bot - Startup
+2026-02-14 10:54:47.251 | INFO     | app.core.logging:log_startup_info:159 | ================================================================================
+2026-02-14 10:54:47.251 | INFO     | app.core.logging:log_startup_info:160 | Environment: dev
+2026-02-14 10:54:47.252 | INFO     | app.core.logging:log_startup_info:161 | Log Level: INFO
+2026-02-14 10:54:47.252 | INFO     | app.core.logging:log_startup_info:162 | Logs Directory: E:\MAHAVIR-GROUP-SOFTWARE-DEVELOPMENT\ai_rag_sentiment_bot\app\logs
+2026-02-14 10:54:47.252 | INFO     | app.core.logging:log_startup_info:163 | Timestamp: 2026-02-14T10:54:47.252974
+2026-02-14 10:54:47.253 | INFO     | app.core.logging:log_startup_info:164 | ================================================================================
+2026-02-14 10:54:47.538 | WARNING  | app.auth.jwt:<module>:27 | JWT_SECRET_KEY not configured in environment. Using default key. Change JWT_SECRET_KEY in production!
+2026-02-14 10:54:48.670 | INFO     | app.sentiment.strategies:__init__:137 | LexiconStrategy initialized
+2026-02-14 10:54:48.674 | INFO     | app.sentiment.strategies:__init__:190 | PatternStrategy initialized
+2026-02-14 10:54:48.675 | INFO     | app.sentiment.strategies:__init__:296 | StatisticalStrategy initialized
+2026-02-14 10:54:48.679 | INFO     | app.sentiment.rules:__init__:125 | SentimentRulesEngine initialized
+2026-02-14 10:54:48.682 | INFO     | app.sentiment.analyzer:__init__:37 | SentimentAnalyzer initialized
+2026-02-14 10:54:52.280 | INFO     | app.core.logging:log_startup_info:157 | ================================================================================
+2026-02-14 10:54:52.282 | INFO     | app.core.logging:log_startup_info:158 | AI RAG Sentiment Bot - Startup
+2026-02-14 10:54:52.284 | INFO     | app.core.logging:log_startup_info:159 | ================================================================================
+2026-02-14 10:54:52.285 | INFO     | app.core.logging:log_startup_info:160 | Environment: dev
+2026-02-14 10:54:52.286 | INFO     | app.core.logging:log_startup_info:161 | Log Level: INFO
+2026-02-14 10:54:52.286 | INFO     | app.core.logging:log_startup_info:162 | Logs Directory: E:\MAHAVIR-GROUP-SOFTWARE-DEVELOPMENT\ai_rag_sentiment_bot\app\logs
+2026-02-14 10:54:52.288 | INFO     | app.core.logging:log_startup_info:163 | Timestamp: 2026-02-14T10:54:52.288861
+2026-02-14 10:54:52.293 | INFO     | app.core.logging:log_startup_info:164 | ================================================================================
+2026-02-14 10:54:52.567 | WARNING  | app.auth.jwt:<module>:27 | JWT_SECRET_KEY not configured in environment. Using default key. Change JWT_SECRET_KEY in production!
+2026-02-14 10:54:53.708 | INFO     | app.sentiment.strategies:__init__:137 | LexiconStrategy initialized
+2026-02-14 10:54:53.708 | INFO     | app.sentiment.strategies:__init__:190 | PatternStrategy initialized
+2026-02-14 10:54:53.709 | INFO     | app.sentiment.strategies:__init__:296 | StatisticalStrategy initialized
+2026-02-14 10:54:53.710 | INFO     | app.sentiment.rules:__init__:125 | SentimentRulesEngine initialized
+2026-02-14 10:54:53.711 | INFO     | app.sentiment.analyzer:__init__:37 | SentimentAnalyzer initialized
+2026-02-14 10:57:33.610 | INFO     | app.core.logging:log_startup_info:157 | ================================================================================
+2026-02-14 10:57:33.617 | INFO     | app.core.logging:log_startup_info:158 | AI RAG Sentiment Bot - Startup
+2026-02-14 10:57:33.621 | INFO     | app.core.logging:log_startup_info:159 | ================================================================================
+2026-02-14 10:57:33.631 | INFO     | app.core.logging:log_startup_info:160 | Environment: dev
+2026-02-14 10:57:33.651 | INFO     | app.core.logging:log_startup_info:161 | Log Level: INFO
+2026-02-14 10:57:33.661 | INFO     | app.core.logging:log_startup_info:162 | Logs Directory: E:\MAHAVIR-GROUP-SOFTWARE-DEVELOPMENT\ai_rag_sentiment_bot\app\logs
+2026-02-14 10:57:33.668 | INFO     | app.core.logging:log_startup_info:163 | Timestamp: 2026-02-14T10:57:33.668551
+2026-02-14 10:57:33.670 | INFO     | app.core.logging:log_startup_info:164 | ================================================================================
+2026-02-14 10:57:34.204 | WARNING  | app.auth.jwt:<module>:27 | JWT_SECRET_KEY not configured in environment. Using default key. Change JWT_SECRET_KEY in production!
+2026-02-14 10:57:38.734 | INFO     | app.core.logging:log_startup_info:157 | ================================================================================
+2026-02-14 10:57:38.738 | INFO     | app.core.logging:log_startup_info:158 | AI RAG Sentiment Bot - Startup
+2026-02-14 10:57:38.740 | INFO     | app.core.logging:log_startup_info:159 | ================================================================================
+2026-02-14 10:57:38.741 | INFO     | app.core.logging:log_startup_info:160 | Environment: dev
+2026-02-14 10:57:38.742 | INFO     | app.core.logging:log_startup_info:161 | Log Level: INFO
+2026-02-14 10:57:38.743 | INFO     | app.core.logging:log_startup_info:162 | Logs Directory: E:\MAHAVIR-GROUP-SOFTWARE-DEVELOPMENT\ai_rag_sentiment_bot\app\logs
+2026-02-14 10:57:38.743 | INFO     | app.core.logging:log_startup_info:163 | Timestamp: 2026-02-14T10:57:38.743550
+2026-02-14 10:57:38.744 | INFO     | app.core.logging:log_startup_info:164 | ================================================================================
+2026-02-14 10:57:38.935 | WARNING  | app.auth.jwt:<module>:27 | JWT_SECRET_KEY not configured in environment. Using default key. Change JWT_SECRET_KEY in production!
+2026-02-14 10:58:42.797 | INFO     | app.core.logging:log_startup_info:157 | ================================================================================
+2026-02-14 10:58:42.843 | INFO     | app.core.logging:log_startup_info:158 | AI RAG Sentiment Bot - Startup
+2026-02-14 10:58:42.860 | INFO     | app.core.logging:log_startup_info:159 | ================================================================================
+2026-02-14 10:58:42.882 | INFO     | app.core.logging:log_startup_info:160 | Environment: dev
+2026-02-14 10:58:42.893 | INFO     | app.core.logging:log_startup_info:161 | Log Level: INFO
+2026-02-14 10:58:42.909 | INFO     | app.core.logging:log_startup_info:162 | Logs Directory: E:\MAHAVIR-GROUP-SOFTWARE-DEVELOPMENT\ai_rag_sentiment_bot\app\logs
+2026-02-14 10:58:42.915 | INFO     | app.core.logging:log_startup_info:163 | Timestamp: 2026-02-14T10:58:42.915136
+2026-02-14 10:58:42.926 | INFO     | app.core.logging:log_startup_info:164 | ================================================================================
+2026-02-14 10:58:43.274 | WARNING  | app.auth.jwt:<module>:27 | JWT_SECRET_KEY not configured in environment. Using default key. Change JWT_SECRET_KEY in production!
+2026-02-14 10:58:44.180 | INFO     | app.sentiment.strategies:__init__:137 | LexiconStrategy initialized
+2026-02-14 10:58:44.181 | INFO     | app.sentiment.strategies:__init__:190 | PatternStrategy initialized
+2026-02-14 10:58:44.182 | INFO     | app.sentiment.strategies:__init__:296 | StatisticalStrategy initialized
+2026-02-14 10:58:44.185 | INFO     | app.sentiment.rules:__init__:125 | SentimentRulesEngine initialized
+2026-02-14 10:58:44.187 | INFO     | app.sentiment.analyzer:__init__:37 | SentimentAnalyzer initialized
+2026-02-14 10:59:00.693 | INFO     | app.core.logging:log_startup_info:157 | ================================================================================
+2026-02-14 10:59:00.694 | INFO     | app.core.logging:log_startup_info:158 | AI RAG Sentiment Bot - Startup
+2026-02-14 10:59:00.695 | INFO     | app.core.logging:log_startup_info:159 | ================================================================================
+2026-02-14 10:59:00.695 | INFO     | app.core.logging:log_startup_info:160 | Environment: dev
+2026-02-14 10:59:00.696 | INFO     | app.core.logging:log_startup_info:161 | Log Level: INFO
+2026-02-14 10:59:00.696 | INFO     | app.core.logging:log_startup_info:162 | Logs Directory: E:\MAHAVIR-GROUP-SOFTWARE-DEVELOPMENT\ai_rag_sentiment_bot\app\logs
+2026-02-14 10:59:00.696 | INFO     | app.core.logging:log_startup_info:163 | Timestamp: 2026-02-14T10:59:00.696649
+2026-02-14 10:59:00.698 | INFO     | app.core.logging:log_startup_info:164 | ================================================================================
+2026-02-14 10:59:00.869 | WARNING  | app.auth.jwt:<module>:27 | JWT_SECRET_KEY not configured in environment. Using default key. Change JWT_SECRET_KEY in production!
+2026-02-14 10:59:02.046 | INFO     | app.sentiment.strategies:__init__:137 | LexiconStrategy initialized
+2026-02-14 10:59:02.047 | INFO     | app.sentiment.strategies:__init__:190 | PatternStrategy initialized
+2026-02-14 10:59:02.048 | INFO     | app.sentiment.strategies:__init__:296 | StatisticalStrategy initialized
+2026-02-14 10:59:02.050 | INFO     | app.sentiment.rules:__init__:125 | SentimentRulesEngine initialized
+2026-02-14 10:59:02.063 | INFO     | app.sentiment.analyzer:__init__:37 | SentimentAnalyzer initialized
+2026-02-14 10:59:58.177 | INFO     | app.core.logging:log_startup_info:157 | ================================================================================
+2026-02-14 10:59:58.179 | INFO     | app.core.logging:log_startup_info:158 | AI RAG Sentiment Bot - Startup
+2026-02-14 10:59:58.187 | INFO     | app.core.logging:log_startup_info:159 | ================================================================================
+2026-02-14 10:59:58.200 | INFO     | app.core.logging:log_startup_info:160 | Environment: dev
+2026-02-14 10:59:58.215 | INFO     | app.core.logging:log_startup_info:161 | Log Level: INFO
+2026-02-14 10:59:58.229 | INFO     | app.core.logging:log_startup_info:162 | Logs Directory: E:\MAHAVIR-GROUP-SOFTWARE-DEVELOPMENT\ai_rag_sentiment_bot\app\logs
+2026-02-14 10:59:58.236 | INFO     | app.core.logging:log_startup_info:163 | Timestamp: 2026-02-14T10:59:58.236475
+2026-02-14 10:59:58.244 | INFO     | app.core.logging:log_startup_info:164 | ================================================================================
+2026-02-14 11:00:12.048 | INFO     | app.core.logging:log_startup_info:157 | ================================================================================
+2026-02-14 11:00:12.069 | INFO     | app.core.logging:log_startup_info:158 | AI RAG Sentiment Bot - Startup
+2026-02-14 11:00:12.081 | INFO     | app.core.logging:log_startup_info:159 | ================================================================================
+2026-02-14 11:00:12.095 | INFO     | app.core.logging:log_startup_info:160 | Environment: dev
+2026-02-14 11:00:12.095 | INFO     | app.core.logging:log_startup_info:161 | Log Level: INFO
+2026-02-14 11:00:12.096 | INFO     | app.core.logging:log_startup_info:162 | Logs Directory: E:\MAHAVIR-GROUP-SOFTWARE-DEVELOPMENT\ai_rag_sentiment_bot\app\logs
+2026-02-14 11:00:12.097 | INFO     | app.core.logging:log_startup_info:163 | Timestamp: 2026-02-14T11:00:12.097552
+2026-02-14 11:00:12.109 | INFO     | app.core.logging:log_startup_info:164 | ================================================================================
+2026-02-14 11:00:17.052 | INFO     | app.core.logging:log_startup_info:157 | ================================================================================
+2026-02-14 11:00:17.138 | INFO     | app.core.logging:log_startup_info:158 | AI RAG Sentiment Bot - Startup
+2026-02-14 11:00:17.151 | INFO     | app.core.logging:log_startup_info:159 | ================================================================================
+2026-02-14 11:00:17.155 | INFO     | app.core.logging:log_startup_info:160 | Environment: dev
+2026-02-14 11:00:17.250 | INFO     | app.core.logging:log_startup_info:161 | Log Level: INFO
+2026-02-14 11:00:17.320 | INFO     | app.core.logging:log_startup_info:162 | Logs Directory: E:\MAHAVIR-GROUP-SOFTWARE-DEVELOPMENT\ai_rag_sentiment_bot\app\logs
+2026-02-14 11:00:17.338 | INFO     | app.core.logging:log_startup_info:163 | Timestamp: 2026-02-14T11:00:17.338539
+2026-02-14 11:00:17.381 | INFO     | app.core.logging:log_startup_info:164 | ================================================================================
+2026-02-14 11:00:32.553 | INFO     | app.core.logging:log_startup_info:157 | ================================================================================
+2026-02-14 11:00:32.555 | INFO     | app.core.logging:log_startup_info:158 | AI RAG Sentiment Bot - Startup
+2026-02-14 11:00:32.556 | INFO     | app.core.logging:log_startup_info:159 | ================================================================================
+2026-02-14 11:00:32.556 | INFO     | app.core.logging:log_startup_info:160 | Environment: dev
+2026-02-14 11:00:32.557 | INFO     | app.core.logging:log_startup_info:161 | Log Level: INFO
+2026-02-14 11:00:32.557 | INFO     | app.core.logging:log_startup_info:162 | Logs Directory: E:\MAHAVIR-GROUP-SOFTWARE-DEVELOPMENT\ai_rag_sentiment_bot\app\logs
+2026-02-14 11:00:32.557 | INFO     | app.core.logging:log_startup_info:163 | Timestamp: 2026-02-14T11:00:32.557403
+2026-02-14 11:00:32.558 | INFO     | app.core.logging:log_startup_info:164 | ================================================================================
+2026-02-14 11:00:42.748 | INFO     | app.core.logging:log_startup_info:157 | ================================================================================
+2026-02-14 11:00:42.749 | INFO     | app.core.logging:log_startup_info:158 | AI RAG Sentiment Bot - Startup
+2026-02-14 11:00:42.750 | INFO     | app.core.logging:log_startup_info:159 | ================================================================================
+2026-02-14 11:00:42.750 | INFO     | app.core.logging:log_startup_info:160 | Environment: dev
+2026-02-14 11:00:42.750 | INFO     | app.core.logging:log_startup_info:161 | Log Level: INFO
+2026-02-14 11:00:42.751 | INFO     | app.core.logging:log_startup_info:162 | Logs Directory: E:\MAHAVIR-GROUP-SOFTWARE-DEVELOPMENT\ai_rag_sentiment_bot\app\logs
+2026-02-14 11:00:42.751 | INFO     | app.core.logging:log_startup_info:163 | Timestamp: 2026-02-14T11:00:42.751156
+2026-02-14 11:00:42.752 | INFO     | app.core.logging:log_startup_info:164 | ================================================================================
+2026-02-14 11:01:15.998 | INFO     | app.core.logging:log_startup_info:157 | ================================================================================
+2026-02-14 11:01:16.004 | INFO     | app.core.logging:log_startup_info:158 | AI RAG Sentiment Bot - Startup
+2026-02-14 11:01:16.004 | INFO     | app.core.logging:log_startup_info:159 | ================================================================================
+2026-02-14 11:01:16.006 | INFO     | app.core.logging:log_startup_info:160 | Environment: dev
+2026-02-14 11:01:16.012 | INFO     | app.core.logging:log_startup_info:161 | Log Level: INFO
+2026-02-14 11:01:16.020 | INFO     | app.core.logging:log_startup_info:162 | Logs Directory: E:\MAHAVIR-GROUP-SOFTWARE-DEVELOPMENT\ai_rag_sentiment_bot\app\logs
+2026-02-14 11:01:16.024 | INFO     | app.core.logging:log_startup_info:163 | Timestamp: 2026-02-14T11:01:16.024021
+2026-02-14 11:01:16.034 | INFO     | app.core.logging:log_startup_info:164 | ================================================================================
+2026-02-14 11:01:17.145 | WARNING  | app.auth.jwt:<module>:36 | JWT_SECRET_KEY not configured in environment. Using default key. Change JWT_SECRET_KEY in production!
+2026-02-14 11:01:29.483 | INFO     | app.core.logging:log_startup_info:157 | ================================================================================
+2026-02-14 11:01:29.512 | INFO     | app.core.logging:log_startup_info:158 | AI RAG Sentiment Bot - Startup
+2026-02-14 11:01:29.525 | INFO     | app.core.logging:log_startup_info:159 | ================================================================================
+2026-02-14 11:01:29.535 | INFO     | app.core.logging:log_startup_info:160 | Environment: dev
+2026-02-14 11:01:29.603 | INFO     | app.core.logging:log_startup_info:161 | Log Level: INFO
+2026-02-14 11:01:29.627 | INFO     | app.core.logging:log_startup_info:162 | Logs Directory: E:\MAHAVIR-GROUP-SOFTWARE-DEVELOPMENT\ai_rag_sentiment_bot\app\logs
+2026-02-14 11:01:29.640 | INFO     | app.core.logging:log_startup_info:163 | Timestamp: 2026-02-14T11:01:29.640992
+2026-02-14 11:01:29.655 | INFO     | app.core.logging:log_startup_info:164 | ================================================================================
+2026-02-14 11:01:29.870 | WARNING  | app.auth.jwt:<module>:36 | JWT_SECRET_KEY not configured in environment. Using default key. Change JWT_SECRET_KEY in production!
+2026-02-14 11:02:23.831 | INFO     | app.core.logging:log_startup_info:157 | ================================================================================
+2026-02-14 11:02:23.840 | INFO     | app.core.logging:log_startup_info:158 | AI RAG Sentiment Bot - Startup
+2026-02-14 11:02:23.854 | INFO     | app.core.logging:log_startup_info:159 | ================================================================================
+2026-02-14 11:02:23.855 | INFO     | app.core.logging:log_startup_info:160 | Environment: dev
+2026-02-14 11:02:23.896 | INFO     | app.core.logging:log_startup_info:161 | Log Level: INFO
+2026-02-14 11:02:23.929 | INFO     | app.core.logging:log_startup_info:162 | Logs Directory: E:\MAHAVIR-GROUP-SOFTWARE-DEVELOPMENT\ai_rag_sentiment_bot\app\logs
+2026-02-14 11:02:23.948 | INFO     | app.core.logging:log_startup_info:163 | Timestamp: 2026-02-14T11:02:23.948406
+2026-02-14 11:02:23.975 | INFO     | app.core.logging:log_startup_info:164 | ================================================================================
+2026-02-14 11:02:24.274 | INFO     | app.core.logging:log_startup_info:157 | ================================================================================
+2026-02-14 11:02:24.299 | INFO     | app.core.logging:log_startup_info:158 | AI RAG Sentiment Bot - Startup
+2026-02-14 11:02:24.307 | WARNING  | app.auth.jwt:<module>:36 | JWT_SECRET_KEY not configured in environment. Using default key. Change JWT_SECRET_KEY in production!
+2026-02-14 11:02:24.342 | INFO     | app.core.logging:log_startup_info:159 | ================================================================================
+2026-02-14 11:02:24.410 | INFO     | app.core.logging:log_startup_info:160 | Environment: dev
+2026-02-14 11:02:24.508 | INFO     | app.core.logging:log_startup_info:161 | Log Level: INFO
+2026-02-14 11:02:24.591 | INFO     | app.core.logging:log_startup_info:162 | Logs Directory: E:\MAHAVIR-GROUP-SOFTWARE-DEVELOPMENT\ai_rag_sentiment_bot\app\logs
+2026-02-14 11:02:24.652 | INFO     | app.core.logging:log_startup_info:163 | Timestamp: 2026-02-14T11:02:24.652404
+2026-02-14 11:02:24.707 | INFO     | app.core.logging:log_startup_info:164 | ================================================================================
+2026-02-14 11:02:25.512 | WARNING  | app.auth.jwt:<module>:36 | JWT_SECRET_KEY not configured in environment. Using default key. Change JWT_SECRET_KEY in production!
+2026-02-14 11:02:26.313 | INFO     | app.sentiment.strategies:__init__:137 | LexiconStrategy initialized
+2026-02-14 11:02:26.326 | INFO     | app.sentiment.strategies:__init__:190 | PatternStrategy initialized
+2026-02-14 11:02:26.395 | INFO     | app.sentiment.strategies:__init__:296 | StatisticalStrategy initialized
+2026-02-14 11:02:26.436 | INFO     | app.sentiment.rules:__init__:125 | SentimentRulesEngine initialized
+2026-02-14 11:02:26.444 | INFO     | app.sentiment.analyzer:__init__:37 | SentimentAnalyzer initialized
+2026-02-14 11:02:26.998 | INFO     | app.sentiment.strategies:__init__:137 | LexiconStrategy initialized
+2026-02-14 11:02:27.012 | INFO     | app.sentiment.strategies:__init__:190 | PatternStrategy initialized
+2026-02-14 11:02:27.054 | INFO     | app.sentiment.strategies:__init__:296 | StatisticalStrategy initialized
+2026-02-14 11:02:27.095 | INFO     | app.sentiment.rules:__init__:125 | SentimentRulesEngine initialized
+2026-02-14 11:02:27.129 | INFO     | app.sentiment.analyzer:__init__:37 | SentimentAnalyzer initialized
+2026-02-14 11:02:35.728 | INFO     | app.core.logging:log_startup_info:157 | ================================================================================
+2026-02-14 11:02:35.733 | INFO     | app.core.logging:log_startup_info:158 | AI RAG Sentiment Bot - Startup
+2026-02-14 11:02:35.734 | INFO     | app.core.logging:log_startup_info:157 | ================================================================================
+2026-02-14 11:02:35.736 | INFO     | app.core.logging:log_startup_info:159 | ================================================================================
+2026-02-14 11:02:35.736 | INFO     | app.core.logging:log_startup_info:158 | AI RAG Sentiment Bot - Startup
+2026-02-14 11:02:35.738 | INFO     | app.core.logging:log_startup_info:160 | Environment: dev
+2026-02-14 11:02:35.739 | INFO     | app.core.logging:log_startup_info:159 | ================================================================================
+2026-02-14 11:02:35.741 | INFO     | app.core.logging:log_startup_info:161 | Log Level: INFO
+2026-02-14 11:02:35.752 | INFO     | app.core.logging:log_startup_info:160 | Environment: dev
+2026-02-14 11:02:35.752 | INFO     | app.core.logging:log_startup_info:162 | Logs Directory: E:\MAHAVIR-GROUP-SOFTWARE-DEVELOPMENT\ai_rag_sentiment_bot\app\logs
+2026-02-14 11:02:35.757 | INFO     | app.core.logging:log_startup_info:163 | Timestamp: 2026-02-14T11:02:35.757074
+2026-02-14 11:02:35.755 | INFO     | app.core.logging:log_startup_info:161 | Log Level: INFO
+2026-02-14 11:02:35.758 | INFO     | app.core.logging:log_startup_info:164 | ================================================================================
+2026-02-14 11:02:35.767 | INFO     | app.core.logging:log_startup_info:162 | Logs Directory: E:\MAHAVIR-GROUP-SOFTWARE-DEVELOPMENT\ai_rag_sentiment_bot\app\logs
+2026-02-14 11:02:35.801 | INFO     | app.core.logging:log_startup_info:163 | Timestamp: 2026-02-14T11:02:35.801564
+2026-02-14 11:02:35.856 | INFO     | app.core.logging:log_startup_info:164 | ================================================================================
+2026-02-14 11:02:36.104 | WARNING  | app.auth.jwt:<module>:36 | JWT_SECRET_KEY not configured in environment. Using default key. Change JWT_SECRET_KEY in production!
+2026-02-14 11:02:36.480 | WARNING  | app.auth.jwt:<module>:36 | JWT_SECRET_KEY not configured in environment. Using default key. Change JWT_SECRET_KEY in production!
+2026-02-14 11:02:37.455 | INFO     | app.sentiment.strategies:__init__:137 | LexiconStrategy initialized
+2026-02-14 11:02:37.462 | INFO     | app.sentiment.strategies:__init__:190 | PatternStrategy initialized
+2026-02-14 11:02:37.464 | INFO     | app.sentiment.strategies:__init__:296 | StatisticalStrategy initialized
+2026-02-14 11:02:37.465 | INFO     | app.sentiment.rules:__init__:125 | SentimentRulesEngine initialized
+2026-02-14 11:02:37.476 | INFO     | app.sentiment.analyzer:__init__:37 | SentimentAnalyzer initialized
+2026-02-14 11:02:37.662 | INFO     | app.sentiment.strategies:__init__:137 | LexiconStrategy initialized
+2026-02-14 11:02:37.692 | INFO     | app.sentiment.strategies:__init__:190 | PatternStrategy initialized
+2026-02-14 11:02:37.703 | INFO     | app.sentiment.strategies:__init__:296 | StatisticalStrategy initialized
+2026-02-14 11:02:37.751 | INFO     | app.sentiment.rules:__init__:125 | SentimentRulesEngine initialized
+2026-02-14 11:02:37.794 | INFO     | app.sentiment.analyzer:__init__:37 | SentimentAnalyzer initialized
+2026-02-14 11:04:39.618 | INFO     | app.core.logging:log_startup_info:157 | ================================================================================
+2026-02-14 11:04:39.622 | INFO     | app.core.logging:log_startup_info:158 | AI RAG Sentiment Bot - Startup
+2026-02-14 11:04:39.622 | INFO     | app.core.logging:log_startup_info:159 | ================================================================================
+2026-02-14 11:04:39.627 | INFO     | app.core.logging:log_startup_info:160 | Environment: dev
+2026-02-14 11:04:39.627 | INFO     | app.core.logging:log_startup_info:161 | Log Level: INFO
+2026-02-14 11:04:39.628 | INFO     | app.core.logging:log_startup_info:162 | Logs Directory: E:\MAHAVIR-GROUP-SOFTWARE-DEVELOPMENT\ai_rag_sentiment_bot\app\logs
+2026-02-14 11:04:39.628 | INFO     | app.core.logging:log_startup_info:163 | Timestamp: 2026-02-14T11:04:39.628653
+2026-02-14 11:04:39.629 | INFO     | app.core.logging:log_startup_info:164 | ================================================================================
+2026-02-14 11:04:39.686 | INFO     | app.core.logging:log_startup_info:157 | ================================================================================
+2026-02-14 11:04:39.714 | INFO     | app.core.logging:log_startup_info:158 | AI RAG Sentiment Bot - Startup
+2026-02-14 11:04:39.751 | INFO     | app.core.logging:log_startup_info:159 | ================================================================================
+2026-02-14 11:04:39.803 | INFO     | app.core.logging:log_startup_info:160 | Environment: dev
+2026-02-14 11:04:39.831 | INFO     | app.core.logging:log_startup_info:161 | Log Level: INFO
+2026-02-14 11:04:39.864 | INFO     | app.core.logging:log_startup_info:162 | Logs Directory: E:\MAHAVIR-GROUP-SOFTWARE-DEVELOPMENT\ai_rag_sentiment_bot\app\logs
+2026-02-14 11:04:39.887 | INFO     | app.core.logging:log_startup_info:163 | Timestamp: 2026-02-14T11:04:39.887934
+2026-02-14 11:04:39.922 | WARNING  | app.auth.jwt:<module>:36 | JWT_SECRET_KEY not configured in environment. Using default key. Change JWT_SECRET_KEY in production!
+2026-02-14 11:04:39.917 | INFO     | app.core.logging:log_startup_info:164 | ================================================================================
+2026-02-14 11:04:40.382 | WARNING  | app.auth.jwt:<module>:36 | JWT_SECRET_KEY not configured in environment. Using default key. Change JWT_SECRET_KEY in production!
+2026-02-14 11:04:41.648 | INFO     | app.sentiment.strategies:__init__:137 | LexiconStrategy initialized
+2026-02-14 11:04:41.650 | INFO     | app.sentiment.strategies:__init__:190 | PatternStrategy initialized
+2026-02-14 11:04:41.650 | INFO     | app.sentiment.strategies:__init__:296 | StatisticalStrategy initialized
+2026-02-14 11:04:41.663 | INFO     | app.sentiment.rules:__init__:125 | SentimentRulesEngine initialized
+2026-02-14 11:04:41.666 | INFO     | app.sentiment.analyzer:__init__:37 | SentimentAnalyzer initialized
+2026-02-14 11:04:42.047 | INFO     | app.sentiment.strategies:__init__:137 | LexiconStrategy initialized
+2026-02-14 11:04:42.048 | INFO     | app.sentiment.strategies:__init__:190 | PatternStrategy initialized
+2026-02-14 11:04:42.048 | INFO     | app.sentiment.strategies:__init__:296 | StatisticalStrategy initialized
+2026-02-14 11:04:42.050 | INFO     | app.sentiment.rules:__init__:125 | SentimentRulesEngine initialized
+2026-02-14 11:04:42.053 | INFO     | app.sentiment.analyzer:__init__:37 | SentimentAnalyzer initialized
+2026-02-14 11:05:19.165 | INFO     | app.core.logging:log_startup_info:157 | ================================================================================
+2026-02-14 11:05:19.166 | INFO     | app.core.logging:log_startup_info:158 | AI RAG Sentiment Bot - Startup
+2026-02-14 11:05:19.167 | INFO     | app.core.logging:log_startup_info:159 | ================================================================================
+2026-02-14 11:05:19.171 | INFO     | app.core.logging:log_startup_info:160 | Environment: dev
+2026-02-14 11:05:19.181 | INFO     | app.core.logging:log_startup_info:161 | Log Level: INFO
+2026-02-14 11:05:19.184 | INFO     | app.core.logging:log_startup_info:162 | Logs Directory: E:\MAHAVIR-GROUP-SOFTWARE-DEVELOPMENT\ai_rag_sentiment_bot\app\logs
+2026-02-14 11:05:19.184 | INFO     | app.core.logging:log_startup_info:163 | Timestamp: 2026-02-14T11:05:19.184637
+2026-02-14 11:05:19.185 | INFO     | app.core.logging:log_startup_info:164 | ================================================================================
+2026-02-14 11:05:19.237 | INFO     | app.core.logging:log_startup_info:157 | ================================================================================
+2026-02-14 11:05:19.244 | INFO     | app.core.logging:log_startup_info:158 | AI RAG Sentiment Bot - Startup
+2026-02-14 11:05:19.245 | INFO     | app.core.logging:log_startup_info:159 | ================================================================================
+2026-02-14 11:05:19.247 | INFO     | app.core.logging:log_startup_info:160 | Environment: dev
+2026-02-14 11:05:19.248 | INFO     | app.core.logging:log_startup_info:161 | Log Level: INFO
+2026-02-14 11:05:19.251 | INFO     | app.core.logging:log_startup_info:162 | Logs Directory: E:\MAHAVIR-GROUP-SOFTWARE-DEVELOPMENT\ai_rag_sentiment_bot\app\logs
+2026-02-14 11:05:19.252 | INFO     | app.core.logging:log_startup_info:163 | Timestamp: 2026-02-14T11:05:19.252962
+2026-02-14 11:05:19.253 | INFO     | app.core.logging:log_startup_info:164 | ================================================================================
+2026-02-14 11:05:19.514 | WARNING  | app.auth.jwt:<module>:36 | JWT_SECRET_KEY not configured in environment. Using default key. Change JWT_SECRET_KEY in production!
+2026-02-14 11:05:19.583 | WARNING  | app.auth.jwt:<module>:36 | JWT_SECRET_KEY not configured in environment. Using default key. Change JWT_SECRET_KEY in production!
+2026-02-14 11:05:30.613 | INFO     | app.core.logging:log_startup_info:157 | ================================================================================
+2026-02-14 11:05:30.616 | INFO     | app.core.logging:log_startup_info:158 | AI RAG Sentiment Bot - Startup
+2026-02-14 11:05:30.619 | INFO     | app.core.logging:log_startup_info:159 | ================================================================================
+2026-02-14 11:05:30.623 | INFO     | app.core.logging:log_startup_info:160 | Environment: dev
+2026-02-14 11:05:30.629 | INFO     | app.core.logging:log_startup_info:161 | Log Level: INFO
+2026-02-14 11:05:30.640 | INFO     | app.core.logging:log_startup_info:162 | Logs Directory: E:\MAHAVIR-GROUP-SOFTWARE-DEVELOPMENT\ai_rag_sentiment_bot\app\logs
+2026-02-14 11:05:30.650 | INFO     | app.core.logging:log_startup_info:163 | Timestamp: 2026-02-14T11:05:30.650424
+2026-02-14 11:05:30.658 | INFO     | app.core.logging:log_startup_info:164 | ================================================================================
+2026-02-14 11:05:30.687 | INFO     | app.core.logging:log_startup_info:157 | ================================================================================
+2026-02-14 11:05:30.693 | INFO     | app.core.logging:log_startup_info:158 | AI RAG Sentiment Bot - Startup
+2026-02-14 11:05:30.709 | INFO     | app.core.logging:log_startup_info:159 | ================================================================================
+2026-02-14 11:05:30.796 | INFO     | app.core.logging:log_startup_info:160 | Environment: dev
+2026-02-14 11:05:30.829 | INFO     | app.core.logging:log_startup_info:161 | Log Level: INFO
+2026-02-14 11:05:30.891 | INFO     | app.core.logging:log_startup_info:162 | Logs Directory: E:\MAHAVIR-GROUP-SOFTWARE-DEVELOPMENT\ai_rag_sentiment_bot\app\logs
+2026-02-14 11:05:30.919 | INFO     | app.core.logging:log_startup_info:163 | Timestamp: 2026-02-14T11:05:30.919774
+2026-02-14 11:05:30.927 | INFO     | app.core.logging:log_startup_info:164 | ================================================================================
+2026-02-14 11:05:31.046 | WARNING  | app.auth.jwt:<module>:36 | JWT_SECRET_KEY not configured in environment. Using default key. Change JWT_SECRET_KEY in production!
+2026-02-14 11:05:31.263 | WARNING  | app.auth.jwt:<module>:36 | JWT_SECRET_KEY not configured in environment. Using default key. Change JWT_SECRET_KEY in production!
+2026-02-14 11:05:35.409 | INFO     | app.core.logging:log_startup_info:157 | ================================================================================
+2026-02-14 11:05:35.410 | INFO     | app.core.logging:log_startup_info:158 | AI RAG Sentiment Bot - Startup
+2026-02-14 11:05:35.416 | INFO     | app.core.logging:log_startup_info:159 | ================================================================================
+2026-02-14 11:05:35.420 | INFO     | app.core.logging:log_startup_info:160 | Environment: dev
+2026-02-14 11:05:35.422 | INFO     | app.core.logging:log_startup_info:157 | ================================================================================
+2026-02-14 11:05:35.425 | INFO     | app.core.logging:log_startup_info:161 | Log Level: INFO
+2026-02-14 11:05:35.425 | INFO     | app.core.logging:log_startup_info:158 | AI RAG Sentiment Bot - Startup
+2026-02-14 11:05:35.427 | INFO     | app.core.logging:log_startup_info:162 | Logs Directory: E:\MAHAVIR-GROUP-SOFTWARE-DEVELOPMENT\ai_rag_sentiment_bot\app\logs
+2026-02-14 11:05:35.429 | INFO     | app.core.logging:log_startup_info:159 | ================================================================================
+2026-02-14 11:05:35.433 | INFO     | app.core.logging:log_startup_info:163 | Timestamp: 2026-02-14T11:05:35.433354
+2026-02-14 11:05:35.435 | INFO     | app.core.logging:log_startup_info:160 | Environment: dev
+2026-02-14 11:05:35.436 | INFO     | app.core.logging:log_startup_info:164 | ================================================================================
+2026-02-14 11:05:35.438 | INFO     | app.core.logging:log_startup_info:161 | Log Level: INFO
+2026-02-14 11:05:35.465 | INFO     | app.core.logging:log_startup_info:162 | Logs Directory: E:\MAHAVIR-GROUP-SOFTWARE-DEVELOPMENT\ai_rag_sentiment_bot\app\logs
+2026-02-14 11:05:35.472 | INFO     | app.core.logging:log_startup_info:163 | Timestamp: 2026-02-14T11:05:35.472377
+2026-02-14 11:05:35.473 | INFO     | app.core.logging:log_startup_info:164 | ================================================================================
+2026-02-14 11:05:35.671 | WARNING  | app.auth.jwt:<module>:36 | JWT_SECRET_KEY not configured in environment. Using default key. Change JWT_SECRET_KEY in production!
+2026-02-14 11:05:35.690 | WARNING  | app.auth.jwt:<module>:36 | JWT_SECRET_KEY not configured in environment. Using default key. Change JWT_SECRET_KEY in production!
+2026-02-14 11:05:43.695 | INFO     | app.core.logging:log_startup_info:157 | ================================================================================
+2026-02-14 11:05:43.697 | INFO     | app.core.logging:log_startup_info:158 | AI RAG Sentiment Bot - Startup
+2026-02-14 11:05:43.698 | INFO     | app.core.logging:log_startup_info:159 | ================================================================================
+2026-02-14 11:05:43.699 | INFO     | app.core.logging:log_startup_info:160 | Environment: dev
+2026-02-14 11:05:43.700 | INFO     | app.core.logging:log_startup_info:161 | Log Level: INFO
+2026-02-14 11:05:43.701 | INFO     | app.core.logging:log_startup_info:162 | Logs Directory: E:\MAHAVIR-GROUP-SOFTWARE-DEVELOPMENT\ai_rag_sentiment_bot\app\logs
+2026-02-14 11:05:43.703 | INFO     | app.core.logging:log_startup_info:163 | Timestamp: 2026-02-14T11:05:43.703078
+2026-02-14 11:05:43.703 | INFO     | app.core.logging:log_startup_info:164 | ================================================================================
+2026-02-14 11:05:43.886 | INFO     | app.core.logging:log_startup_info:157 | ================================================================================
+2026-02-14 11:05:43.887 | INFO     | app.core.logging:log_startup_info:158 | AI RAG Sentiment Bot - Startup
+2026-02-14 11:05:43.892 | INFO     | app.core.logging:log_startup_info:159 | ================================================================================
+2026-02-14 11:05:43.892 | INFO     | app.core.logging:log_startup_info:160 | Environment: dev
+2026-02-14 11:05:43.893 | INFO     | app.core.logging:log_startup_info:161 | Log Level: INFO
+2026-02-14 11:05:43.894 | INFO     | app.core.logging:log_startup_info:162 | Logs Directory: E:\MAHAVIR-GROUP-SOFTWARE-DEVELOPMENT\ai_rag_sentiment_bot\app\logs
+2026-02-14 11:05:43.895 | INFO     | app.core.logging:log_startup_info:163 | Timestamp: 2026-02-14T11:05:43.895119
+2026-02-14 11:05:43.895 | INFO     | app.core.logging:log_startup_info:164 | ================================================================================
+2026-02-14 11:05:43.922 | WARNING  | app.auth.jwt:<module>:36 | JWT_SECRET_KEY not configured in environment. Using default key. Change JWT_SECRET_KEY in production!
+2026-02-14 11:05:44.083 | WARNING  | app.auth.jwt:<module>:36 | JWT_SECRET_KEY not configured in environment. Using default key. Change JWT_SECRET_KEY in production!
+2026-02-14 11:06:14.706 | INFO     | app.core.logging:log_startup_info:157 | ================================================================================
+2026-02-14 11:06:14.719 | INFO     | app.core.logging:log_startup_info:158 | AI RAG Sentiment Bot - Startup
+2026-02-14 11:06:14.725 | INFO     | app.core.logging:log_startup_info:159 | ================================================================================
+2026-02-14 11:06:14.741 | INFO     | app.core.logging:log_startup_info:160 | Environment: dev
+2026-02-14 11:06:14.741 | INFO     | app.core.logging:log_startup_info:161 | Log Level: INFO
+2026-02-14 11:06:14.742 | INFO     | app.core.logging:log_startup_info:162 | Logs Directory: E:\MAHAVIR-GROUP-SOFTWARE-DEVELOPMENT\ai_rag_sentiment_bot\app\logs
+2026-02-14 11:06:14.743 | INFO     | app.core.logging:log_startup_info:163 | Timestamp: 2026-02-14T11:06:14.743352
+2026-02-14 11:06:14.752 | INFO     | app.core.logging:log_startup_info:164 | ================================================================================
+2026-02-14 11:06:14.915 | INFO     | app.core.logging:log_startup_info:157 | ================================================================================
+2026-02-14 11:06:14.925 | INFO     | app.core.logging:log_startup_info:158 | AI RAG Sentiment Bot - Startup
+2026-02-14 11:06:14.937 | INFO     | app.core.logging:log_startup_info:159 | ================================================================================
+2026-02-14 11:06:14.941 | INFO     | app.core.logging:log_startup_info:160 | Environment: dev
+2026-02-14 11:06:15.000 | INFO     | app.core.logging:log_startup_info:161 | Log Level: INFO
+2026-02-14 11:06:15.034 | WARNING  | app.auth.jwt:<module>:36 | JWT_SECRET_KEY not configured in environment. Using default key. Change JWT_SECRET_KEY in production!
+2026-02-14 11:06:15.071 | INFO     | app.core.logging:log_startup_info:162 | Logs Directory: E:\MAHAVIR-GROUP-SOFTWARE-DEVELOPMENT\ai_rag_sentiment_bot\app\logs
+2026-02-14 11:06:15.141 | INFO     | app.core.logging:log_startup_info:163 | Timestamp: 2026-02-14T11:06:15.141710
+2026-02-14 11:06:15.190 | INFO     | app.core.logging:log_startup_info:164 | ================================================================================
+2026-02-14 11:06:15.855 | WARNING  | app.auth.jwt:<module>:36 | JWT_SECRET_KEY not configured in environment. Using default key. Change JWT_SECRET_KEY in production!
+2026-02-14 11:06:19.487 | INFO     | app.core.logging:log_startup_info:157 | ================================================================================
+2026-02-14 11:06:19.487 | INFO     | app.core.logging:log_startup_info:158 | AI RAG Sentiment Bot - Startup
+2026-02-14 11:06:19.488 | INFO     | app.core.logging:log_startup_info:159 | ================================================================================
+2026-02-14 11:06:19.488 | INFO     | app.core.logging:log_startup_info:160 | Environment: dev
+2026-02-14 11:06:19.489 | INFO     | app.core.logging:log_startup_info:161 | Log Level: INFO
+2026-02-14 11:06:19.489 | INFO     | app.core.logging:log_startup_info:162 | Logs Directory: E:\MAHAVIR-GROUP-SOFTWARE-DEVELOPMENT\ai_rag_sentiment_bot\app\logs
+2026-02-14 11:06:19.490 | INFO     | app.core.logging:log_startup_info:163 | Timestamp: 2026-02-14T11:06:19.490300
+2026-02-14 11:06:19.490 | INFO     | app.core.logging:log_startup_info:164 | ================================================================================
+2026-02-14 11:06:19.684 | WARNING  | app.auth.jwt:<module>:36 | JWT_SECRET_KEY not configured in environment. Using default key. Change JWT_SECRET_KEY in production!
+2026-02-14 11:06:19.864 | INFO     | app.core.logging:log_startup_info:157 | ================================================================================
+2026-02-14 11:06:19.866 | INFO     | app.core.logging:log_startup_info:158 | AI RAG Sentiment Bot - Startup
+2026-02-14 11:06:19.867 | INFO     | app.core.logging:log_startup_info:159 | ================================================================================
+2026-02-14 11:06:19.868 | INFO     | app.core.logging:log_startup_info:160 | Environment: dev
+2026-02-14 11:06:19.869 | INFO     | app.core.logging:log_startup_info:161 | Log Level: INFO
+2026-02-14 11:06:19.870 | INFO     | app.core.logging:log_startup_info:162 | Logs Directory: E:\MAHAVIR-GROUP-SOFTWARE-DEVELOPMENT\ai_rag_sentiment_bot\app\logs
+2026-02-14 11:06:19.871 | INFO     | app.core.logging:log_startup_info:163 | Timestamp: 2026-02-14T11:06:19.871421
+2026-02-14 11:06:19.884 | INFO     | app.core.logging:log_startup_info:164 | ================================================================================
+2026-02-14 11:06:20.094 | WARNING  | app.auth.jwt:<module>:36 | JWT_SECRET_KEY not configured in environment. Using default key. Change JWT_SECRET_KEY in production!
+2026-02-14 11:06:29.908 | INFO     | app.core.logging:log_startup_info:157 | ================================================================================
+2026-02-14 11:06:29.937 | INFO     | app.core.logging:log_startup_info:158 | AI RAG Sentiment Bot - Startup
+2026-02-14 11:06:29.959 | INFO     | app.core.logging:log_startup_info:159 | ================================================================================
+2026-02-14 11:06:29.970 | INFO     | app.core.logging:log_startup_info:160 | Environment: dev
+2026-02-14 11:06:29.982 | INFO     | app.core.logging:log_startup_info:161 | Log Level: INFO
+2026-02-14 11:06:29.994 | INFO     | app.core.logging:log_startup_info:162 | Logs Directory: E:\MAHAVIR-GROUP-SOFTWARE-DEVELOPMENT\ai_rag_sentiment_bot\app\logs
+2026-02-14 11:06:29.995 | INFO     | app.core.logging:log_startup_info:163 | Timestamp: 2026-02-14T11:06:29.995780
+2026-02-14 11:06:29.996 | INFO     | app.core.logging:log_startup_info:164 | ================================================================================
+2026-02-14 11:06:30.004 | INFO     | app.core.logging:log_startup_info:157 | ================================================================================
+2026-02-14 11:06:30.007 | INFO     | app.core.logging:log_startup_info:158 | AI RAG Sentiment Bot - Startup
+2026-02-14 11:06:30.009 | INFO     | app.core.logging:log_startup_info:159 | ================================================================================
+2026-02-14 11:06:30.011 | INFO     | app.core.logging:log_startup_info:160 | Environment: dev
+2026-02-14 11:06:30.013 | INFO     | app.core.logging:log_startup_info:161 | Log Level: INFO
+2026-02-14 11:06:30.014 | INFO     | app.core.logging:log_startup_info:162 | Logs Directory: E:\MAHAVIR-GROUP-SOFTWARE-DEVELOPMENT\ai_rag_sentiment_bot\app\logs
+2026-02-14 11:06:30.024 | INFO     | app.core.logging:log_startup_info:163 | Timestamp: 2026-02-14T11:06:30.024859
+2026-02-14 11:06:30.029 | INFO     | app.core.logging:log_startup_info:164 | ================================================================================
+2026-02-14 11:06:30.217 | WARNING  | app.auth.jwt:<module>:36 | JWT_SECRET_KEY not configured in environment. Using default key. Change JWT_SECRET_KEY in production!
+2026-02-14 11:06:30.224 | WARNING  | app.auth.jwt:<module>:36 | JWT_SECRET_KEY not configured in environment. Using default key. Change JWT_SECRET_KEY in production!
+2026-02-14 11:06:37.389 | INFO     | app.core.logging:log_startup_info:157 | ================================================================================
+2026-02-14 11:06:37.390 | INFO     | app.core.logging:log_startup_info:158 | AI RAG Sentiment Bot - Startup
+2026-02-14 11:06:37.391 | INFO     | app.core.logging:log_startup_info:159 | ================================================================================
+2026-02-14 11:06:37.402 | INFO     | app.core.logging:log_startup_info:160 | Environment: dev
+2026-02-14 11:06:37.409 | INFO     | app.core.logging:log_startup_info:161 | Log Level: INFO
+2026-02-14 11:06:37.416 | INFO     | app.core.logging:log_startup_info:162 | Logs Directory: E:\MAHAVIR-GROUP-SOFTWARE-DEVELOPMENT\ai_rag_sentiment_bot\app\logs
+2026-02-14 11:06:37.419 | INFO     | app.core.logging:log_startup_info:163 | Timestamp: 2026-02-14T11:06:37.419367
+2026-02-14 11:06:37.423 | INFO     | app.core.logging:log_startup_info:164 | ================================================================================
+2026-02-14 11:06:37.752 | WARNING  | app.auth.jwt:<module>:36 | JWT_SECRET_KEY not configured in environment. Using default key. Change JWT_SECRET_KEY in production!
+2026-02-14 11:06:37.822 | INFO     | app.core.logging:log_startup_info:157 | ================================================================================
+2026-02-14 11:06:37.871 | INFO     | app.core.logging:log_startup_info:158 | AI RAG Sentiment Bot - Startup
+2026-02-14 11:06:37.938 | INFO     | app.core.logging:log_startup_info:159 | ================================================================================
+2026-02-14 11:06:37.994 | INFO     | app.core.logging:log_startup_info:160 | Environment: dev
+2026-02-14 11:06:38.023 | INFO     | app.core.logging:log_startup_info:161 | Log Level: INFO
+2026-02-14 11:06:38.071 | INFO     | app.core.logging:log_startup_info:162 | Logs Directory: E:\MAHAVIR-GROUP-SOFTWARE-DEVELOPMENT\ai_rag_sentiment_bot\app\logs
+2026-02-14 11:06:38.076 | INFO     | app.core.logging:log_startup_info:163 | Timestamp: 2026-02-14T11:06:38.076656
+2026-02-14 11:06:38.091 | INFO     | app.core.logging:log_startup_info:164 | ================================================================================
+2026-02-14 11:06:38.691 | WARNING  | app.auth.jwt:<module>:36 | JWT_SECRET_KEY not configured in environment. Using default key. Change JWT_SECRET_KEY in production!
+2026-02-14 11:06:50.929 | INFO     | app.core.logging:log_startup_info:157 | ================================================================================
+2026-02-14 11:06:50.930 | INFO     | app.core.logging:log_startup_info:158 | AI RAG Sentiment Bot - Startup
+2026-02-14 11:06:50.938 | INFO     | app.core.logging:log_startup_info:159 | ================================================================================
+2026-02-14 11:06:50.941 | INFO     | app.core.logging:log_startup_info:160 | Environment: dev
+2026-02-14 11:06:50.943 | INFO     | app.core.logging:log_startup_info:161 | Log Level: INFO
+2026-02-14 11:06:50.973 | INFO     | app.core.logging:log_startup_info:162 | Logs Directory: E:\MAHAVIR-GROUP-SOFTWARE-DEVELOPMENT\ai_rag_sentiment_bot\app\logs
+2026-02-14 11:06:50.975 | INFO     | app.core.logging:log_startup_info:163 | Timestamp: 2026-02-14T11:06:50.975973
+2026-02-14 11:06:50.978 | INFO     | app.core.logging:log_startup_info:164 | ================================================================================
+2026-02-14 11:06:51.173 | INFO     | app.core.logging:log_startup_info:157 | ================================================================================
+2026-02-14 11:06:51.175 | INFO     | app.core.logging:log_startup_info:158 | AI RAG Sentiment Bot - Startup
+2026-02-14 11:06:51.175 | INFO     | app.core.logging:log_startup_info:159 | ================================================================================
+2026-02-14 11:06:51.176 | INFO     | app.core.logging:log_startup_info:160 | Environment: dev
+2026-02-14 11:06:51.176 | INFO     | app.core.logging:log_startup_info:161 | Log Level: INFO
+2026-02-14 11:06:51.177 | INFO     | app.core.logging:log_startup_info:162 | Logs Directory: E:\MAHAVIR-GROUP-SOFTWARE-DEVELOPMENT\ai_rag_sentiment_bot\app\logs
+2026-02-14 11:06:51.178 | INFO     | app.core.logging:log_startup_info:163 | Timestamp: 2026-02-14T11:06:51.178299
+2026-02-14 11:06:51.179 | INFO     | app.core.logging:log_startup_info:164 | ================================================================================
+2026-02-14 11:06:51.279 | WARNING  | app.auth.jwt:<module>:36 | JWT_SECRET_KEY not configured in environment. Using default key. Change JWT_SECRET_KEY in production!
+2026-02-14 11:06:51.583 | WARNING  | app.auth.jwt:<module>:36 | JWT_SECRET_KEY not configured in environment. Using default key. Change JWT_SECRET_KEY in production!
+2026-02-14 11:09:39.413 | INFO     | app.core.logging:log_startup_info:157 | ================================================================================
+2026-02-14 11:09:39.435 | INFO     | app.core.logging:log_startup_info:158 | AI RAG Sentiment Bot - Startup
+2026-02-14 11:09:39.437 | INFO     | app.core.logging:log_startup_info:159 | ================================================================================
+2026-02-14 11:09:39.438 | INFO     | app.core.logging:log_startup_info:160 | Environment: dev
+2026-02-14 11:09:39.438 | INFO     | app.core.logging:log_startup_info:161 | Log Level: INFO
+2026-02-14 11:09:39.439 | INFO     | app.core.logging:log_startup_info:162 | Logs Directory: E:\MAHAVIR-GROUP-SOFTWARE-DEVELOPMENT\ai_rag_sentiment_bot\app\logs
+2026-02-14 11:09:39.439 | INFO     | app.core.logging:log_startup_info:163 | Timestamp: 2026-02-14T11:09:39.439472
+2026-02-14 11:09:39.439 | INFO     | app.core.logging:log_startup_info:164 | ================================================================================
+2026-02-14 11:09:39.504 | INFO     | app.core.logging:log_startup_info:157 | ================================================================================
+2026-02-14 11:09:39.538 | INFO     | app.core.logging:log_startup_info:158 | AI RAG Sentiment Bot - Startup
+2026-02-14 11:09:39.691 | INFO     | app.core.logging:log_startup_info:159 | ================================================================================
+2026-02-14 11:09:39.711 | INFO     | app.core.logging:log_startup_info:160 | Environment: dev
+2026-02-14 11:09:39.722 | INFO     | app.core.logging:log_startup_info:161 | Log Level: INFO
+2026-02-14 11:09:39.731 | INFO     | app.core.logging:log_startup_info:162 | Logs Directory: E:\MAHAVIR-GROUP-SOFTWARE-DEVELOPMENT\ai_rag_sentiment_bot\app\logs
+2026-02-14 11:09:39.737 | INFO     | app.core.logging:log_startup_info:163 | Timestamp: 2026-02-14T11:09:39.737233
+2026-02-14 11:09:39.739 | INFO     | app.core.logging:log_startup_info:164 | ================================================================================
+2026-02-14 11:09:40.121 | WARNING  | app.auth.jwt:<module>:36 | JWT_SECRET_KEY not configured in environment. Using default key. Change JWT_SECRET_KEY in production!
+2026-02-14 11:09:40.140 | WARNING  | app.auth.jwt:<module>:36 | JWT_SECRET_KEY not configured in environment. Using default key. Change JWT_SECRET_KEY in production!
+2026-02-14 11:09:44.644 | INFO     | app.core.logging:log_startup_info:157 | ================================================================================
+2026-02-14 11:09:44.645 | INFO     | app.core.logging:log_startup_info:158 | AI RAG Sentiment Bot - Startup
+2026-02-14 11:09:44.646 | INFO     | app.core.logging:log_startup_info:159 | ================================================================================
+2026-02-14 11:09:44.646 | INFO     | app.core.logging:log_startup_info:160 | Environment: dev
+2026-02-14 11:09:44.646 | INFO     | app.core.logging:log_startup_info:161 | Log Level: INFO
+2026-02-14 11:09:44.647 | INFO     | app.core.logging:log_startup_info:162 | Logs Directory: E:\MAHAVIR-GROUP-SOFTWARE-DEVELOPMENT\ai_rag_sentiment_bot\app\logs
+2026-02-14 11:09:44.647 | INFO     | app.core.logging:log_startup_info:163 | Timestamp: 2026-02-14T11:09:44.647779
+2026-02-14 11:09:44.648 | INFO     | app.core.logging:log_startup_info:164 | ================================================================================
+2026-02-14 11:09:44.680 | INFO     | app.core.logging:log_startup_info:157 | ================================================================================
+2026-02-14 11:09:44.681 | INFO     | app.core.logging:log_startup_info:158 | AI RAG Sentiment Bot - Startup
+2026-02-14 11:09:44.682 | INFO     | app.core.logging:log_startup_info:159 | ================================================================================
+2026-02-14 11:09:44.682 | INFO     | app.core.logging:log_startup_info:160 | Environment: dev
+2026-02-14 11:09:44.683 | INFO     | app.core.logging:log_startup_info:161 | Log Level: INFO
+2026-02-14 11:09:44.683 | INFO     | app.core.logging:log_startup_info:162 | Logs Directory: E:\MAHAVIR-GROUP-SOFTWARE-DEVELOPMENT\ai_rag_sentiment_bot\app\logs
+2026-02-14 11:09:44.684 | INFO     | app.core.logging:log_startup_info:163 | Timestamp: 2026-02-14T11:09:44.684226
+2026-02-14 11:09:44.684 | INFO     | app.core.logging:log_startup_info:164 | ================================================================================
+2026-02-14 11:09:44.871 | WARNING  | app.auth.jwt:<module>:36 | JWT_SECRET_KEY not configured in environment. Using default key. Change JWT_SECRET_KEY in production!
+2026-02-14 11:09:44.915 | WARNING  | app.auth.jwt:<module>:36 | JWT_SECRET_KEY not configured in environment. Using default key. Change JWT_SECRET_KEY in production!
+2026-02-14 11:09:54.811 | INFO     | app.core.logging:log_startup_info:157 | ================================================================================
+2026-02-14 11:09:54.823 | INFO     | app.core.logging:log_startup_info:158 | AI RAG Sentiment Bot - Startup
+2026-02-14 11:09:54.835 | INFO     | app.core.logging:log_startup_info:157 | ================================================================================
+2026-02-14 11:09:54.842 | INFO     | app.core.logging:log_startup_info:158 | AI RAG Sentiment Bot - Startup
+2026-02-14 11:09:54.836 | INFO     | app.core.logging:log_startup_info:159 | ================================================================================
+2026-02-14 11:09:54.843 | INFO     | app.core.logging:log_startup_info:159 | ================================================================================
+2026-02-14 11:09:54.844 | INFO     | app.core.logging:log_startup_info:160 | Environment: dev
+2026-02-14 11:09:54.844 | INFO     | app.core.logging:log_startup_info:160 | Environment: dev
+2026-02-14 11:09:54.844 | INFO     | app.core.logging:log_startup_info:161 | Log Level: INFO
+2026-02-14 11:09:54.845 | INFO     | app.core.logging:log_startup_info:162 | Logs Directory: E:\MAHAVIR-GROUP-SOFTWARE-DEVELOPMENT\ai_rag_sentiment_bot\app\logs
+2026-02-14 11:09:54.845 | INFO     | app.core.logging:log_startup_info:161 | Log Level: INFO
+2026-02-14 11:09:54.847 | INFO     | app.core.logging:log_startup_info:163 | Timestamp: 2026-02-14T11:09:54.847593
+2026-02-14 11:09:54.858 | INFO     | app.core.logging:log_startup_info:164 | ================================================================================
+2026-02-14 11:09:54.857 | INFO     | app.core.logging:log_startup_info:162 | Logs Directory: E:\MAHAVIR-GROUP-SOFTWARE-DEVELOPMENT\ai_rag_sentiment_bot\app\logs
+2026-02-14 11:09:54.868 | INFO     | app.core.logging:log_startup_info:163 | Timestamp: 2026-02-14T11:09:54.868302
+2026-02-14 11:09:54.892 | INFO     | app.core.logging:log_startup_info:164 | ================================================================================
+2026-02-14 11:09:55.210 | WARNING  | app.auth.jwt:<module>:36 | JWT_SECRET_KEY not configured in environment. Using default key. Change JWT_SECRET_KEY in production!
+2026-02-14 11:09:55.238 | WARNING  | app.auth.jwt:<module>:36 | JWT_SECRET_KEY not configured in environment. Using default key. Change JWT_SECRET_KEY in production!
+2026-02-14 11:10:08.076 | INFO     | app.core.logging:log_startup_info:157 | ================================================================================
+2026-02-14 11:10:08.078 | INFO     | app.core.logging:log_startup_info:158 | AI RAG Sentiment Bot - Startup
+2026-02-14 11:10:08.079 | INFO     | app.core.logging:log_startup_info:159 | ================================================================================
+2026-02-14 11:10:08.079 | INFO     | app.core.logging:log_startup_info:160 | Environment: dev
+2026-02-14 11:10:08.080 | INFO     | app.core.logging:log_startup_info:161 | Log Level: INFO
+2026-02-14 11:10:08.081 | INFO     | app.core.logging:log_startup_info:162 | Logs Directory: E:\MAHAVIR-GROUP-SOFTWARE-DEVELOPMENT\ai_rag_sentiment_bot\app\logs
+2026-02-14 11:10:08.082 | INFO     | app.core.logging:log_startup_info:163 | Timestamp: 2026-02-14T11:10:08.082143
+2026-02-14 11:10:08.082 | INFO     | app.core.logging:log_startup_info:164 | ================================================================================
+2026-02-14 11:10:08.091 | INFO     | app.core.logging:log_startup_info:157 | ================================================================================
+2026-02-14 11:10:08.092 | INFO     | app.core.logging:log_startup_info:158 | AI RAG Sentiment Bot - Startup
+2026-02-14 11:10:08.096 | INFO     | app.core.logging:log_startup_info:159 | ================================================================================
+2026-02-14 11:10:08.098 | INFO     | app.core.logging:log_startup_info:160 | Environment: dev
+2026-02-14 11:10:08.098 | INFO     | app.core.logging:log_startup_info:161 | Log Level: INFO
+2026-02-14 11:10:08.100 | INFO     | app.core.logging:log_startup_info:162 | Logs Directory: E:\MAHAVIR-GROUP-SOFTWARE-DEVELOPMENT\ai_rag_sentiment_bot\app\logs
+2026-02-14 11:10:08.100 | INFO     | app.core.logging:log_startup_info:163 | Timestamp: 2026-02-14T11:10:08.100662
+2026-02-14 11:10:08.101 | INFO     | app.core.logging:log_startup_info:164 | ================================================================================
+2026-02-14 11:10:08.261 | WARNING  | app.auth.jwt:<module>:36 | JWT_SECRET_KEY not configured in environment. Using default key. Change JWT_SECRET_KEY in production!
+2026-02-14 11:10:08.275 | WARNING  | app.auth.jwt:<module>:36 | JWT_SECRET_KEY not configured in environment. Using default key. Change JWT_SECRET_KEY in production!
+2026-02-14 11:10:19.875 | INFO     | app.core.logging:log_startup_info:157 | ================================================================================
+2026-02-14 11:10:19.876 | INFO     | app.core.logging:log_startup_info:158 | AI RAG Sentiment Bot - Startup
+2026-02-14 11:10:19.879 | INFO     | app.core.logging:log_startup_info:159 | ================================================================================
+2026-02-14 11:10:19.880 | INFO     | app.core.logging:log_startup_info:160 | Environment: dev
+2026-02-14 11:10:19.882 | INFO     | app.core.logging:log_startup_info:161 | Log Level: INFO
+2026-02-14 11:10:19.883 | INFO     | app.core.logging:log_startup_info:162 | Logs Directory: E:\MAHAVIR-GROUP-SOFTWARE-DEVELOPMENT\ai_rag_sentiment_bot\app\logs
+2026-02-14 11:10:19.884 | INFO     | app.core.logging:log_startup_info:163 | Timestamp: 2026-02-14T11:10:19.884249
+2026-02-14 11:10:19.884 | INFO     | app.core.logging:log_startup_info:164 | ================================================================================
+2026-02-14 11:10:19.943 | INFO     | app.core.logging:log_startup_info:157 | ================================================================================
+2026-02-14 11:10:19.954 | INFO     | app.core.logging:log_startup_info:158 | AI RAG Sentiment Bot - Startup
+2026-02-14 11:10:19.955 | INFO     | app.core.logging:log_startup_info:159 | ================================================================================
+2026-02-14 11:10:19.956 | INFO     | app.core.logging:log_startup_info:160 | Environment: dev
+2026-02-14 11:10:19.957 | INFO     | app.core.logging:log_startup_info:161 | Log Level: INFO
+2026-02-14 11:10:19.957 | INFO     | app.core.logging:log_startup_info:162 | Logs Directory: E:\MAHAVIR-GROUP-SOFTWARE-DEVELOPMENT\ai_rag_sentiment_bot\app\logs
+2026-02-14 11:10:19.960 | INFO     | app.core.logging:log_startup_info:163 | Timestamp: 2026-02-14T11:10:19.959777
+2026-02-14 11:10:19.966 | INFO     | app.core.logging:log_startup_info:164 | ================================================================================
+2026-02-14 11:10:20.157 | WARNING  | app.auth.jwt:<module>:36 | JWT_SECRET_KEY not configured in environment. Using default key. Change JWT_SECRET_KEY in production!
+2026-02-14 11:10:20.206 | WARNING  | app.auth.jwt:<module>:36 | JWT_SECRET_KEY not configured in environment. Using default key. Change JWT_SECRET_KEY in production!
+2026-02-14 11:10:25.667 | INFO     | app.core.logging:log_startup_info:157 | ================================================================================
+2026-02-14 11:10:25.750 | INFO     | app.core.logging:log_startup_info:158 | AI RAG Sentiment Bot - Startup
+2026-02-14 11:10:25.815 | INFO     | app.core.logging:log_startup_info:159 | ================================================================================
+2026-02-14 11:10:25.861 | INFO     | app.core.logging:log_startup_info:160 | Environment: dev
+2026-02-14 11:10:25.896 | INFO     | app.core.logging:log_startup_info:161 | Log Level: INFO
+2026-02-14 11:10:25.918 | INFO     | app.core.logging:log_startup_info:162 | Logs Directory: E:\MAHAVIR-GROUP-SOFTWARE-DEVELOPMENT\ai_rag_sentiment_bot\app\logs
+2026-02-14 11:10:25.933 | INFO     | app.core.logging:log_startup_info:163 | Timestamp: 2026-02-14T11:10:25.933943
+2026-02-14 11:10:25.984 | INFO     | app.core.logging:log_startup_info:164 | ================================================================================
+2026-02-14 11:10:26.084 | INFO     | app.core.logging:log_startup_info:157 | ================================================================================
+2026-02-14 11:10:26.101 | INFO     | app.core.logging:log_startup_info:158 | AI RAG Sentiment Bot - Startup
+2026-02-14 11:10:26.117 | INFO     | app.core.logging:log_startup_info:159 | ================================================================================
+2026-02-14 11:10:26.125 | INFO     | app.core.logging:log_startup_info:160 | Environment: dev
+2026-02-14 11:10:26.128 | INFO     | app.core.logging:log_startup_info:161 | Log Level: INFO
+2026-02-14 11:10:26.133 | INFO     | app.core.logging:log_startup_info:162 | Logs Directory: E:\MAHAVIR-GROUP-SOFTWARE-DEVELOPMENT\ai_rag_sentiment_bot\app\logs
+2026-02-14 11:10:26.162 | INFO     | app.core.logging:log_startup_info:163 | Timestamp: 2026-02-14T11:10:26.161751
+2026-02-14 11:10:26.185 | INFO     | app.core.logging:log_startup_info:164 | ================================================================================
+2026-02-14 11:10:26.351 | WARNING  | app.auth.jwt:<module>:36 | JWT_SECRET_KEY not configured in environment. Using default key. Change JWT_SECRET_KEY in production!
+2026-02-14 11:10:26.498 | WARNING  | app.auth.jwt:<module>:36 | JWT_SECRET_KEY not configured in environment. Using default key. Change JWT_SECRET_KEY in production!
+2026-02-14 11:10:55.902 | INFO     | app.core.logging:log_startup_info:157 | ================================================================================
+2026-02-14 11:10:55.904 | INFO     | app.core.logging:log_startup_info:158 | AI RAG Sentiment Bot - Startup
+2026-02-14 11:10:55.905 | INFO     | app.core.logging:log_startup_info:159 | ================================================================================
+2026-02-14 11:10:55.906 | INFO     | app.core.logging:log_startup_info:160 | Environment: dev
+2026-02-14 11:10:55.907 | INFO     | app.core.logging:log_startup_info:161 | Log Level: INFO
+2026-02-14 11:10:55.907 | INFO     | app.core.logging:log_startup_info:162 | Logs Directory: E:\MAHAVIR-GROUP-SOFTWARE-DEVELOPMENT\ai_rag_sentiment_bot\app\logs
+2026-02-14 11:10:55.909 | INFO     | app.core.logging:log_startup_info:163 | Timestamp: 2026-02-14T11:10:55.909335
+2026-02-14 11:10:55.910 | INFO     | app.core.logging:log_startup_info:164 | ================================================================================
+2026-02-14 11:10:55.988 | INFO     | app.core.logging:log_startup_info:157 | ================================================================================
+2026-02-14 11:10:55.989 | INFO     | app.core.logging:log_startup_info:158 | AI RAG Sentiment Bot - Startup
+2026-02-14 11:10:55.991 | INFO     | app.core.logging:log_startup_info:159 | ================================================================================
+2026-02-14 11:10:55.992 | INFO     | app.core.logging:log_startup_info:160 | Environment: dev
+2026-02-14 11:10:55.993 | INFO     | app.core.logging:log_startup_info:161 | Log Level: INFO
+2026-02-14 11:10:55.993 | INFO     | app.core.logging:log_startup_info:162 | Logs Directory: E:\MAHAVIR-GROUP-SOFTWARE-DEVELOPMENT\ai_rag_sentiment_bot\app\logs
+2026-02-14 11:10:55.993 | INFO     | app.core.logging:log_startup_info:163 | Timestamp: 2026-02-14T11:10:55.993895
+2026-02-14 11:10:55.995 | INFO     | app.core.logging:log_startup_info:164 | ================================================================================
+2026-02-14 11:10:56.113 | WARNING  | app.auth.jwt:<module>:36 | JWT_SECRET_KEY not configured in environment. Using default key. Change JWT_SECRET_KEY in production!
+2026-02-14 11:10:56.252 | WARNING  | app.auth.jwt:<module>:36 | JWT_SECRET_KEY not configured in environment. Using default key. Change JWT_SECRET_KEY in production!
+2026-02-14 11:11:11.598 | INFO     | app.core.logging:log_startup_info:157 | ================================================================================
+2026-02-14 11:11:11.606 | INFO     | app.core.logging:log_startup_info:157 | ================================================================================
+2026-02-14 11:11:11.623 | INFO     | app.core.logging:log_startup_info:158 | AI RAG Sentiment Bot - Startup
+2026-02-14 11:11:11.623 | INFO     | app.core.logging:log_startup_info:158 | AI RAG Sentiment Bot - Startup
+2026-02-14 11:11:11.629 | INFO     | app.core.logging:log_startup_info:159 | ================================================================================
+2026-02-14 11:11:11.631 | INFO     | app.core.logging:log_startup_info:159 | ================================================================================
+2026-02-14 11:11:11.640 | INFO     | app.core.logging:log_startup_info:160 | Environment: dev
+2026-02-14 11:11:11.642 | INFO     | app.core.logging:log_startup_info:160 | Environment: dev
+2026-02-14 11:11:11.664 | INFO     | app.core.logging:log_startup_info:161 | Log Level: INFO
+2026-02-14 11:11:11.664 | INFO     | app.core.logging:log_startup_info:161 | Log Level: INFO
+2026-02-14 11:11:11.679 | INFO     | app.core.logging:log_startup_info:162 | Logs Directory: E:\MAHAVIR-GROUP-SOFTWARE-DEVELOPMENT\ai_rag_sentiment_bot\app\logs
+2026-02-14 11:11:11.679 | INFO     | app.core.logging:log_startup_info:162 | Logs Directory: E:\MAHAVIR-GROUP-SOFTWARE-DEVELOPMENT\ai_rag_sentiment_bot\app\logs
+2026-02-14 11:11:11.691 | INFO     | app.core.logging:log_startup_info:163 | Timestamp: 2026-02-14T11:11:11.691729
+2026-02-14 11:11:11.692 | INFO     | app.core.logging:log_startup_info:163 | Timestamp: 2026-02-14T11:11:11.692843
+2026-02-14 11:11:11.713 | INFO     | app.core.logging:log_startup_info:164 | ================================================================================
+2026-02-14 11:11:11.711 | INFO     | app.core.logging:log_startup_info:164 | ================================================================================
+2026-02-14 11:11:11.970 | WARNING  | app.auth.jwt:<module>:36 | JWT_SECRET_KEY not configured in environment. Using default key. Change JWT_SECRET_KEY in production!
+2026-02-14 11:11:12.014 | WARNING  | app.auth.jwt:<module>:36 | JWT_SECRET_KEY not configured in environment. Using default key. Change JWT_SECRET_KEY in production!
+2026-02-14 11:13:37.007 | INFO     | app.core.logging:log_startup_info:157 | ================================================================================
+2026-02-14 11:13:37.012 | INFO     | app.core.logging:log_startup_info:158 | AI RAG Sentiment Bot - Startup
+2026-02-14 11:13:37.012 | INFO     | app.core.logging:log_startup_info:159 | ================================================================================
+2026-02-14 11:13:37.013 | INFO     | app.core.logging:log_startup_info:160 | Environment: dev
+2026-02-14 11:13:37.014 | INFO     | app.core.logging:log_startup_info:161 | Log Level: INFO
+2026-02-14 11:13:37.017 | INFO     | app.core.logging:log_startup_info:162 | Logs Directory: E:\MAHAVIR-GROUP-SOFTWARE-DEVELOPMENT\ai_rag_sentiment_bot\app\logs
+2026-02-14 11:13:37.019 | INFO     | app.core.logging:log_startup_info:163 | Timestamp: 2026-02-14T11:13:37.019946
+2026-02-14 11:13:37.020 | INFO     | app.core.logging:log_startup_info:164 | ================================================================================
+2026-02-14 11:13:37.031 | INFO     | app.core.logging:log_startup_info:157 | ================================================================================
+2026-02-14 11:13:37.033 | INFO     | app.core.logging:log_startup_info:158 | AI RAG Sentiment Bot - Startup
+2026-02-14 11:13:37.034 | INFO     | app.core.logging:log_startup_info:159 | ================================================================================
+2026-02-14 11:13:37.036 | INFO     | app.core.logging:log_startup_info:160 | Environment: dev
+2026-02-14 11:13:37.036 | INFO     | app.core.logging:log_startup_info:161 | Log Level: INFO
+2026-02-14 11:13:37.036 | INFO     | app.core.logging:log_startup_info:162 | Logs Directory: E:\MAHAVIR-GROUP-SOFTWARE-DEVELOPMENT\ai_rag_sentiment_bot\app\logs
+2026-02-14 11:13:37.040 | INFO     | app.core.logging:log_startup_info:163 | Timestamp: 2026-02-14T11:13:37.040439
+2026-02-14 11:13:37.040 | INFO     | app.core.logging:log_startup_info:164 | ================================================================================
+2026-02-14 11:13:37.215 | WARNING  | app.auth.jwt:<module>:36 | JWT_SECRET_KEY not configured in environment. Using default key. Change JWT_SECRET_KEY in production!
+2026-02-14 11:13:37.227 | WARNING  | app.auth.jwt:<module>:36 | JWT_SECRET_KEY not configured in environment. Using default key. Change JWT_SECRET_KEY in production!
+2026-02-14 11:13:37.860 | INFO     | app.sentiment.strategies:__init__:137 | LexiconStrategy initialized
+2026-02-14 11:13:37.861 | INFO     | app.sentiment.strategies:__init__:190 | PatternStrategy initialized
+2026-02-14 11:13:37.862 | INFO     | app.sentiment.strategies:__init__:296 | StatisticalStrategy initialized
+2026-02-14 11:13:37.867 | INFO     | app.sentiment.rules:__init__:125 | SentimentRulesEngine initialized
+2026-02-14 11:13:37.875 | INFO     | app.sentiment.analyzer:__init__:37 | SentimentAnalyzer initialized
+2026-02-14 11:13:37.994 | INFO     | app.sentiment.strategies:__init__:137 | LexiconStrategy initialized
+2026-02-14 11:13:38.012 | INFO     | app.sentiment.strategies:__init__:190 | PatternStrategy initialized
+2026-02-14 11:13:38.052 | INFO     | app.sentiment.strategies:__init__:296 | StatisticalStrategy initialized
+2026-02-14 11:13:38.078 | INFO     | app.sentiment.rules:__init__:125 | SentimentRulesEngine initialized
+2026-02-14 11:13:38.113 | INFO     | app.sentiment.analyzer:__init__:37 | SentimentAnalyzer initialized
+2026-02-14 11:13:58.889 | INFO     | app.core.logging:log_startup_info:157 | ================================================================================
+2026-02-14 11:13:58.891 | INFO     | app.core.logging:log_startup_info:158 | AI RAG Sentiment Bot - Startup
+2026-02-14 11:13:58.893 | INFO     | app.core.logging:log_startup_info:159 | ================================================================================
+2026-02-14 11:13:58.894 | INFO     | app.core.logging:log_startup_info:160 | Environment: dev
+2026-02-14 11:13:58.895 | INFO     | app.core.logging:log_startup_info:161 | Log Level: INFO
+2026-02-14 11:13:58.896 | INFO     | app.core.logging:log_startup_info:162 | Logs Directory: E:\MAHAVIR-GROUP-SOFTWARE-DEVELOPMENT\ai_rag_sentiment_bot\app\logs
+2026-02-14 11:13:58.903 | INFO     | app.core.logging:log_startup_info:163 | Timestamp: 2026-02-14T11:13:58.903535
+2026-02-14 11:13:58.919 | INFO     | app.core.logging:log_startup_info:164 | ================================================================================
+2026-02-14 11:13:59.078 | INFO     | app.core.logging:log_startup_info:157 | ================================================================================
+2026-02-14 11:13:59.078 | INFO     | app.core.logging:log_startup_info:158 | AI RAG Sentiment Bot - Startup
+2026-02-14 11:13:59.079 | INFO     | app.core.logging:log_startup_info:159 | ================================================================================
+2026-02-14 11:13:59.079 | INFO     | app.core.logging:log_startup_info:160 | Environment: dev
+2026-02-14 11:13:59.083 | INFO     | app.core.logging:log_startup_info:161 | Log Level: INFO
+2026-02-14 11:13:59.085 | INFO     | app.core.logging:log_startup_info:162 | Logs Directory: E:\MAHAVIR-GROUP-SOFTWARE-DEVELOPMENT\ai_rag_sentiment_bot\app\logs
+2026-02-14 11:13:59.086 | INFO     | app.core.logging:log_startup_info:163 | Timestamp: 2026-02-14T11:13:59.086057
+2026-02-14 11:13:59.086 | INFO     | app.core.logging:log_startup_info:164 | ================================================================================
+2026-02-14 11:13:59.159 | WARNING  | app.auth.jwt:<module>:36 | JWT_SECRET_KEY not configured in environment. Using default key. Change JWT_SECRET_KEY in production!
+2026-02-14 11:13:59.261 | WARNING  | app.auth.jwt:<module>:36 | JWT_SECRET_KEY not configured in environment. Using default key. Change JWT_SECRET_KEY in production!
+2026-02-14 11:13:59.707 | INFO     | app.sentiment.strategies:__init__:137 | LexiconStrategy initialized
+2026-02-14 11:13:59.724 | INFO     | app.sentiment.strategies:__init__:190 | PatternStrategy initialized
+2026-02-14 11:13:59.739 | INFO     | app.sentiment.strategies:__init__:296 | StatisticalStrategy initialized
+2026-02-14 11:13:59.748 | INFO     | app.sentiment.rules:__init__:125 | SentimentRulesEngine initialized
+2026-02-14 11:13:59.767 | INFO     | app.sentiment.analyzer:__init__:37 | SentimentAnalyzer initialized
+2026-02-14 11:13:59.776 | INFO     | app.sentiment.strategies:__init__:137 | LexiconStrategy initialized
+2026-02-14 11:13:59.789 | INFO     | app.sentiment.strategies:__init__:190 | PatternStrategy initialized
+2026-02-14 11:13:59.801 | INFO     | app.sentiment.strategies:__init__:296 | StatisticalStrategy initialized
+2026-02-14 11:13:59.804 | INFO     | app.sentiment.rules:__init__:125 | SentimentRulesEngine initialized
+2026-02-14 11:13:59.806 | INFO     | app.sentiment.analyzer:__init__:37 | SentimentAnalyzer initialized
+2026-02-14 11:14:37.851 | INFO     | app.core.logging:log_startup_info:157 | ================================================================================
+2026-02-14 11:14:37.855 | INFO     | app.core.logging:log_startup_info:158 | AI RAG Sentiment Bot - Startup
+2026-02-14 11:14:37.859 | INFO     | app.core.logging:log_startup_info:159 | ================================================================================
+2026-02-14 11:14:37.870 | INFO     | app.core.logging:log_startup_info:160 | Environment: dev
+2026-02-14 11:14:37.913 | INFO     | app.core.logging:log_startup_info:161 | Log Level: INFO
+2026-02-14 11:14:37.937 | INFO     | app.core.logging:log_startup_info:162 | Logs Directory: E:\MAHAVIR-GROUP-SOFTWARE-DEVELOPMENT\ai_rag_sentiment_bot\app\logs
+2026-02-14 11:14:37.946 | INFO     | app.core.logging:log_startup_info:163 | Timestamp: 2026-02-14T11:14:37.946330
+2026-02-14 11:14:38.006 | INFO     | app.core.logging:log_startup_info:164 | ================================================================================
+2026-02-14 11:14:38.356 | INFO     | app.core.logging:log_startup_info:157 | ================================================================================
+2026-02-14 11:14:38.362 | INFO     | app.core.logging:log_startup_info:158 | AI RAG Sentiment Bot - Startup
+2026-02-14 11:14:38.375 | INFO     | app.core.logging:log_startup_info:159 | ================================================================================
+2026-02-14 11:14:38.378 | INFO     | app.core.logging:log_startup_info:160 | Environment: dev
+2026-02-14 11:14:38.384 | INFO     | app.core.logging:log_startup_info:161 | Log Level: INFO
+2026-02-14 11:14:38.396 | INFO     | app.core.logging:log_startup_info:162 | Logs Directory: E:\MAHAVIR-GROUP-SOFTWARE-DEVELOPMENT\ai_rag_sentiment_bot\app\logs
+2026-02-14 11:14:38.408 | INFO     | app.core.logging:log_startup_info:163 | Timestamp: 2026-02-14T11:14:38.408025
+2026-02-14 11:14:38.417 | INFO     | app.core.logging:log_startup_info:164 | ================================================================================
+2026-02-14 11:14:38.420 | WARNING  | app.auth.jwt:<module>:36 | JWT_SECRET_KEY not configured in environment. Using default key. Change JWT_SECRET_KEY in production!
+2026-02-14 11:14:38.746 | WARNING  | app.auth.jwt:<module>:36 | JWT_SECRET_KEY not configured in environment. Using default key. Change JWT_SECRET_KEY in production!
+2026-02-14 11:14:39.248 | INFO     | app.sentiment.strategies:__init__:137 | LexiconStrategy initialized
+2026-02-14 11:14:39.257 | INFO     | app.sentiment.strategies:__init__:190 | PatternStrategy initialized
+2026-02-14 11:14:39.259 | INFO     | app.sentiment.strategies:__init__:296 | StatisticalStrategy initialized
+2026-02-14 11:14:39.262 | INFO     | app.sentiment.rules:__init__:125 | SentimentRulesEngine initialized
+2026-02-14 11:14:39.268 | INFO     | app.sentiment.analyzer:__init__:37 | SentimentAnalyzer initialized
+2026-02-14 11:14:40.007 | INFO     | app.sentiment.strategies:__init__:137 | LexiconStrategy initialized
+2026-02-14 11:14:40.028 | INFO     | app.sentiment.strategies:__init__:190 | PatternStrategy initialized
+2026-02-14 11:14:40.094 | INFO     | app.sentiment.strategies:__init__:296 | StatisticalStrategy initialized
+2026-02-14 11:14:40.211 | INFO     | app.sentiment.rules:__init__:125 | SentimentRulesEngine initialized
+2026-02-14 11:14:40.236 | INFO     | app.sentiment.analyzer:__init__:37 | SentimentAnalyzer initialized
+2026-02-14 11:14:51.421 | INFO     | app.core.logging:log_startup_info:157 | ================================================================================
+2026-02-14 11:14:51.481 | INFO     | app.core.logging:log_startup_info:158 | AI RAG Sentiment Bot - Startup
+2026-02-14 11:14:51.569 | INFO     | app.core.logging:log_startup_info:159 | ================================================================================
+2026-02-14 11:14:51.697 | INFO     | app.core.logging:log_startup_info:160 | Environment: dev
+2026-02-14 11:14:51.882 | INFO     | app.core.logging:log_startup_info:161 | Log Level: INFO
+2026-02-14 11:14:52.007 | INFO     | app.core.logging:log_startup_info:162 | Logs Directory: E:\MAHAVIR-GROUP-SOFTWARE-DEVELOPMENT\ai_rag_sentiment_bot\app\logs
+2026-02-14 11:14:52.079 | INFO     | app.core.logging:log_startup_info:163 | Timestamp: 2026-02-14T11:14:52.079552
+2026-02-14 11:14:52.114 | INFO     | app.core.logging:log_startup_info:164 | ================================================================================
+2026-02-14 11:14:52.533 | WARNING  | app.auth.jwt:<module>:36 | JWT_SECRET_KEY not configured in environment. Using default key. Change JWT_SECRET_KEY in production!
+2026-02-14 11:14:53.445 | INFO     | app.sentiment.strategies:__init__:137 | LexiconStrategy initialized
+2026-02-14 11:14:53.446 | INFO     | app.sentiment.strategies:__init__:190 | PatternStrategy initialized
+2026-02-14 11:14:53.447 | INFO     | app.sentiment.strategies:__init__:296 | StatisticalStrategy initialized
+2026-02-14 11:14:53.449 | INFO     | app.sentiment.rules:__init__:125 | SentimentRulesEngine initialized
+2026-02-14 11:14:53.451 | INFO     | app.sentiment.analyzer:__init__:37 | SentimentAnalyzer initialized
+2026-02-14 11:15:38.736 | INFO     | app.core.logging:log_startup_info:157 | ================================================================================
+2026-02-14 11:15:38.738 | INFO     | app.core.logging:log_startup_info:158 | AI RAG Sentiment Bot - Startup
+2026-02-14 11:15:38.738 | INFO     | app.core.logging:log_startup_info:159 | ================================================================================
+2026-02-14 11:15:38.738 | INFO     | app.core.logging:log_startup_info:160 | Environment: dev
+2026-02-14 11:15:38.739 | INFO     | app.core.logging:log_startup_info:161 | Log Level: INFO
+2026-02-14 11:15:38.739 | INFO     | app.core.logging:log_startup_info:162 | Logs Directory: E:\MAHAVIR-GROUP-SOFTWARE-DEVELOPMENT\ai_rag_sentiment_bot\app\logs
+2026-02-14 11:15:38.739 | INFO     | app.core.logging:log_startup_info:163 | Timestamp: 2026-02-14T11:15:38.739140
+2026-02-14 11:15:38.740 | INFO     | app.core.logging:log_startup_info:164 | ================================================================================
+2026-02-14 11:15:38.935 | WARNING  | app.auth.jwt:<module>:36 | JWT_SECRET_KEY not configured in environment. Using default key. Change JWT_SECRET_KEY in production!
+2026-02-14 11:15:40.195 | INFO     | app.sentiment.strategies:__init__:137 | LexiconStrategy initialized
+2026-02-14 11:15:40.204 | INFO     | app.sentiment.strategies:__init__:190 | PatternStrategy initialized
+2026-02-14 11:15:40.205 | INFO     | app.sentiment.strategies:__init__:296 | StatisticalStrategy initialized
+2026-02-14 11:15:40.268 | INFO     | app.sentiment.rules:__init__:125 | SentimentRulesEngine initialized
+2026-02-14 11:15:40.272 | INFO     | app.sentiment.analyzer:__init__:37 | SentimentAnalyzer initialized
+2026-02-14 11:17:28.129 | INFO     | app.core.logging:log_startup_info:157 | ================================================================================
+2026-02-14 11:17:28.134 | INFO     | app.core.logging:log_startup_info:158 | AI RAG Sentiment Bot - Startup
+2026-02-14 11:17:28.139 | INFO     | app.core.logging:log_startup_info:159 | ================================================================================
+2026-02-14 11:17:28.140 | INFO     | app.core.logging:log_startup_info:160 | Environment: dev
+2026-02-14 11:17:28.214 | INFO     | app.core.logging:log_startup_info:161 | Log Level: INFO
+2026-02-14 11:17:28.289 | INFO     | app.core.logging:log_startup_info:162 | Logs Directory: E:\MAHAVIR-GROUP-SOFTWARE-DEVELOPMENT\ai_rag_sentiment_bot\app\logs
+2026-02-14 11:17:28.349 | INFO     | app.core.logging:log_startup_info:163 | Timestamp: 2026-02-14T11:17:28.349836
+2026-02-14 11:17:28.450 | INFO     | app.core.logging:log_startup_info:164 | ================================================================================
+2026-02-14 11:17:28.930 | WARNING  | app.auth.jwt:<module>:36 | JWT_SECRET_KEY not configured in environment. Using default key. Change JWT_SECRET_KEY in production!
+2026-02-14 11:17:29.903 | INFO     | app.sentiment.strategies:__init__:137 | LexiconStrategy initialized
+2026-02-14 11:17:29.904 | INFO     | app.sentiment.strategies:__init__:190 | PatternStrategy initialized
+2026-02-14 11:17:29.905 | INFO     | app.sentiment.strategies:__init__:296 | StatisticalStrategy initialized
+2026-02-14 11:17:29.908 | INFO     | app.sentiment.rules:__init__:125 | SentimentRulesEngine initialized
+2026-02-14 11:17:29.911 | INFO     | app.sentiment.analyzer:__init__:37 | SentimentAnalyzer initialized
+2026-02-14 11:18:22.637 | INFO     | app.core.logging:log_startup_info:157 | ================================================================================
+2026-02-14 11:18:22.638 | INFO     | app.core.logging:log_startup_info:158 | AI RAG Sentiment Bot - Startup
+2026-02-14 11:18:22.638 | INFO     | app.core.logging:log_startup_info:159 | ================================================================================
+2026-02-14 11:18:22.639 | INFO     | app.core.logging:log_startup_info:160 | Environment: dev
+2026-02-14 11:18:22.639 | INFO     | app.core.logging:log_startup_info:161 | Log Level: INFO
+2026-02-14 11:18:22.639 | INFO     | app.core.logging:log_startup_info:162 | Logs Directory: E:\MAHAVIR-GROUP-SOFTWARE-DEVELOPMENT\ai_rag_sentiment_bot\app\logs
+2026-02-14 11:18:22.640 | INFO     | app.core.logging:log_startup_info:163 | Timestamp: 2026-02-14T11:18:22.640609
+2026-02-14 11:18:22.640 | INFO     | app.core.logging:log_startup_info:164 | ================================================================================
+2026-02-14 11:18:22.827 | WARNING  | app.auth.jwt:<module>:36 | JWT_SECRET_KEY not configured in environment. Using default key. Change JWT_SECRET_KEY in production!
+2026-02-14 11:18:23.357 | INFO     | app.sentiment.strategies:__init__:137 | LexiconStrategy initialized
+2026-02-14 11:18:23.358 | INFO     | app.sentiment.strategies:__init__:190 | PatternStrategy initialized
+2026-02-14 11:18:23.358 | INFO     | app.sentiment.strategies:__init__:296 | StatisticalStrategy initialized
+2026-02-14 11:18:23.360 | INFO     | app.sentiment.rules:__init__:125 | SentimentRulesEngine initialized
+2026-02-14 11:18:23.361 | INFO     | app.sentiment.analyzer:__init__:37 | SentimentAnalyzer initialized
+2026-02-14 11:19:49.222 | INFO     | app.core.logging:log_startup_info:157 | ================================================================================
+2026-02-14 11:19:49.234 | INFO     | app.core.logging:log_startup_info:158 | AI RAG Sentiment Bot - Startup
+2026-02-14 11:19:49.235 | INFO     | app.core.logging:log_startup_info:159 | ================================================================================
+2026-02-14 11:19:49.236 | INFO     | app.core.logging:log_startup_info:160 | Environment: dev
+2026-02-14 11:19:49.237 | INFO     | app.core.logging:log_startup_info:161 | Log Level: INFO
+2026-02-14 11:19:49.239 | INFO     | app.core.logging:log_startup_info:162 | Logs Directory: E:\MAHAVIR-GROUP-SOFTWARE-DEVELOPMENT\ai_rag_sentiment_bot\app\logs
+2026-02-14 11:19:49.240 | INFO     | app.core.logging:log_startup_info:163 | Timestamp: 2026-02-14T11:19:49.240097
+2026-02-14 11:19:49.248 | INFO     | app.core.logging:log_startup_info:164 | ================================================================================
+2026-02-14 11:19:49.528 | WARNING  | app.auth.jwt:<module>:36 | JWT_SECRET_KEY not configured in environment. Using default key. Change JWT_SECRET_KEY in production!
+2026-02-14 11:19:50.387 | INFO     | app.sentiment.strategies:__init__:137 | LexiconStrategy initialized
+2026-02-14 11:19:50.388 | INFO     | app.sentiment.strategies:__init__:190 | PatternStrategy initialized
+2026-02-14 11:19:50.389 | INFO     | app.sentiment.strategies:__init__:296 | StatisticalStrategy initialized
+2026-02-14 11:19:50.394 | INFO     | app.sentiment.rules:__init__:125 | SentimentRulesEngine initialized
+2026-02-14 11:19:50.403 | INFO     | app.sentiment.analyzer:__init__:37 | SentimentAnalyzer initialized
+2026-02-14 11:20:07.972 | INFO     | app.core.logging:log_startup_info:157 | ================================================================================
+2026-02-14 11:20:07.990 | INFO     | app.core.logging:log_startup_info:158 | AI RAG Sentiment Bot - Startup
+2026-02-14 11:20:07.995 | INFO     | app.core.logging:log_startup_info:159 | ================================================================================
+2026-02-14 11:20:08.000 | INFO     | app.core.logging:log_startup_info:160 | Environment: dev
+2026-02-14 11:20:08.003 | INFO     | app.core.logging:log_startup_info:161 | Log Level: INFO
+2026-02-14 11:20:08.003 | INFO     | app.core.logging:log_startup_info:162 | Logs Directory: E:\MAHAVIR-GROUP-SOFTWARE-DEVELOPMENT\ai_rag_sentiment_bot\app\logs
+2026-02-14 11:20:08.008 | INFO     | app.core.logging:log_startup_info:163 | Timestamp: 2026-02-14T11:20:08.008120
+2026-02-14 11:20:08.018 | INFO     | app.core.logging:log_startup_info:164 | ================================================================================
+2026-02-14 11:20:08.267 | WARNING  | app.auth.jwt:<module>:36 | JWT_SECRET_KEY not configured in environment. Using default key. Change JWT_SECRET_KEY in production!
+2026-02-14 11:20:08.847 | INFO     | app.sentiment.strategies:__init__:137 | LexiconStrategy initialized
+2026-02-14 11:20:08.848 | INFO     | app.sentiment.strategies:__init__:190 | PatternStrategy initialized
+2026-02-14 11:20:08.848 | INFO     | app.sentiment.strategies:__init__:296 | StatisticalStrategy initialized
+2026-02-14 11:20:08.849 | INFO     | app.sentiment.rules:__init__:125 | SentimentRulesEngine initialized
+2026-02-14 11:20:08.849 | INFO     | app.sentiment.analyzer:__init__:37 | SentimentAnalyzer initialized
+2026-02-14 11:20:29.842 | INFO     | app.core.logging:log_startup_info:157 | ================================================================================
+2026-02-14 11:20:29.843 | INFO     | app.core.logging:log_startup_info:158 | AI RAG Sentiment Bot - Startup
+2026-02-14 11:20:29.844 | INFO     | app.core.logging:log_startup_info:159 | ================================================================================
+2026-02-14 11:20:29.844 | INFO     | app.core.logging:log_startup_info:160 | Environment: dev
+2026-02-14 11:20:29.844 | INFO     | app.core.logging:log_startup_info:161 | Log Level: INFO
+2026-02-14 11:20:29.845 | INFO     | app.core.logging:log_startup_info:162 | Logs Directory: E:\MAHAVIR-GROUP-SOFTWARE-DEVELOPMENT\ai_rag_sentiment_bot\app\logs
+2026-02-14 11:20:29.845 | INFO     | app.core.logging:log_startup_info:163 | Timestamp: 2026-02-14T11:20:29.845889
+2026-02-14 11:20:29.845 | INFO     | app.core.logging:log_startup_info:164 | ================================================================================
+2026-02-14 11:20:30.024 | WARNING  | app.auth.jwt:<module>:36 | JWT_SECRET_KEY not configured in environment. Using default key. Change JWT_SECRET_KEY in production!
+2026-02-14 11:20:30.688 | INFO     | app.sentiment.strategies:__init__:137 | LexiconStrategy initialized
+2026-02-14 11:20:30.690 | INFO     | app.sentiment.strategies:__init__:190 | PatternStrategy initialized
+2026-02-14 11:20:30.691 | INFO     | app.sentiment.strategies:__init__:296 | StatisticalStrategy initialized
+2026-02-14 11:20:30.697 | INFO     | app.sentiment.rules:__init__:125 | SentimentRulesEngine initialized
+2026-02-14 11:20:30.699 | INFO     | app.sentiment.analyzer:__init__:37 | SentimentAnalyzer initialized
+2026-02-14 11:21:41.695 | INFO     | app.core.logging:log_startup_info:157 | ================================================================================
+2026-02-14 11:21:41.696 | INFO     | app.core.logging:log_startup_info:158 | AI RAG Sentiment Bot - Startup
+2026-02-14 11:21:41.696 | INFO     | app.core.logging:log_startup_info:159 | ================================================================================
+2026-02-14 11:21:41.697 | INFO     | app.core.logging:log_startup_info:160 | Environment: dev
+2026-02-14 11:21:41.697 | INFO     | app.core.logging:log_startup_info:161 | Log Level: INFO
+2026-02-14 11:21:41.697 | INFO     | app.core.logging:log_startup_info:162 | Logs Directory: E:\MAHAVIR-GROUP-SOFTWARE-DEVELOPMENT\ai_rag_sentiment_bot\app\logs
+2026-02-14 11:21:41.698 | INFO     | app.core.logging:log_startup_info:163 | Timestamp: 2026-02-14T11:21:41.698122
+2026-02-14 11:21:41.698 | INFO     | app.core.logging:log_startup_info:164 | ================================================================================
+2026-02-14 11:21:41.874 | WARNING  | app.auth.jwt:<module>:36 | JWT_SECRET_KEY not configured in environment. Using default key. Change JWT_SECRET_KEY in production!
+2026-02-14 11:21:42.680 | INFO     | app.sentiment.strategies:__init__:137 | LexiconStrategy initialized
+2026-02-14 11:21:42.680 | INFO     | app.sentiment.strategies:__init__:190 | PatternStrategy initialized
+2026-02-14 11:21:42.681 | INFO     | app.sentiment.strategies:__init__:296 | StatisticalStrategy initialized
+2026-02-14 11:21:42.686 | INFO     | app.sentiment.rules:__init__:125 | SentimentRulesEngine initialized
+2026-02-14 11:21:42.693 | INFO     | app.sentiment.analyzer:__init__:37 | SentimentAnalyzer initialized
+2026-02-14 11:21:50.853 | INFO     | app.core.logging:log_startup_info:157 | ================================================================================
+2026-02-14 11:21:50.854 | INFO     | app.core.logging:log_startup_info:158 | AI RAG Sentiment Bot - Startup
+2026-02-14 11:21:50.855 | INFO     | app.core.logging:log_startup_info:159 | ================================================================================
+2026-02-14 11:21:50.856 | INFO     | app.core.logging:log_startup_info:160 | Environment: dev
+2026-02-14 11:21:50.856 | INFO     | app.core.logging:log_startup_info:161 | Log Level: INFO
+2026-02-14 11:21:50.856 | INFO     | app.core.logging:log_startup_info:162 | Logs Directory: E:\MAHAVIR-GROUP-SOFTWARE-DEVELOPMENT\ai_rag_sentiment_bot\app\logs
+2026-02-14 11:21:50.856 | INFO     | app.core.logging:log_startup_info:163 | Timestamp: 2026-02-14T11:21:50.856898
+2026-02-14 11:21:50.857 | INFO     | app.core.logging:log_startup_info:164 | ================================================================================
+2026-02-14 11:21:51.104 | WARNING  | app.auth.jwt:<module>:36 | JWT_SECRET_KEY not configured in environment. Using default key. Change JWT_SECRET_KEY in production!
+2026-02-14 11:21:52.294 | INFO     | app.sentiment.strategies:__init__:137 | LexiconStrategy initialized
+2026-02-14 11:21:52.296 | INFO     | app.sentiment.strategies:__init__:190 | PatternStrategy initialized
+2026-02-14 11:21:52.297 | INFO     | app.sentiment.strategies:__init__:296 | StatisticalStrategy initialized
+2026-02-14 11:21:52.298 | INFO     | app.sentiment.rules:__init__:125 | SentimentRulesEngine initialized
+2026-02-14 11:21:52.298 | INFO     | app.sentiment.analyzer:__init__:37 | SentimentAnalyzer initialized
+2026-02-14 11:21:57.724 | INFO     | app.core.logging:log_startup_info:157 | ================================================================================
+2026-02-14 11:21:57.725 | INFO     | app.core.logging:log_startup_info:158 | AI RAG Sentiment Bot - Startup
+2026-02-14 11:21:57.725 | INFO     | app.core.logging:log_startup_info:159 | ================================================================================
+2026-02-14 11:21:57.726 | INFO     | app.core.logging:log_startup_info:160 | Environment: dev
+2026-02-14 11:21:57.727 | INFO     | app.core.logging:log_startup_info:161 | Log Level: INFO
+2026-02-14 11:21:57.728 | INFO     | app.core.logging:log_startup_info:162 | Logs Directory: E:\MAHAVIR-GROUP-SOFTWARE-DEVELOPMENT\ai_rag_sentiment_bot\app\logs
+2026-02-14 11:21:57.729 | INFO     | app.core.logging:log_startup_info:163 | Timestamp: 2026-02-14T11:21:57.729039
+2026-02-14 11:21:57.729 | INFO     | app.core.logging:log_startup_info:164 | ================================================================================
+2026-02-14 11:21:57.894 | WARNING  | app.auth.jwt:<module>:36 | JWT_SECRET_KEY not configured in environment. Using default key. Change JWT_SECRET_KEY in production!
+2026-02-14 11:21:58.330 | INFO     | app.sentiment.strategies:__init__:137 | LexiconStrategy initialized
+2026-02-14 11:21:58.330 | INFO     | app.sentiment.strategies:__init__:190 | PatternStrategy initialized
+2026-02-14 11:21:58.331 | INFO     | app.sentiment.strategies:__init__:296 | StatisticalStrategy initialized
+2026-02-14 11:21:58.332 | INFO     | app.sentiment.rules:__init__:125 | SentimentRulesEngine initialized
+2026-02-14 11:21:58.333 | INFO     | app.sentiment.analyzer:__init__:37 | SentimentAnalyzer initialized
+2026-02-14 11:22:02.410 | INFO     | app.main:startup_event:64 | AI RAG Sentiment Bot is starting up...
+2026-02-14 11:22:02.469 | INFO     | app.main:startup_event:72 | Vector collection ensured: rag_documents
+2026-02-14 11:22:14.983 | INFO     | app.main:shutdown_event:79 | AI RAG Sentiment Bot is shutting down...
+2026-02-14 11:22:17.569 | INFO     | app.core.logging:log_startup_info:157 | ================================================================================
+2026-02-14 11:22:17.573 | INFO     | app.core.logging:log_startup_info:158 | AI RAG Sentiment Bot - Startup
+2026-02-14 11:22:17.574 | INFO     | app.core.logging:log_startup_info:159 | ================================================================================
+2026-02-14 11:22:17.576 | INFO     | app.core.logging:log_startup_info:160 | Environment: dev
+2026-02-14 11:22:17.577 | INFO     | app.core.logging:log_startup_info:161 | Log Level: INFO
+2026-02-14 11:22:17.579 | INFO     | app.core.logging:log_startup_info:162 | Logs Directory: E:\MAHAVIR-GROUP-SOFTWARE-DEVELOPMENT\ai_rag_sentiment_bot\app\logs
+2026-02-14 11:22:17.580 | INFO     | app.core.logging:log_startup_info:163 | Timestamp: 2026-02-14T11:22:17.580072
+2026-02-14 11:22:17.581 | INFO     | app.core.logging:log_startup_info:164 | ================================================================================
+2026-02-14 11:22:17.928 | WARNING  | app.auth.jwt:<module>:36 | JWT_SECRET_KEY not configured in environment. Using default key. Change JWT_SECRET_KEY in production!
+2026-02-14 11:22:18.750 | INFO     | app.sentiment.strategies:__init__:137 | LexiconStrategy initialized
+2026-02-14 11:22:18.757 | INFO     | app.sentiment.strategies:__init__:190 | PatternStrategy initialized
+2026-02-14 11:22:18.758 | INFO     | app.sentiment.strategies:__init__:296 | StatisticalStrategy initialized
+2026-02-14 11:22:18.760 | INFO     | app.sentiment.rules:__init__:125 | SentimentRulesEngine initialized
+2026-02-14 11:22:18.761 | INFO     | app.sentiment.analyzer:__init__:37 | SentimentAnalyzer initialized
+2026-02-14 11:22:22.658 | INFO     | app.main:startup_event:64 | AI RAG Sentiment Bot is starting up...
+2026-02-14 11:22:22.675 | INFO     | app.main:startup_event:72 | Vector collection ensured: rag_documents
+2026-02-14 11:23:03.536 | INFO     | app.main:shutdown_event:79 | AI RAG Sentiment Bot is shutting down...
+2026-02-14 11:23:20.100 | INFO     | app.core.logging:log_startup_info:157 | ================================================================================
+2026-02-14 11:23:20.100 | INFO     | app.core.logging:log_startup_info:158 | AI RAG Sentiment Bot - Startup
+2026-02-14 11:23:20.100 | INFO     | app.core.logging:log_startup_info:159 | ================================================================================
+2026-02-14 11:23:20.104 | INFO     | app.core.logging:log_startup_info:160 | Environment: dev
+2026-02-14 11:23:20.105 | INFO     | app.core.logging:log_startup_info:161 | Log Level: INFO
+2026-02-14 11:23:20.105 | INFO     | app.core.logging:log_startup_info:162 | Logs Directory: E:\MAHAVIR-GROUP-SOFTWARE-DEVELOPMENT\ai_rag_sentiment_bot\app\logs
+2026-02-14 11:23:20.105 | INFO     | app.core.logging:log_startup_info:163 | Timestamp: 2026-02-14T11:23:20.105430
+2026-02-14 11:23:20.106 | INFO     | app.core.logging:log_startup_info:164 | ================================================================================
+2026-02-14 11:23:20.238 | WARNING  | app.auth.jwt:<module>:36 | JWT_SECRET_KEY not configured in environment. Using default key. Change JWT_SECRET_KEY in production!
+2026-02-14 11:23:20.638 | INFO     | app.sentiment.strategies:__init__:137 | LexiconStrategy initialized
+2026-02-14 11:23:20.641 | INFO     | app.sentiment.strategies:__init__:190 | PatternStrategy initialized
+2026-02-14 11:23:20.642 | INFO     | app.sentiment.strategies:__init__:296 | StatisticalStrategy initialized
+2026-02-14 11:23:20.644 | INFO     | app.sentiment.rules:__init__:125 | SentimentRulesEngine initialized
+2026-02-14 11:23:20.645 | INFO     | app.sentiment.analyzer:__init__:37 | SentimentAnalyzer initialized
+2026-02-14 11:23:22.654 | INFO     | app.main:startup_event:64 | AI RAG Sentiment Bot is starting up...
+2026-02-14 11:23:22.670 | INFO     | app.main:startup_event:72 | Vector collection ensured: rag_documents
+2026-02-14 11:25:02.182 | INFO     | app.main:shutdown_event:79 | AI RAG Sentiment Bot is shutting down...
+2026-02-14 11:25:05.456 | INFO     | app.core.logging:log_startup_info:157 | ================================================================================
+2026-02-14 11:25:05.462 | INFO     | app.core.logging:log_startup_info:158 | AI RAG Sentiment Bot - Startup
+2026-02-14 11:25:05.477 | INFO     | app.core.logging:log_startup_info:159 | ================================================================================
+2026-02-14 11:25:05.479 | INFO     | app.core.logging:log_startup_info:160 | Environment: dev
+2026-02-14 11:25:05.481 | INFO     | app.core.logging:log_startup_info:161 | Log Level: INFO
+2026-02-14 11:25:05.489 | INFO     | app.core.logging:log_startup_info:162 | Logs Directory: E:\MAHAVIR-GROUP-SOFTWARE-DEVELOPMENT\ai_rag_sentiment_bot\app\logs
+2026-02-14 11:25:05.494 | INFO     | app.core.logging:log_startup_info:163 | Timestamp: 2026-02-14T11:25:05.494786
+2026-02-14 11:25:05.495 | INFO     | app.core.logging:log_startup_info:164 | ================================================================================
+2026-02-14 11:25:05.791 | WARNING  | app.auth.jwt:<module>:36 | JWT_SECRET_KEY not configured in environment. Using default key. Change JWT_SECRET_KEY in production!
+2026-02-14 11:25:06.693 | INFO     | app.sentiment.strategies:__init__:137 | LexiconStrategy initialized
+2026-02-14 11:25:06.708 | INFO     | app.sentiment.strategies:__init__:190 | PatternStrategy initialized
+2026-02-14 11:25:06.713 | INFO     | app.sentiment.strategies:__init__:296 | StatisticalStrategy initialized
+2026-02-14 11:25:06.728 | INFO     | app.sentiment.rules:__init__:125 | SentimentRulesEngine initialized
+2026-02-14 11:25:06.840 | INFO     | app.sentiment.analyzer:__init__:37 | SentimentAnalyzer initialized
+2026-02-14 11:25:10.068 | INFO     | app.main:startup_event:64 | AI RAG Sentiment Bot is starting up...
+2026-02-14 11:25:10.107 | INFO     | app.main:startup_event:72 | Vector collection ensured: rag_documents
+2026-02-14 11:25:38.100 | INFO     | app.main:shutdown_event:79 | AI RAG Sentiment Bot is shutting down...
+2026-02-14 11:25:39.658 | INFO     | app.core.logging:log_startup_info:157 | ================================================================================
+2026-02-14 11:25:39.659 | INFO     | app.core.logging:log_startup_info:158 | AI RAG Sentiment Bot - Startup
+2026-02-14 11:25:39.659 | INFO     | app.core.logging:log_startup_info:159 | ================================================================================
+2026-02-14 11:25:39.659 | INFO     | app.core.logging:log_startup_info:160 | Environment: dev
+2026-02-14 11:25:39.660 | INFO     | app.core.logging:log_startup_info:161 | Log Level: INFO
+2026-02-14 11:25:39.661 | INFO     | app.core.logging:log_startup_info:162 | Logs Directory: E:\MAHAVIR-GROUP-SOFTWARE-DEVELOPMENT\ai_rag_sentiment_bot\app\logs
+2026-02-14 11:25:39.661 | INFO     | app.core.logging:log_startup_info:163 | Timestamp: 2026-02-14T11:25:39.661484
+2026-02-14 11:25:39.661 | INFO     | app.core.logging:log_startup_info:164 | ================================================================================
+2026-02-14 11:25:39.827 | WARNING  | app.auth.jwt:<module>:36 | JWT_SECRET_KEY not configured in environment. Using default key. Change JWT_SECRET_KEY in production!
+2026-02-14 11:25:40.291 | INFO     | app.sentiment.strategies:__init__:137 | LexiconStrategy initialized
+2026-02-14 11:25:40.292 | INFO     | app.sentiment.strategies:__init__:190 | PatternStrategy initialized
+2026-02-14 11:25:40.292 | INFO     | app.sentiment.strategies:__init__:296 | StatisticalStrategy initialized
+2026-02-14 11:25:40.292 | INFO     | app.sentiment.rules:__init__:125 | SentimentRulesEngine initialized
+2026-02-14 11:25:40.292 | INFO     | app.sentiment.analyzer:__init__:37 | SentimentAnalyzer initialized
+2026-02-14 11:25:45.009 | INFO     | app.main:startup_event:64 | AI RAG Sentiment Bot is starting up...
+2026-02-14 11:25:45.027 | INFO     | app.main:startup_event:72 | Vector collection ensured: rag_documents
+2026-02-14 11:28:12.397 | INFO     | app.core.logging:log_startup_info:157 | ================================================================================
+2026-02-14 11:28:12.399 | INFO     | app.core.logging:log_startup_info:158 | AI RAG Sentiment Bot - Startup
+2026-02-14 11:28:12.399 | INFO     | app.core.logging:log_startup_info:159 | ================================================================================
+2026-02-14 11:28:12.399 | INFO     | app.core.logging:log_startup_info:160 | Environment: dev
+2026-02-14 11:28:12.399 | INFO     | app.core.logging:log_startup_info:161 | Log Level: INFO
+2026-02-14 11:28:12.400 | INFO     | app.core.logging:log_startup_info:162 | Logs Directory: E:\MAHAVIR-GROUP-SOFTWARE-DEVELOPMENT\ai_rag_sentiment_bot\app\logs
+2026-02-14 11:28:12.400 | INFO     | app.core.logging:log_startup_info:163 | Timestamp: 2026-02-14T11:28:12.400136
+2026-02-14 11:28:12.400 | INFO     | app.core.logging:log_startup_info:164 | ================================================================================
+2026-02-14 11:28:12.553 | WARNING  | app.auth.jwt:<module>:36 | JWT_SECRET_KEY not configured in environment. Using default key. Change JWT_SECRET_KEY in production!
+2026-02-14 11:28:12.950 | INFO     | app.sentiment.strategies:__init__:137 | LexiconStrategy initialized
+2026-02-14 11:28:12.951 | INFO     | app.sentiment.strategies:__init__:190 | PatternStrategy initialized
+2026-02-14 11:28:12.951 | INFO     | app.sentiment.strategies:__init__:296 | StatisticalStrategy initialized
+2026-02-14 11:28:12.953 | INFO     | app.sentiment.rules:__init__:125 | SentimentRulesEngine initialized
+2026-02-14 11:28:12.953 | INFO     | app.sentiment.analyzer:__init__:37 | SentimentAnalyzer initialized
+2026-02-14 11:28:15.374 | INFO     | app.main:startup_event:64 | AI RAG Sentiment Bot is starting up...
+2026-02-14 11:28:15.387 | INFO     | app.main:startup_event:72 | Vector collection ensured: rag_documents
+2026-02-14 11:29:03.784 | INFO     | app.main:shutdown_event:79 | AI RAG Sentiment Bot is shutting down...
+2026-02-14 11:29:08.784 | INFO     | app.core.logging:log_startup_info:157 | ================================================================================
+2026-02-14 11:29:08.785 | INFO     | app.core.logging:log_startup_info:158 | AI RAG Sentiment Bot - Startup
+2026-02-14 11:29:08.787 | INFO     | app.core.logging:log_startup_info:159 | ================================================================================
+2026-02-14 11:29:08.787 | INFO     | app.core.logging:log_startup_info:160 | Environment: dev
+2026-02-14 11:29:08.787 | INFO     | app.core.logging:log_startup_info:161 | Log Level: INFO
+2026-02-14 11:29:08.788 | INFO     | app.core.logging:log_startup_info:162 | Logs Directory: E:\MAHAVIR-GROUP-SOFTWARE-DEVELOPMENT\ai_rag_sentiment_bot\app\logs
+2026-02-14 11:29:08.789 | INFO     | app.core.logging:log_startup_info:163 | Timestamp: 2026-02-14T11:29:08.789129
+2026-02-14 11:29:08.789 | INFO     | app.core.logging:log_startup_info:164 | ================================================================================
+2026-02-14 11:29:08.953 | WARNING  | app.auth.jwt:<module>:36 | JWT_SECRET_KEY not configured in environment. Using default key. Change JWT_SECRET_KEY in production!
+2026-02-14 11:29:09.364 | INFO     | app.sentiment.strategies:__init__:137 | LexiconStrategy initialized
+2026-02-14 11:29:09.365 | INFO     | app.sentiment.strategies:__init__:190 | PatternStrategy initialized
+2026-02-14 11:29:09.366 | INFO     | app.sentiment.strategies:__init__:296 | StatisticalStrategy initialized
+2026-02-14 11:29:09.367 | INFO     | app.sentiment.rules:__init__:125 | SentimentRulesEngine initialized
+2026-02-14 11:29:09.368 | INFO     | app.sentiment.analyzer:__init__:37 | SentimentAnalyzer initialized
+2026-02-14 11:29:11.942 | INFO     | app.main:startup_event:64 | AI RAG Sentiment Bot is starting up...
+2026-02-14 11:29:11.952 | INFO     | app.main:startup_event:72 | Vector collection ensured: rag_documents
+2026-02-14 11:36:28.157 | INFO     | app.main:shutdown_event:79 | AI RAG Sentiment Bot is shutting down...
+2026-02-14 11:36:52.248 | INFO     | app.main:shutdown_event:79 | AI RAG Sentiment Bot is shutting down...
+2026-02-14 11:36:57.622 | INFO     | app.core.logging:log_startup_info:157 | ================================================================================
+2026-02-14 11:36:57.627 | INFO     | app.core.logging:log_startup_info:158 | AI RAG Sentiment Bot - Startup
+2026-02-14 11:36:57.627 | INFO     | app.core.logging:log_startup_info:159 | ================================================================================
+2026-02-14 11:36:57.635 | INFO     | app.core.logging:log_startup_info:160 | Environment: dev
+2026-02-14 11:36:57.640 | INFO     | app.core.logging:log_startup_info:161 | Log Level: INFO
+2026-02-14 11:36:57.641 | INFO     | app.core.logging:log_startup_info:162 | Logs Directory: E:\MAHAVIR-GROUP-SOFTWARE-DEVELOPMENT\ai_rag_sentiment_bot\app\logs
+2026-02-14 11:36:57.641 | INFO     | app.core.logging:log_startup_info:163 | Timestamp: 2026-02-14T11:36:57.641291
+2026-02-14 11:36:57.645 | INFO     | app.core.logging:log_startup_info:164 | ================================================================================
+2026-02-14 11:36:58.010 | WARNING  | app.auth.jwt:<module>:36 | JWT_SECRET_KEY not configured in environment. Using default key. Change JWT_SECRET_KEY in production!
+2026-02-14 11:36:59.789 | INFO     | app.sentiment.strategies:__init__:137 | LexiconStrategy initialized
+2026-02-14 11:36:59.797 | INFO     | app.sentiment.strategies:__init__:190 | PatternStrategy initialized
+2026-02-14 11:36:59.800 | INFO     | app.sentiment.strategies:__init__:296 | StatisticalStrategy initialized
+2026-02-14 11:36:59.825 | INFO     | app.sentiment.rules:__init__:125 | SentimentRulesEngine initialized
+2026-02-14 11:36:59.837 | INFO     | app.sentiment.analyzer:__init__:37 | SentimentAnalyzer initialized
+2026-02-14 11:37:05.083 | INFO     | app.main:startup_event:64 | AI RAG Sentiment Bot is starting up...
+2026-02-14 11:37:06.851 | INFO     | app.main:startup_event:72 | Vector collection ensured: rag_documents
+2026-02-14 11:38:05.821 | INFO     | app.main:shutdown_event:79 | AI RAG Sentiment Bot is shutting down...
+2026-02-14 11:38:07.561 | INFO     | app.core.logging:log_startup_info:157 | ================================================================================
+2026-02-14 11:38:07.562 | INFO     | app.core.logging:log_startup_info:158 | AI RAG Sentiment Bot - Startup
+2026-02-14 11:38:07.563 | INFO     | app.core.logging:log_startup_info:159 | ================================================================================
+2026-02-14 11:38:07.563 | INFO     | app.core.logging:log_startup_info:160 | Environment: dev
+2026-02-14 11:38:07.563 | INFO     | app.core.logging:log_startup_info:161 | Log Level: INFO
+2026-02-14 11:38:07.564 | INFO     | app.core.logging:log_startup_info:162 | Logs Directory: E:\MAHAVIR-GROUP-SOFTWARE-DEVELOPMENT\ai_rag_sentiment_bot\app\logs
+2026-02-14 11:38:07.564 | INFO     | app.core.logging:log_startup_info:163 | Timestamp: 2026-02-14T11:38:07.564420
+2026-02-14 11:38:07.564 | INFO     | app.core.logging:log_startup_info:164 | ================================================================================
+2026-02-14 11:38:07.707 | WARNING  | app.auth.jwt:<module>:36 | JWT_SECRET_KEY not configured in environment. Using default key. Change JWT_SECRET_KEY in production!
+2026-02-14 11:38:08.200 | INFO     | app.sentiment.strategies:__init__:137 | LexiconStrategy initialized
+2026-02-14 11:38:08.200 | INFO     | app.sentiment.strategies:__init__:190 | PatternStrategy initialized
+2026-02-14 11:38:08.201 | INFO     | app.sentiment.strategies:__init__:296 | StatisticalStrategy initialized
+2026-02-14 11:38:08.202 | INFO     | app.sentiment.rules:__init__:125 | SentimentRulesEngine initialized
+2026-02-14 11:38:08.203 | INFO     | app.sentiment.analyzer:__init__:37 | SentimentAnalyzer initialized
+2026-02-14 11:38:10.828 | INFO     | app.main:startup_event:64 | AI RAG Sentiment Bot is starting up...
+2026-02-14 11:38:10.838 | INFO     | app.main:startup_event:72 | Vector collection ensured: rag_documents
+2026-02-14 11:39:59.579 | INFO     | app.core.logging:log_startup_info:157 | ================================================================================
+2026-02-14 11:39:59.579 | INFO     | app.core.logging:log_startup_info:158 | AI RAG Sentiment Bot - Startup
+2026-02-14 11:39:59.580 | INFO     | app.core.logging:log_startup_info:159 | ================================================================================
+2026-02-14 11:39:59.581 | INFO     | app.core.logging:log_startup_info:160 | Environment: dev
+2026-02-14 11:39:59.581 | INFO     | app.core.logging:log_startup_info:161 | Log Level: INFO
+2026-02-14 11:39:59.581 | INFO     | app.core.logging:log_startup_info:162 | Logs Directory: E:\MAHAVIR-GROUP-SOFTWARE-DEVELOPMENT\ai_rag_sentiment_bot\app\logs
+2026-02-14 11:39:59.582 | INFO     | app.core.logging:log_startup_info:163 | Timestamp: 2026-02-14T11:39:59.582021
+2026-02-14 11:39:59.582 | INFO     | app.core.logging:log_startup_info:164 | ================================================================================
+2026-02-14 11:39:59.721 | WARNING  | app.auth.jwt:<module>:36 | JWT_SECRET_KEY not configured in environment. Using default key. Change JWT_SECRET_KEY in production!
+2026-02-14 11:40:00.156 | INFO     | app.sentiment.strategies:__init__:137 | LexiconStrategy initialized
+2026-02-14 11:40:00.157 | INFO     | app.sentiment.strategies:__init__:190 | PatternStrategy initialized
+2026-02-14 11:40:00.157 | INFO     | app.sentiment.strategies:__init__:296 | StatisticalStrategy initialized
+2026-02-14 11:40:00.159 | INFO     | app.sentiment.rules:__init__:125 | SentimentRulesEngine initialized
+2026-02-14 11:40:00.159 | INFO     | app.sentiment.analyzer:__init__:37 | SentimentAnalyzer initialized
+2026-02-14 11:40:02.466 | INFO     | app.main:startup_event:64 | AI RAG Sentiment Bot is starting up...
+2026-02-14 11:40:02.483 | INFO     | app.main:startup_event:72 | Vector collection ensured: rag_documents
+2026-02-14 11:41:38.683 | INFO     | app.main:shutdown_event:79 | AI RAG Sentiment Bot is shutting down...
+2026-02-14 11:42:16.873 | INFO     | app.main:shutdown_event:79 | AI RAG Sentiment Bot is shutting down...
+2026-02-14 11:46:17.789 | INFO     | app.core.logging:log_startup_info:157 | ================================================================================
+2026-02-14 11:46:17.790 | INFO     | app.core.logging:log_startup_info:158 | AI RAG Sentiment Bot - Startup
+2026-02-14 11:46:17.790 | INFO     | app.core.logging:log_startup_info:159 | ================================================================================
+2026-02-14 11:46:17.791 | INFO     | app.core.logging:log_startup_info:160 | Environment: dev
+2026-02-14 11:46:17.791 | INFO     | app.core.logging:log_startup_info:161 | Log Level: INFO
+2026-02-14 11:46:17.791 | INFO     | app.core.logging:log_startup_info:162 | Logs Directory: E:\MAHAVIR-GROUP-SOFTWARE-DEVELOPMENT\ai_rag_sentiment_bot\app\logs
+2026-02-14 11:46:17.792 | INFO     | app.core.logging:log_startup_info:163 | Timestamp: 2026-02-14T11:46:17.792573
+2026-02-14 11:46:17.792 | INFO     | app.core.logging:log_startup_info:164 | ================================================================================
+2026-02-14 11:46:17.986 | WARNING  | app.auth.jwt:<module>:36 | JWT_SECRET_KEY not configured in environment. Using default key. Change JWT_SECRET_KEY in production!
+2026-02-14 11:46:18.429 | INFO     | app.sentiment.strategies:__init__:137 | LexiconStrategy initialized
+2026-02-14 11:46:18.429 | INFO     | app.sentiment.strategies:__init__:190 | PatternStrategy initialized
+2026-02-14 11:46:18.430 | INFO     | app.sentiment.strategies:__init__:296 | StatisticalStrategy initialized
+2026-02-14 11:46:18.431 | INFO     | app.sentiment.rules:__init__:125 | SentimentRulesEngine initialized
+2026-02-14 11:46:18.431 | INFO     | app.sentiment.analyzer:__init__:37 | SentimentAnalyzer initialized
+2026-02-14 11:46:21.620 | INFO     | app.main:startup_event:64 | AI RAG Sentiment Bot is starting up...
+2026-02-14 11:46:21.682 | INFO     | app.main:startup_event:72 | Vector collection ensured: rag_documents
+2026-02-14 11:46:21.701 | INFO     | app.main:shutdown_event:79 | AI RAG Sentiment Bot is shutting down...
+2026-02-14 11:46:23.220 | INFO     | app.core.logging:log_startup_info:157 | ================================================================================
+2026-02-14 11:46:23.221 | INFO     | app.core.logging:log_startup_info:158 | AI RAG Sentiment Bot - Startup
+2026-02-14 11:46:23.221 | INFO     | app.core.logging:log_startup_info:159 | ================================================================================
+2026-02-14 11:46:23.222 | INFO     | app.core.logging:log_startup_info:160 | Environment: dev
+2026-02-14 11:46:23.222 | INFO     | app.core.logging:log_startup_info:161 | Log Level: INFO
+2026-02-14 11:46:23.222 | INFO     | app.core.logging:log_startup_info:162 | Logs Directory: E:\MAHAVIR-GROUP-SOFTWARE-DEVELOPMENT\ai_rag_sentiment_bot\app\logs
+2026-02-14 11:46:23.223 | INFO     | app.core.logging:log_startup_info:163 | Timestamp: 2026-02-14T11:46:23.223198
+2026-02-14 11:46:23.223 | INFO     | app.core.logging:log_startup_info:164 | ================================================================================
+2026-02-14 11:46:23.356 | WARNING  | app.auth.jwt:<module>:36 | JWT_SECRET_KEY not configured in environment. Using default key. Change JWT_SECRET_KEY in production!
+2026-02-14 11:46:23.793 | INFO     | app.sentiment.strategies:__init__:137 | LexiconStrategy initialized
+2026-02-14 11:46:23.793 | INFO     | app.sentiment.strategies:__init__:190 | PatternStrategy initialized
+2026-02-14 11:46:23.795 | INFO     | app.sentiment.strategies:__init__:296 | StatisticalStrategy initialized
+2026-02-14 11:46:23.796 | INFO     | app.sentiment.rules:__init__:125 | SentimentRulesEngine initialized
+2026-02-14 11:46:23.797 | INFO     | app.sentiment.analyzer:__init__:37 | SentimentAnalyzer initialized
+2026-02-14 11:46:26.999 | INFO     | app.main:startup_event:64 | AI RAG Sentiment Bot is starting up...
+2026-02-14 11:46:27.007 | INFO     | app.main:startup_event:72 | Vector collection ensured: rag_documents
+2026-02-14 11:48:07.450 | INFO     | app.main:shutdown_event:79 | AI RAG Sentiment Bot is shutting down...
+2026-02-14 11:48:12.645 | INFO     | app.core.logging:log_startup_info:157 | ================================================================================
+2026-02-14 11:48:12.646 | INFO     | app.core.logging:log_startup_info:158 | AI RAG Sentiment Bot - Startup
+2026-02-14 11:48:12.647 | INFO     | app.core.logging:log_startup_info:159 | ================================================================================
+2026-02-14 11:48:12.647 | INFO     | app.core.logging:log_startup_info:160 | Environment: dev
+2026-02-14 11:48:12.647 | INFO     | app.core.logging:log_startup_info:161 | Log Level: INFO
+2026-02-14 11:48:12.647 | INFO     | app.core.logging:log_startup_info:162 | Logs Directory: E:\MAHAVIR-GROUP-SOFTWARE-DEVELOPMENT\ai_rag_sentiment_bot\app\logs
+2026-02-14 11:48:12.648 | INFO     | app.core.logging:log_startup_info:163 | Timestamp: 2026-02-14T11:48:12.648804
+2026-02-14 11:48:12.648 | INFO     | app.core.logging:log_startup_info:164 | ================================================================================
+2026-02-14 11:48:12.793 | WARNING  | app.auth.jwt:<module>:36 | JWT_SECRET_KEY not configured in environment. Using default key. Change JWT_SECRET_KEY in production!
+2026-02-14 11:48:13.238 | INFO     | app.sentiment.strategies:__init__:137 | LexiconStrategy initialized
+2026-02-14 11:48:13.238 | INFO     | app.sentiment.strategies:__init__:190 | PatternStrategy initialized
+2026-02-14 11:48:13.239 | INFO     | app.sentiment.strategies:__init__:296 | StatisticalStrategy initialized
+2026-02-14 11:48:13.240 | INFO     | app.sentiment.rules:__init__:125 | SentimentRulesEngine initialized
+2026-02-14 11:48:13.241 | INFO     | app.sentiment.analyzer:__init__:37 | SentimentAnalyzer initialized
+2026-02-14 11:48:15.452 | INFO     | app.main:startup_event:64 | AI RAG Sentiment Bot is starting up...
+2026-02-14 11:48:15.467 | INFO     | app.main:startup_event:72 | Vector collection ensured: rag_documents
+2026-02-14 11:52:47.763 | INFO     | app.main:shutdown_event:79 | AI RAG Sentiment Bot is shutting down...
+2026-02-14 11:52:53.549 | INFO     | app.core.logging:log_startup_info:157 | ================================================================================
+2026-02-14 11:52:53.555 | INFO     | app.core.logging:log_startup_info:158 | AI RAG Sentiment Bot - Startup
+2026-02-14 11:52:53.557 | INFO     | app.core.logging:log_startup_info:159 | ================================================================================
+2026-02-14 11:52:53.560 | INFO     | app.core.logging:log_startup_info:160 | Environment: dev
+2026-02-14 11:52:53.565 | INFO     | app.core.logging:log_startup_info:161 | Log Level: INFO
+2026-02-14 11:52:53.574 | INFO     | app.core.logging:log_startup_info:162 | Logs Directory: E:\MAHAVIR-GROUP-SOFTWARE-DEVELOPMENT\ai_rag_sentiment_bot\app\logs
+2026-02-14 11:52:53.576 | INFO     | app.core.logging:log_startup_info:163 | Timestamp: 2026-02-14T11:52:53.576049
+2026-02-14 11:52:53.577 | INFO     | app.core.logging:log_startup_info:164 | ================================================================================
+2026-02-14 11:52:53.935 | WARNING  | app.auth.jwt:<module>:36 | JWT_SECRET_KEY not configured in environment. Using default key. Change JWT_SECRET_KEY in production!
+2026-02-14 11:52:54.791 | INFO     | app.sentiment.strategies:__init__:137 | LexiconStrategy initialized
+2026-02-14 11:52:54.800 | INFO     | app.sentiment.strategies:__init__:190 | PatternStrategy initialized
+2026-02-14 11:52:54.803 | INFO     | app.sentiment.strategies:__init__:296 | StatisticalStrategy initialized
+2026-02-14 11:52:54.809 | INFO     | app.sentiment.rules:__init__:125 | SentimentRulesEngine initialized
+2026-02-14 11:52:54.814 | INFO     | app.sentiment.analyzer:__init__:37 | SentimentAnalyzer initialized
+2026-02-14 11:52:58.078 | INFO     | app.main:startup_event:64 | AI RAG Sentiment Bot is starting up...
+2026-02-14 11:52:58.119 | INFO     | app.main:startup_event:72 | Vector collection ensured: rag_documents
+2026-02-14 11:53:46.219 | ERROR    | app.api.auth:register:72 | Error registering user: When initializing mapper Mapper[User(users)], expression 'UserRole' failed to locate a name ('UserRole'). If this is a class name, consider adding this relationship() to the <class 'app.models.user.User'> class after both dependent classes have been defined.
+2026-02-14 11:53:46.222 | ERROR    | app.db.deps:get_db:8 | Database session error: 500: Registration failed
+2026-02-14 12:00:24.443 | INFO     | app.main:shutdown_event:79 | AI RAG Sentiment Bot is shutting down...
+2026-02-14 15:32:41.455 | INFO     | app.core.logging:log_startup_info:157 | ================================================================================
+2026-02-14 15:32:41.458 | INFO     | app.core.logging:log_startup_info:158 | AI RAG Sentiment Bot - Startup
+2026-02-14 15:32:41.459 | INFO     | app.core.logging:log_startup_info:159 | ================================================================================
+2026-02-14 15:32:41.459 | INFO     | app.core.logging:log_startup_info:160 | Environment: dev
+2026-02-14 15:32:41.460 | INFO     | app.core.logging:log_startup_info:161 | Log Level: INFO
+2026-02-14 15:32:41.460 | INFO     | app.core.logging:log_startup_info:162 | Logs Directory: E:\MAHAVIR-GROUP-SOFTWARE-DEVELOPMENT\ai_rag_sentiment_bot\app\logs
+2026-02-14 15:32:41.460 | INFO     | app.core.logging:log_startup_info:163 | Timestamp: 2026-02-14T15:32:41.460505
+2026-02-14 15:32:41.462 | INFO     | app.core.logging:log_startup_info:164 | ================================================================================
+2026-02-14 15:32:42.898 | WARNING  | app.auth.jwt:<module>:36 | JWT_SECRET_KEY not configured in environment. Using default key. Change JWT_SECRET_KEY in production!
+2026-02-14 15:34:00.833 | INFO     | app.core.logging:log_startup_info:157 | ================================================================================
+2026-02-14 15:34:00.840 | INFO     | app.core.logging:log_startup_info:158 | AI RAG Sentiment Bot - Startup
+2026-02-14 15:34:00.841 | INFO     | app.core.logging:log_startup_info:159 | ================================================================================
+2026-02-14 15:34:00.843 | INFO     | app.core.logging:log_startup_info:160 | Environment: dev
+2026-02-14 15:34:00.849 | INFO     | app.core.logging:log_startup_info:161 | Log Level: INFO
+2026-02-14 15:34:00.862 | INFO     | app.core.logging:log_startup_info:162 | Logs Directory: E:\MAHAVIR-GROUP-SOFTWARE-DEVELOPMENT\ai_rag_sentiment_bot\app\logs
+2026-02-14 15:34:00.893 | INFO     | app.core.logging:log_startup_info:163 | Timestamp: 2026-02-14T15:34:00.893303
+2026-02-14 15:34:00.893 | INFO     | app.core.logging:log_startup_info:164 | ================================================================================
+2026-02-14 15:34:01.436 | WARNING  | app.auth.jwt:<module>:36 | JWT_SECRET_KEY not configured in environment. Using default key. Change JWT_SECRET_KEY in production!
+2026-02-14 15:34:02.628 | INFO     | app.sentiment.strategies:__init__:137 | LexiconStrategy initialized
+2026-02-14 15:34:02.630 | INFO     | app.sentiment.strategies:__init__:190 | PatternStrategy initialized
+2026-02-14 15:34:02.631 | INFO     | app.sentiment.strategies:__init__:296 | StatisticalStrategy initialized
+2026-02-14 15:34:02.650 | INFO     | app.sentiment.rules:__init__:125 | SentimentRulesEngine initialized
+2026-02-14 15:34:02.652 | INFO     | app.sentiment.analyzer:__init__:37 | SentimentAnalyzer initialized
+2026-02-14 15:34:14.354 | INFO     | app.main:startup_event:64 | AI RAG Sentiment Bot is starting up...
+2026-02-14 15:34:14.388 | INFO     | app.main:startup_event:72 | Vector collection ensured: rag_documents
+2026-02-14 15:47:26.972 | INFO     | app.core.logging:log_startup_info:157 | ================================================================================
+2026-02-14 15:47:26.973 | INFO     | app.core.logging:log_startup_info:158 | AI RAG Sentiment Bot - Startup
+2026-02-14 15:47:26.973 | INFO     | app.core.logging:log_startup_info:159 | ================================================================================
+2026-02-14 15:47:26.973 | INFO     | app.core.logging:log_startup_info:160 | Environment: dev
+2026-02-14 15:47:26.974 | INFO     | app.core.logging:log_startup_info:161 | Log Level: INFO
+2026-02-14 15:47:26.974 | INFO     | app.core.logging:log_startup_info:162 | Logs Directory: E:\MAHAVIR-GROUP-SOFTWARE-DEVELOPMENT\ai_rag_sentiment_bot\app\logs
+2026-02-14 15:47:26.975 | INFO     | app.core.logging:log_startup_info:163 | Timestamp: 2026-02-14T15:47:26.975880
+2026-02-14 15:47:26.975 | INFO     | app.core.logging:log_startup_info:164 | ================================================================================
+2026-02-14 15:47:27.137 | WARNING  | app.auth.jwt:<module>:36 | JWT_SECRET_KEY not configured in environment. Using default key. Change JWT_SECRET_KEY in production!
+2026-02-14 15:47:27.667 | INFO     | app.sentiment.strategies:__init__:137 | LexiconStrategy initialized
+2026-02-14 15:47:27.667 | INFO     | app.sentiment.strategies:__init__:190 | PatternStrategy initialized
+2026-02-14 15:47:27.668 | INFO     | app.sentiment.strategies:__init__:296 | StatisticalStrategy initialized
+2026-02-14 15:47:27.669 | INFO     | app.sentiment.rules:__init__:125 | SentimentRulesEngine initialized
+2026-02-14 15:47:27.670 | INFO     | app.sentiment.analyzer:__init__:37 | SentimentAnalyzer initialized
+2026-02-14 15:48:38.683 | INFO     | app.core.logging:log_startup_info:157 | ================================================================================
+2026-02-14 15:48:38.683 | INFO     | app.core.logging:log_startup_info:158 | AI RAG Sentiment Bot - Startup
+2026-02-14 15:48:38.683 | INFO     | app.core.logging:log_startup_info:159 | ================================================================================
+2026-02-14 15:48:38.683 | INFO     | app.core.logging:log_startup_info:160 | Environment: dev
+2026-02-14 15:48:38.684 | INFO     | app.core.logging:log_startup_info:161 | Log Level: INFO
+2026-02-14 15:48:38.684 | INFO     | app.core.logging:log_startup_info:162 | Logs Directory: E:\MAHAVIR-GROUP-SOFTWARE-DEVELOPMENT\ai_rag_sentiment_bot\app\logs
+2026-02-14 15:48:38.684 | INFO     | app.core.logging:log_startup_info:163 | Timestamp: 2026-02-14T15:48:38.684579
+2026-02-14 15:48:38.684 | INFO     | app.core.logging:log_startup_info:164 | ================================================================================
+2026-02-14 15:48:38.890 | WARNING  | app.auth.jwt:<module>:36 | JWT_SECRET_KEY not configured in environment. Using default key. Change JWT_SECRET_KEY in production!
+2026-02-14 15:48:39.473 | INFO     | app.sentiment.strategies:__init__:137 | LexiconStrategy initialized
+2026-02-14 15:48:39.473 | INFO     | app.sentiment.strategies:__init__:190 | PatternStrategy initialized
+2026-02-14 15:48:39.473 | INFO     | app.sentiment.strategies:__init__:296 | StatisticalStrategy initialized
+2026-02-14 15:48:39.475 | INFO     | app.sentiment.rules:__init__:125 | SentimentRulesEngine initialized
+2026-02-14 15:48:39.476 | INFO     | app.sentiment.analyzer:__init__:37 | SentimentAnalyzer initialized
+2026-02-14 15:48:42.482 | INFO     | app.main:startup_event:64 | AI RAG Sentiment Bot is starting up...
+2026-02-14 15:48:42.510 | INFO     | app.main:startup_event:72 | Vector collection ensured: rag_documents
+2026-02-14 15:49:15.157 | INFO     | app.main:shutdown_event:79 | AI RAG Sentiment Bot is shutting down...
+2026-02-14 15:50:29.998 | INFO     | app.core.logging:log_startup_info:157 | ================================================================================
+2026-02-14 15:50:30.002 | INFO     | app.core.logging:log_startup_info:158 | AI RAG Sentiment Bot - Startup
+2026-02-14 15:50:30.002 | INFO     | app.core.logging:log_startup_info:159 | ================================================================================
+2026-02-14 15:50:30.003 | INFO     | app.core.logging:log_startup_info:160 | Environment: dev
+2026-02-14 15:50:30.003 | INFO     | app.core.logging:log_startup_info:161 | Log Level: INFO
+2026-02-14 15:50:30.003 | INFO     | app.core.logging:log_startup_info:162 | Logs Directory: E:\MAHAVIR-GROUP-SOFTWARE-DEVELOPMENT\ai_rag_sentiment_bot\app\logs
+2026-02-14 15:50:30.004 | INFO     | app.core.logging:log_startup_info:163 | Timestamp: 2026-02-14T15:50:30.004145
+2026-02-14 15:50:30.004 | INFO     | app.core.logging:log_startup_info:164 | ================================================================================
+2026-02-14 15:50:30.006 | INFO     | app.sentiment.strategies:__init__:137 | LexiconStrategy initialized
+2026-02-14 15:50:30.007 | INFO     | app.sentiment.strategies:__init__:190 | PatternStrategy initialized
+2026-02-14 15:50:30.007 | INFO     | app.sentiment.strategies:__init__:296 | StatisticalStrategy initialized
+2026-02-14 15:50:30.010 | INFO     | app.sentiment.rules:__init__:125 | SentimentRulesEngine initialized
+2026-02-14 15:50:30.011 | INFO     | app.sentiment.analyzer:__init__:37 | SentimentAnalyzer initialized
+2026-02-14 15:51:31.092 | INFO     | app.main:shutdown_event:79 | AI RAG Sentiment Bot is shutting down...
+2026-02-14 15:53:05.198 | INFO     | app.core.logging:log_startup_info:157 | ================================================================================
+2026-02-14 15:53:05.199 | INFO     | app.core.logging:log_startup_info:158 | AI RAG Sentiment Bot - Startup
+2026-02-14 15:53:05.199 | INFO     | app.core.logging:log_startup_info:159 | ================================================================================
+2026-02-14 15:53:05.200 | INFO     | app.core.logging:log_startup_info:160 | Environment: dev
+2026-02-14 15:53:05.200 | INFO     | app.core.logging:log_startup_info:161 | Log Level: INFO
+2026-02-14 15:53:05.201 | INFO     | app.core.logging:log_startup_info:162 | Logs Directory: E:\MAHAVIR-GROUP-SOFTWARE-DEVELOPMENT\ai_rag_sentiment_bot\app\logs
+2026-02-14 15:53:05.202 | INFO     | app.core.logging:log_startup_info:163 | Timestamp: 2026-02-14T15:53:05.202327
+2026-02-14 15:53:05.203 | INFO     | app.core.logging:log_startup_info:164 | ================================================================================
+2026-02-14 15:53:05.544 | WARNING  | app.auth.jwt:<module>:36 | JWT_SECRET_KEY not configured in environment. Using default key. Change JWT_SECRET_KEY in production!
+2026-02-14 15:53:06.385 | INFO     | app.sentiment.strategies:__init__:137 | LexiconStrategy initialized
+2026-02-14 15:53:06.386 | INFO     | app.sentiment.strategies:__init__:190 | PatternStrategy initialized
+2026-02-14 15:53:06.387 | INFO     | app.sentiment.strategies:__init__:296 | StatisticalStrategy initialized
+2026-02-14 15:53:06.389 | INFO     | app.sentiment.rules:__init__:125 | SentimentRulesEngine initialized
+2026-02-14 15:53:06.390 | INFO     | app.sentiment.analyzer:__init__:37 | SentimentAnalyzer initialized
+2026-02-14 15:53:08.994 | INFO     | app.main:startup_event:64 | AI RAG Sentiment Bot is starting up...
+2026-02-14 15:53:09.030 | INFO     | app.main:startup_event:72 | Vector collection ensured: rag_documents
+2026-02-14 15:58:17.387 | INFO     | app.main:shutdown_event:79 | AI RAG Sentiment Bot is shutting down...
+2026-02-14 15:58:22.598 | INFO     | app.core.logging:log_startup_info:157 | ================================================================================
+2026-02-14 15:58:22.609 | INFO     | app.core.logging:log_startup_info:158 | AI RAG Sentiment Bot - Startup
+2026-02-14 15:58:22.610 | INFO     | app.core.logging:log_startup_info:159 | ================================================================================
+2026-02-14 15:58:22.610 | INFO     | app.core.logging:log_startup_info:160 | Environment: dev
+2026-02-14 15:58:22.611 | INFO     | app.core.logging:log_startup_info:161 | Log Level: INFO
+2026-02-14 15:58:22.611 | INFO     | app.core.logging:log_startup_info:162 | Logs Directory: E:\MAHAVIR-GROUP-SOFTWARE-DEVELOPMENT\ai_rag_sentiment_bot\app\logs
+2026-02-14 15:58:22.611 | INFO     | app.core.logging:log_startup_info:163 | Timestamp: 2026-02-14T15:58:22.611584
+2026-02-14 15:58:22.612 | INFO     | app.core.logging:log_startup_info:164 | ================================================================================
+2026-02-14 15:58:23.084 | WARNING  | app.auth.jwt:<module>:36 | JWT_SECRET_KEY not configured in environment. Using default key. Change JWT_SECRET_KEY in production!
+2026-02-14 15:58:24.229 | INFO     | app.sentiment.strategies:__init__:137 | LexiconStrategy initialized
+2026-02-14 15:58:24.264 | INFO     | app.sentiment.strategies:__init__:190 | PatternStrategy initialized
+2026-02-14 15:58:24.335 | INFO     | app.sentiment.strategies:__init__:296 | StatisticalStrategy initialized
+2026-02-14 15:58:24.362 | INFO     | app.sentiment.rules:__init__:125 | SentimentRulesEngine initialized
+2026-02-14 15:58:24.418 | INFO     | app.sentiment.analyzer:__init__:37 | SentimentAnalyzer initialized
+2026-02-14 15:58:24.654 | INFO     | app.core.logging:log_startup_info:157 | ================================================================================
+2026-02-14 15:58:24.658 | INFO     | app.core.logging:log_startup_info:158 | AI RAG Sentiment Bot - Startup
+2026-02-14 15:58:24.659 | INFO     | app.core.logging:log_startup_info:159 | ================================================================================
+2026-02-14 15:58:24.663 | INFO     | app.core.logging:log_startup_info:160 | Environment: dev
+2026-02-14 15:58:24.666 | INFO     | app.core.logging:log_startup_info:161 | Log Level: INFO
+2026-02-14 15:58:24.699 | INFO     | app.core.logging:log_startup_info:162 | Logs Directory: E:\MAHAVIR-GROUP-SOFTWARE-DEVELOPMENT\ai_rag_sentiment_bot\app\logs
+2026-02-14 15:58:24.767 | INFO     | app.core.logging:log_startup_info:163 | Timestamp: 2026-02-14T15:58:24.767180
+2026-02-14 15:58:24.807 | INFO     | app.core.logging:log_startup_info:164 | ================================================================================
+2026-02-14 15:58:25.075 | WARNING  | app.auth.jwt:<module>:36 | JWT_SECRET_KEY not configured in environment. Using default key. Change JWT_SECRET_KEY in production!
+2026-02-14 15:58:25.943 | INFO     | app.sentiment.strategies:__init__:137 | LexiconStrategy initialized
+2026-02-14 15:58:25.958 | INFO     | app.sentiment.strategies:__init__:190 | PatternStrategy initialized
+2026-02-14 15:58:26.000 | INFO     | app.sentiment.strategies:__init__:296 | StatisticalStrategy initialized
+2026-02-14 15:58:26.045 | INFO     | app.sentiment.rules:__init__:125 | SentimentRulesEngine initialized
+2026-02-14 15:58:26.100 | INFO     | app.sentiment.analyzer:__init__:37 | SentimentAnalyzer initialized
+2026-02-14 15:58:39.852 | INFO     | app.main:startup_event:64 | AI RAG Sentiment Bot is starting up...
+2026-02-14 15:58:42.821 | INFO     | app.main:startup_event:72 | Vector collection ensured: rag_documents
+2026-02-14 15:58:42.986 | INFO     | app.main:startup_event:64 | AI RAG Sentiment Bot is starting up...
+2026-02-14 15:58:43.876 | INFO     | app.main:startup_event:72 | Vector collection ensured: rag_documents
+2026-02-14 18:00:31.915 | INFO     | app.main:shutdown_event:79 | AI RAG Sentiment Bot is shutting down...
