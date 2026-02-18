@@ -4,14 +4,7 @@ from app.core.config import settings
 from app.core.logging import get_logger
 from app.rag.embedding import embed_query
 
-
 logger = get_logger(__name__)
-
-from typing import List
-from app.auth.context import UserContext
-from app.core.logging import logger
-from app.core.config import settings
-from app.rag.embedding import embed_query
 
 
 def retrieve_context(
@@ -19,53 +12,58 @@ def retrieve_context(
     client,
     query: str,
     user_context: UserContext,
+    ticket_id: str | None = None,
+    top_k: int | None = None,
 ) -> List[dict]:
     """
-    RBAC-aware, enterprise-safe vector retrieval.
+    Enterprise RBAC-aware vector retrieval for Mahavir AI HelpDesk.
     """
 
-    # 1️⃣ Trust boundary
     if not user_context or not user_context.is_verified:
         raise PermissionError("Unverified user context")
 
-    # 2️⃣ Generate embedding
+    top_k = top_k or settings.RAG_TOP_K
+
+    # 1️⃣ Embed query
     query_embedding = embed_query(query)
 
-    # 3️⃣ Build RBAC filters
+    # 2️⃣ Build RBAC Filters
     filters = {
         "must": [
-            {
-                "key": "allowed_roles",
-                "match": {"any": user_context.roles},
-            },
-            {
-                "key": "visibility",
-                "match": {"any": user_context.allowed_visibility},
-            },
+            {"key": "allowed_roles", "match": {"any": user_context.roles}},
+            {"key": "visibility", "match": {"any": user_context.allowed_visibility}},
         ]
     }
 
+    # Department filter (Mahavir HR/IT/Sales/Service separation)
     if user_context.department:
         filters["must"].append(
-            {
-                "key": "department",
-                "match": {"value": user_context.department},
-            }
+            {"key": "department", "match": {"value": user_context.department}}
         )
 
+    # Ticket-specific knowledge (VERY IMPORTANT for HelpDesk)
+    if ticket_id:
+        filters["should"] = [
+            {"key": "ticket_id", "match": {"value": ticket_id}}
+        ]
+
     logger.info(
-        f"RAG search | user={user_context.user_id} "
-        f"| roles={user_context.roles} "
-        f"| dept={user_context.department}"
+        f"[RAG SEARCH] user={user_context.user_id} "
+        f"roles={user_context.roles} "
+        f"dept={user_context.department} "
+        f"ticket={ticket_id}"
     )
 
-    # 4️⃣ Vector search (RBAC enforced inside DB)
+    # 3️⃣ Search Vector DB
     results = client.search(
         collection_name=settings.RAG_COLLECTION,
         query_vector=query_embedding,
-        limit=settings.RAG_TOP_K,
+        limit=top_k,
         query_filter=filters,
         with_payload=True,
+        with_vectors=False,
     )
 
-    return results
+    logger.info(f"[RAG RESULTS] found={len(results)}")
+
+    return [r.payload for r in results]

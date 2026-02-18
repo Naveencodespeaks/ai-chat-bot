@@ -1,71 +1,48 @@
-from __future__ import annotations
+# app/models/conversation.py
 
-from typing import TYPE_CHECKING, List, Optional
-
-from sqlalchemy import Enum, ForeignKey, Index, String
+from sqlalchemy import String, ForeignKey
 from sqlalchemy.orm import Mapped, mapped_column, relationship
-
-from app.db.base import Base
-from app.models.base import TimestampMixin
-from app.models.enums import ConversationStatus
-
-if TYPE_CHECKING:
-    from app.models.message import Message
-    from app.models.user import User
+from app.models.base import Base
+import uuid
 
 
-class Conversation(Base, TimestampMixin):
-    """
-    Conversation = chat thread/session
-    Used in Mahavir AI Helpdesk + WhatsApp system
-    """
+class Conversation(Base):
     __tablename__ = "conversations"
 
-    id: Mapped[int] = mapped_column(primary_key=True)
+    id: Mapped[str] = mapped_column(
+        String(255),
+        primary_key=True,
+        default=lambda: str(uuid.uuid4())
+    )
 
-    # 🔥 MUST MATCH users.id TYPE (String UUID)
-    user_id: Mapped[str] = mapped_column(
+    owner_id: Mapped[str] = mapped_column(
         String(255),
         ForeignKey("users.id", ondelete="CASCADE"),
         nullable=False,
-        index=True,
+        index=True
     )
 
-    assigned_agent_id: Mapped[Optional[str]] = mapped_column(
+    assigned_user_id: Mapped[str] = mapped_column(
         String(255),
         ForeignKey("users.id", ondelete="SET NULL"),
         nullable=True,
-        index=True,
+        index=True
     )
 
-    status: Mapped[ConversationStatus] = mapped_column(
-        Enum(ConversationStatus, name="conversation_status"),
-        nullable=False,
-        default=ConversationStatus.OPEN,
-        index=True,
-    )
-
-    # Relationships
-    user: Mapped["User"] = relationship(
+    owner = relationship(
         "User",
-        foreign_keys=[user_id],
-        lazy="joined",
+        foreign_keys=[owner_id],
+        back_populates="conversations"
     )
 
-    assigned_agent: Mapped[Optional["User"]] = relationship(
+    assigned_user = relationship(
         "User",
-        foreign_keys=[assigned_agent_id],
-        lazy="joined",
+        foreign_keys=[assigned_user_id],
+        back_populates="assigned_conversations"
     )
 
-    messages: Mapped[List["Message"]] = relationship(
+    messages = relationship(
         "Message",
         back_populates="conversation",
-        cascade="all, delete-orphan",
-        passive_deletes=True,
-        order_by="Message.id",
+        cascade="all, delete-orphan"
     )
-
-
-Index("ix_conversations_user_status", Conversation.user_id, Conversation.status)
-Index("ix_conversations_agent_status", Conversation.assigned_agent_id, Conversation.status)

@@ -1,14 +1,27 @@
-from sqlalchemy import ForeignKey
+# app/models/user_role.py
+
+from sqlalchemy import String, ForeignKey
 from sqlalchemy.orm import Mapped, mapped_column, relationship
-from app.db.session import Base
+from app.models.base import Base
+import uuid
 
 
 class UserRole(Base):
     __tablename__ = "user_roles"
 
-    id: Mapped[int] = mapped_column(primary_key=True)
-    user_id: Mapped[int] = mapped_column(ForeignKey("users.id"))
-    role_id: Mapped[int] = mapped_column(ForeignKey("roles.id"))
+    id: Mapped[str] = mapped_column(
+        String(255),
+        primary_key=True,
+        default=lambda: str(uuid.uuid4())
+    )
 
-    user = relationship("User", back_populates="roles")
-    role = relationship("Role", back_populates="users")
+    user_id: Mapped[str] = mapped_column(
+        String(255),
+        ForeignKey("users.id", ondelete="CASCADE"),
+        nullable=False,
+        index=True
+    )
+
+    role_name: Mapped[str] = mapped_column(String(100), nullable=False)
+
+    user = relationship("User", back_populates="user_roles")

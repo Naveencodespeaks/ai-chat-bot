@@ -1,6 +1,7 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
+
 # ✅ Use ONLY your project logger
 from app.core.logging import logger
 
@@ -15,10 +16,12 @@ from app.api.tickets import router as tickets_router
 from app.api.health import router as health_router
 
 # Vector DB setup
-from app.db.vector import vector_client
+# from app.db.vector import vector_client
 from app.rag.vector_schema import ensure_collection
 from app.core.config import settings
 from app.core.scheduler import start_scheduler
+from app.db.vector import get_qdrant_client
+
 
 
 app = FastAPI(
@@ -65,7 +68,7 @@ def startup_event():
 
     # Ensure vector collection exists
     ensure_collection(
-        vector_client,
+        get_qdrant_client(),
         settings.RAG_COLLECTION,
     )
 
