@@ -7,6 +7,11 @@ import uuid
 
 
 class User(Base, TimestampMixin):
+    """
+    Enterprise User model for Mahavir AI HelpDesk system.
+    Supports RBAC, departments, WhatsApp agents, audit logs.
+    """
+
     __tablename__ = "users"
 
     id: Mapped[str] = mapped_column(
@@ -24,14 +29,25 @@ class User(Base, TimestampMixin):
     is_active: Mapped[bool] = mapped_column(Boolean, default=True, index=True)
     is_verified: Mapped[bool] = mapped_column(Boolean, default=False)
 
-    roles: Mapped[list] = mapped_column(JSON, default=lambda: ["user"])
     meta: Mapped[dict] = mapped_column(JSON, name="metadata", default=lambda: {})
 
-    # RELATIONSHIPS
+    # ==============================
+    # RBAC RELATIONSHIPS
+    # ==============================
+    user_roles = relationship(
+    "UserRole",
+    back_populates="user",
+    cascade="all, delete-orphan"
+)
 
-    user_roles = relationship("UserRole", back_populates="user", cascade="all, delete-orphan")
-
-    documents = relationship("Document", back_populates="owner", cascade="all, delete-orphan")
+    # ==============================
+    # BUSINESS RELATIONSHIPS
+    # ==============================
+    documents = relationship(
+        "Document",
+        back_populates="owner",
+        cascade="all, delete-orphan"
+    )
 
     conversations = relationship(
         "Conversation",

@@ -1,63 +1,9 @@
-# from uuid import uuid4
-# from qdrant_client.models import PointStruct
-
-# def ingest_document(
-#     client,
-#     text: str,
-#     embedding: list[float],
-#     metadata: dict
-# ):
-#     point = PointStruct(
-#         id=str(uuid4()),
-#         vector=embedding,
-#         payload={
-#             "text": text,
-#             **metadata
-#         }
-#     )
-
-#     client.upsert(
-#         collection_name="rag_documents",
-#         points=[point]
-#     )
-
-
-# def ingest_chunk(
-#     *,
-#     client,
-#     embedding,
-#     text: str,
-#     document_id: str,
-#     allowed_roles: list[str],
-#     department: str,
-#     visibility: str,
-# ):
-#     client.upsert(
-#         collection_name="rag_documents",
-#         points=[
-#             {
-#                 "id": f"{document_id}-{hash(text)}",
-#                 "vector": embedding,
-#                 "payload": {
-#                     "document_id": document_id,
-#                     "allowed_roles": allowed_roles,
-#                     "department": department,
-#                     "visibility": visibility,
-#                     "text": text,
-#                 },
-#             }
-#         ],
-#     )
-
-
-
-# ===================================================
-
 # app/rag/ingest.py
 
 from __future__ import annotations
 
 from dataclasses import dataclass
+from app.db.vector import ensure_collection
 from datetime import datetime, timezone
 from typing import Any, Dict, Iterable, List, Optional, Tuple
 import hashlib
@@ -149,13 +95,81 @@ def _normalize_text(text: str) -> str:
     text = re.sub(r"[ \t]{2,}", " ", text)
     return text.strip()
 
+from app.auth.context import UserContext
+
+
+from app.auth.context import UserContext
+from app.core.logging import get_logger
+
+logger = get_logger(__name__)
+
 
 def _assert_verified_ingest(user_context: UserContext) -> None:
-    if not user_context or not getattr(user_context, "is_verified", False):
-        raise PermissionError("Unverified user context")
-    # If you want strict admin-only ingest, uncomment:
-    # if "ADMIN" not in (user_context.roles or []):
-    #     raise PermissionError("Only ADMIN can ingest documents")
+    """
+    Security gate for RAG ingestion.
+
+    Logs all ingestion attempts for audit trail.
+    Only verified ADMIN users are allowed to ingest documents.
+    """
+
+    # -----------------------------
+    # Log ingestion attempt
+    # -----------------------------
+    logger.warning(
+        f"[INGEST ATTEMPT] "
+        f"user={getattr(user_context, 'user_id', 'unknown')} "
+        f"roles={getattr(user_context, 'roles', [])} "
+        f"dept={getattr(user_context, 'department', None)}"
+    )
+
+    # -----------------------------
+    # Basic Validation
+    # -----------------------------
+    if not user_context:
+        logger.error("[INGEST BLOCKED] Missing user context")
+        raise PermissionError("Missing user context")
+
+    if not getattr(user_context, "is_verified", False):
+        logger.error(
+            f"[INGEST BLOCKED] Unverified user "
+            f"user={getattr(user_context, 'user_id', 'unknown')}"
+        )
+        raise PermissionError("User is not verified")
+
+    # -----------------------------
+    # Role Check (case-safe)
+    # -----------------------------
+    roles = [r.upper() for r in (user_context.roles or [])]
+
+    if "ADMIN" not in roles and "SUPERADMIN" not in roles:
+        logger.error(
+            f"[INGEST BLOCKED] Not admin "
+            f"user={getattr(user_context, 'user_id', 'unknown')} "
+            f"roles={roles}"
+        )
+        raise PermissionError("Only ADMIN users can ingest documents")
+
+    # -----------------------------
+    # Department Check
+    # -----------------------------
+    if not getattr(user_context, "department", None):
+        logger.error(
+            f"[INGEST BLOCKED] Missing department "
+            f"user={getattr(user_context, 'user_id', 'unknown')}"
+        )
+        raise PermissionError("Department must be set for ingestion")
+
+    # -----------------------------
+    # Passed all checks
+    # -----------------------------
+    logger.info(
+        f"[INGEST ALLOWED] "
+        f"user={getattr(user_context, 'user_id', 'unknown')} "
+        f"roles={roles} "
+        f"dept={getattr(user_context, 'department', None)}"
+    )
+
+
 
 
 def _validate_meta(
@@ -175,7 +189,9 @@ def _validate_meta(
     if not source:
         raise ValueError("source is required")
 
-    dept = (department or DEFAULT_DEPARTMENT).strip()
+    # dept = (department or DEFAULT_DEPARTMENT).strip()
+    dept = (department or DEFAULT_DEPARTMENT).strip().upper()
+
     roles = allowed_roles or list(DEFAULT_ALLOWED_ROLES)
     vis = visibility or list(DEFAULT_VISIBILITY)
     tg = tags or []
@@ -189,8 +205,8 @@ def _validate_meta(
         raise ValueError("tags must be a list of strings")
 
     # normalize values
-    roles = [r.strip() for r in roles]
-    vis = [v.strip() for v in vis]
+    roles = [r.strip().upper() for r in roles]
+    vis = [v.strip().upper() for v in vis]
     tg = [t.strip() for t in tg if t.strip()]
 
     return title, source, dept, roles, vis, tg
@@ -409,6 +425,7 @@ def ingest_document(
     *,
     client: Any,
     user_context: UserContext,
+    ticket_id: Optional[str] = None,
     text: str,
     title: str,
     source: str,
@@ -450,7 +467,10 @@ def ingest_document(
     if len(clean_text) < 30:
         raise ValueError("text is too short to ingest")
 
-    collection = DEFAULT_COLLECTION
+
+    # collection = DEFAULT_COLLECTION
+    collection = getattr(settings, "RAG_COLLECTION", DEFAULT_COLLECTION)
+
     chunk_size = int(chunk_size or DEFAULT_CHUNK_SIZE)
     overlap = int(overlap or DEFAULT_CHUNK_OVERLAP)
 
@@ -490,18 +510,35 @@ def ingest_document(
         if vector_size is None:
             vector_size = len(vec)
 
-        payload = {
-            # retrieval contract
-            "text": chunk,
-            "doc_id": meta.doc_id,
-            "chunk_index": idx,
+        # chunk_hash = hashlib.sha1(chunk.encode()).hexdigest()[:8]
+        # chunk_id = f"{meta.doc_id}:{idx}:{chunk_hash}"
+        chunk_id = str(uuid.uuid4())
 
-            # RBAC contract (your retriever expects these keys)
+        payload = {
+            # ======================
+            # IDs
+            # ======================
+            "document_id": meta.doc_id,
+            "chunk_id": chunk_id,
+            "chunk_index": idx,
+            "ticket_id": ticket_id,
+
+            # ======================
+            # CONTENT
+            # ======================
+            "content": chunk,
+            "text": chunk,  # keep for compatibility
+
+            # ======================
+            # RBAC SECURITY
+            # ======================
             "allowed_roles": meta.allowed_roles,
             "visibility": meta.visibility,
             "department": meta.department,
 
-            # helpful ops metadata
+            # ======================
+            # METADATA
+            # ======================
             "title": meta.title,
             "source": meta.source,
             "tags": meta.tags,
@@ -511,11 +548,12 @@ def ingest_document(
 
         points.append(
             {
-                "id": f"{meta.doc_id}:{idx}",
+                "id": chunk_id,
                 "vector": vec,
                 "payload": payload,
             }
         )
+
 
     if vector_size is None:
         raise RuntimeError("Unable to determine vector size (embedding failed?)")

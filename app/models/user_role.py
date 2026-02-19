@@ -7,6 +7,11 @@ import uuid
 
 
 class UserRole(Base):
+    """
+    Mapping table between Users and Roles.
+    Enterprise RBAC-ready.
+    """
+
     __tablename__ = "user_roles"
 
     id: Mapped[str] = mapped_column(
@@ -15,13 +20,20 @@ class UserRole(Base):
         default=lambda: str(uuid.uuid4())
     )
 
+    # FK → users
     user_id: Mapped[str] = mapped_column(
-        String(255),
         ForeignKey("users.id", ondelete="CASCADE"),
         nullable=False,
         index=True
     )
 
-    role_name: Mapped[str] = mapped_column(String(100), nullable=False)
+    # FK → roles  ❗ THIS WAS MISSING
+    role_id: Mapped[str] = mapped_column(
+        ForeignKey("roles.id", ondelete="CASCADE"),
+        nullable=False,
+        index=True
+    )
 
+    # Relationships
     user = relationship("User", back_populates="user_roles")
+    role = relationship("Role", back_populates="user_roles")

@@ -311,7 +311,6 @@ def get_document(
         raise HTTPException(status_code=404, detail="Document not found")
     return DocumentResponse(**document.to_dict())
 
-
 @router.get(
     "/{document_id}/chunks",
     response_model=List[dict],
@@ -324,22 +323,53 @@ def get_document_chunks(
     current_user: User = Depends(get_current_user),
 ):
     """
-    Reads from Qdrant by doc_id payload.
+    Reads from Qdrant with RBAC filter.
     """
+
     try:
-        from app.db.vector import get_qdrant_client
         client = get_qdrant_client()
+        from qdrant_client.http import models as qmodels
 
-        from qdrant_client.http import models as qmodels  # type: ignore
+        user_roles = [r.upper() for r in getattr(current_user, "roles", [])]
+        user_department = getattr(current_user, "department", None)
 
-        scroll_filter = qmodels.Filter(
-            must=[
+        # -----------------------------
+        # ADMIN override
+        # -----------------------------
+        if "ADMIN" in user_roles or "SUPERADMIN" in user_roles:
+            scroll_filter = qmodels.Filter(
+                must=[
+                    qmodels.FieldCondition(
+                        key="document_id",
+                        match=qmodels.MatchValue(value=document_id),
+                    )
+                ]
+            )
+        else:
+            conditions = [
                 qmodels.FieldCondition(
-                    key="doc_id",
+                    key="document_id",
                     match=qmodels.MatchValue(value=document_id),
                 )
             ]
-        )
+
+            if user_department:
+                conditions.append(
+                    qmodels.FieldCondition(
+                        key="department",
+                        match=qmodels.MatchValue(value=user_department),
+                    )
+                )
+
+            if user_roles:
+                conditions.append(
+                    qmodels.FieldCondition(
+                        key="allowed_roles",
+                        match=qmodels.MatchAny(any=user_roles),
+                    )
+                )
+
+            scroll_filter = qmodels.Filter(must=conditions)
 
         points, _ = client.scroll(
             collection_name=settings.RAG_COLLECTION,
@@ -349,9 +379,11 @@ def get_document_chunks(
             with_vectors=False,
         )
 
-        # return payloads only
         return [p.payload for p in points]
 
     except Exception as e:
         logger.error(f"Error retrieving chunks for document {document_id}: {e}")
-        raise HTTPException(status_code=500, detail="Failed to retrieve document chunks")
+        raise HTTPException(
+            status_code=500,
+            detail="Failed to retrieve document chunks",
+        )

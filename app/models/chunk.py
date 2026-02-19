@@ -15,7 +15,7 @@ from app.models.base import TimestampMixin
 from app.db.base import Base
 
 if TYPE_CHECKING:
-    from app.models.document import Document
+    from app.models.documents import Document
 
 
 class Chunk(Base, TimestampMixin):
