@@ -1,6 +1,4 @@
-# app/models/user.py
-
-from sqlalchemy import String, Boolean, JSON
+from sqlalchemy import Index, String, Boolean, JSON
 from sqlalchemy.orm import Mapped, mapped_column, relationship
 from app.models.base import Base, TimestampMixin
 import uuid
@@ -9,10 +7,15 @@ import uuid
 class User(Base, TimestampMixin):
     """
     Enterprise User model for Mahavir AI HelpDesk system.
-    Supports RBAC, departments, WhatsApp agents, audit logs.
     """
 
     __tablename__ = "users"
+
+    __table_args__ = (
+        Index("idx_users_email", "email"),
+        Index("idx_users_active", "is_active"),
+        Index("idx_users_department", "department"),
+    )
 
     id: Mapped[str] = mapped_column(
         String(255),
@@ -20,13 +23,13 @@ class User(Base, TimestampMixin):
         default=lambda: str(uuid.uuid4())
     )
 
-    email: Mapped[str] = mapped_column(String(255), unique=True, index=True, nullable=False)
+    email: Mapped[str] = mapped_column(String(255), unique=True, nullable=False)
     hashed_password: Mapped[str] = mapped_column(String(255), nullable=False)
 
     full_name: Mapped[str] = mapped_column(String(255), nullable=False)
     department: Mapped[str] = mapped_column(String(100), default="General")
 
-    is_active: Mapped[bool] = mapped_column(Boolean, default=True, index=True)
+    is_active: Mapped[bool] = mapped_column(Boolean, default=True)
     is_verified: Mapped[bool] = mapped_column(Boolean, default=False)
 
     meta: Mapped[dict] = mapped_column(JSON, name="metadata", default=lambda: {})
@@ -35,10 +38,10 @@ class User(Base, TimestampMixin):
     # RBAC RELATIONSHIPS
     # ==============================
     user_roles = relationship(
-    "UserRole",
-    back_populates="user",
-    cascade="all, delete-orphan"
-)
+        "UserRole",
+        back_populates="user",
+        cascade="all, delete-orphan"
+    )
 
     # ==============================
     # BUSINESS RELATIONSHIPS

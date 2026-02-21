@@ -25,18 +25,19 @@ if TYPE_CHECKING:
 
 
 class Ticket(Base, TimestampMixin):
-    """
-    Enterprise Ticket Model
-    Used for Mahavir AI Helpdesk + WhatsApp Support
-    """
-
     __tablename__ = "tickets"
+
+    __table_args__ = (
+        Index("idx_tickets_conversation_id", "conversation_id"),
+        Index("idx_tickets_created_by_id", "created_by_id"),
+        Index("idx_tickets_assigned_agent_id", "assigned_agent_id"),
+        Index("idx_tickets_department_id", "department_id"),
+        Index("idx_tickets_status", "status"),
+        Index("idx_tickets_priority", "priority"),
+    )
 
     id: Mapped[int] = mapped_column(primary_key=True)
 
-    # --------------------------------------------------
-    # CORE RELATIONS
-    # --------------------------------------------------
     conversation_id: Mapped[int] = mapped_column(
         ForeignKey("conversations.id", ondelete="CASCADE"),
         nullable=False,
@@ -44,7 +45,6 @@ class Ticket(Base, TimestampMixin):
         index=True,
     )
 
-    # 🔥 FIXED → must be STRING because users.id is STRING
     created_by_id: Mapped[str] = mapped_column(
         String(255),
         ForeignKey("users.id", ondelete="CASCADE"),
@@ -65,16 +65,10 @@ class Ticket(Base, TimestampMixin):
         index=True,
     )
 
-    # --------------------------------------------------
-    # BASIC INFO
-    # --------------------------------------------------
     title: Mapped[Optional[str]] = mapped_column(String(255))
     description: Mapped[Optional[str]] = mapped_column(Text)
     category: Mapped[Optional[str]] = mapped_column(String(100))
 
-    # --------------------------------------------------
-    # STATUS
-    # --------------------------------------------------
     status: Mapped[TicketStatus] = mapped_column(
         Enum(TicketStatus, name="ticket_status"),
         default=TicketStatus.OPEN,
@@ -91,9 +85,6 @@ class Ticket(Base, TimestampMixin):
 
     resolution_notes: Mapped[Optional[str]] = mapped_column(Text)
 
-    # --------------------------------------------------
-    # SLA TRACKING
-    # --------------------------------------------------
     sla_due_at: Mapped[Optional[datetime]] = mapped_column(DateTime)
     first_response_at: Mapped[Optional[datetime]] = mapped_column(DateTime)
     closed_at: Mapped[Optional[datetime]] = mapped_column(DateTime)
@@ -103,17 +94,16 @@ class Ticket(Base, TimestampMixin):
     reassigned_count: Mapped[int] = mapped_column(default=0)
     assigned_at: Mapped[Optional[datetime]] = mapped_column(DateTime)
 
-    # --------------------------------------------------
-    # ROUTING ANALYTICS
-    # --------------------------------------------------
     routing_method: Mapped[Optional[str]] = mapped_column(String(20))
     ai_confidence: Mapped[Optional[float]] = mapped_column(Float)
     ai_predicted_department: Mapped[Optional[str]] = mapped_column(String(100))
 
-    # --------------------------------------------------
-    # RELATIONSHIPS
-    # --------------------------------------------------
-    conversation: Mapped["Conversation"] = relationship("Conversation", lazy="joined")
+    # ✅ FIXED RELATIONSHIPS
+    conversation: Mapped["Conversation"] = relationship(
+        "Conversation",
+        back_populates="ticket",
+        lazy="joined"
+    )
 
     created_by: Mapped["User"] = relationship(
         "User",
@@ -127,11 +117,11 @@ class Ticket(Base, TimestampMixin):
         lazy="joined",
     )
 
-    department: Mapped[Optional["Department"]] = relationship("Department", lazy="joined")
+    department: Mapped[Optional["Department"]] = relationship(
+        "Department",
+        lazy="joined"
+    )
 
-    # --------------------------------------------------
-    # HELPER PROPERTY
-    # --------------------------------------------------
     @property
     def assigned_to_id(self) -> Optional[str]:
         return self.assigned_agent_id
@@ -139,11 +129,3 @@ class Ticket(Base, TimestampMixin):
     @assigned_to_id.setter
     def assigned_to_id(self, value: Optional[str]):
         self.assigned_agent_id = value
-
-
-# --------------------------------------------------
-# INDEXES
-# --------------------------------------------------
-Index("ix_tickets_status_priority", Ticket.status, Ticket.priority)
-Index("ix_tickets_agent_status", Ticket.assigned_agent_id, Ticket.status)
-Index("ix_tickets_sla_due", Ticket.sla_due_at)

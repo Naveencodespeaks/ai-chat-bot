@@ -4,7 +4,7 @@ JWT Token Management Module
 Provides token creation, validation, and user context extraction.
 Supports configurable algorithms, secrets, and expiration times.
 """
-
+import uuid
 from datetime import datetime, timedelta
 from typing import Optional, Dict, Any
 from fastapi import HTTPException, status
@@ -12,6 +12,8 @@ from jose import jwt, JWTError
 from pydantic import ValidationError
 from passlib.context import CryptContext
 import os
+from dotenv import load_dotenv
+load_dotenv()
 
 from app.core.logging import logger
 from app.schemas.auth import UserContext
@@ -25,17 +27,29 @@ pwd_context = CryptContext(
 )
 
 
-# Configuration from environment
-JWT_SECRET_KEY = os.getenv("JWT_SECRET_KEY", "your-secret-key-change-in-production")
+# ============================================================================
+# JWT Configuration
+# ============================================================================
+
+JWT_SECRET_KEY = os.getenv("JWT_SECRET_KEY")
 JWT_ALGORITHM = os.getenv("JWT_ALGORITHM", "HS256")
 JWT_EXPIRATION_HOURS = int(os.getenv("JWT_EXPIRATION_HOURS", "24"))
 JWT_REFRESH_EXPIRATION_DAYS = int(os.getenv("JWT_REFRESH_EXPIRATION_DAYS", "7"))
 
-# Warning if using default secret
-if JWT_SECRET_KEY == "your-secret-key-change-in-production":
+# -----------------------------
+# Validate JWT Secret
+# -----------------------------
+if not JWT_SECRET_KEY:
+    logger.critical(
+        "JWT_SECRET_KEY not found in environment variables. "
+        "Application cannot start securely."
+    )
+    raise RuntimeError("JWT_SECRET_KEY must be set in environment")
+
+if len(JWT_SECRET_KEY) < 32:
     logger.warning(
-        "JWT_SECRET_KEY not configured in environment. Using default key. "
-        "Change JWT_SECRET_KEY in production!"
+        "JWT_SECRET_KEY is too short. Use at least 32 characters "
+        "for enterprise security."
     )
 
 
@@ -135,65 +149,112 @@ def create_access_token(
     data: Optional[Dict[str, Any]] = None,
 ) -> str:
     """
-    Create a JWT access token.
-    
-    Supports two calling styles:
-    1. New style: create_access_token(user_id, email, username, roles, expires_delta)
-    2. Old style: create_access_token(data={"sub": user_id}, expires_delta=expires_delta)
-    
-    Args:
-        user_id: User identifier (new style)
-        email: User email address (new style)
-        username: Username (new style)
-        roles: List of user roles (new style)
-        expires_delta: Custom expiration time (default: JWT_EXPIRATION_HOURS)
-        token_id: Optional token ID for revocation tracking
-        data: Legacy dict-based payload (old style)
-    
-    Returns:
-        Encoded JWT token string
-    
-    Raises:
-        ValueError: If configuration is invalid
+    Create JWT access token with enterprise logging and error handling.
     """
-    if not JWT_SECRET_KEY or JWT_SECRET_KEY == "your-secret-key-change-in-production":
-        raise ValueError(
-            "JWT_SECRET_KEY must be configured in environment before creating tokens"
-        )
-    
-    # Set expiration time
-    if expires_delta:
-        expire = datetime.utcnow() + expires_delta
-    else:
-        expire = datetime.utcnow() + timedelta(hours=JWT_EXPIRATION_HOURS)
-    
-    # Handle old-style data dict (backward compatibility)
-    if data is not None:
-        to_encode = data.copy()
-        to_encode["exp"] = expire
-        to_encode["iat"] = datetime.utcnow()
-    else:
-        # New style with structured data
-        to_encode = {
-            "user_id": user_id,
-            "email": email,
-            "username": username,
-            "roles": roles or [],
-            "exp": expire,
-            "iat": datetime.utcnow(),
-            "jti": token_id,
-        }
-    
+
     try:
-        encoded_jwt = jwt.encode(to_encode, JWT_SECRET_KEY, algorithm=JWT_ALGORITHM)
-        logger.debug(
-            f"Token created for user {user_id or to_encode.get('sub')}",
-            extra={"user_id": user_id, "expires_at": expire.isoformat()},
+        # -----------------------------
+        # Validate configuration
+        # -----------------------------
+        if not JWT_SECRET_KEY:
+            logger.critical("JWT_SECRET_KEY missing")
+            raise ValueError("JWT_SECRET_KEY not configured")
+
+        if data is None and not all([user_id, email, username]):
+            logger.error(
+                "Token creation failed: missing user fields",
+                extra={"user_id": user_id, "email": email, "username": username},
+            )
+            raise ValueError("user_id, email, username required")
+
+        expire = datetime.utcnow() + (
+            expires_delta or timedelta(hours=JWT_EXPIRATION_HOURS)
         )
+
+        if not token_id:
+            token_id = str(uuid.uuid4())
+
+        if data is not None:
+            to_encode = data.copy()
+            to_encode["exp"] = expire
+            to_encode["iat"] = datetime.utcnow()
+            to_encode["jti"] = token_id
+            to_encode.setdefault("type", "access")
+        else:
+            to_encode = {
+                "user_id": user_id,
+                "email": email,
+                "username": username,
+                "roles": roles or [],
+                "exp": expire,
+                "iat": datetime.utcnow(),
+                "jti": token_id,
+                "type": "access",
+            }
+
+        encoded_jwt = jwt.encode(to_encode, JWT_SECRET_KEY, algorithm=JWT_ALGORITHM)
+
+        logger.info("JWT created", extra={"user_id": user_id})
+
         return encoded_jwt
-    except Exception as e:
-        logger.error(f"Token creation failed: {e}")
+
+        # -----------------------------
+        # Set expiration
+        # -----------------------------
+        expire = datetime.utcnow() + (
+            expires_delta or timedelta(hours=JWT_EXPIRATION_HOURS)
+        )
+
+        # -----------------------------
+        # Generate token id
+        # -----------------------------
+        if not token_id:
+            token_id = str(uuid.uuid4())
+
+        # -----------------------------
+        # Prepare payload
+        # -----------------------------
+        if data is not None:
+            to_encode = data.copy()
+            to_encode["exp"] = expire
+            to_encode["iat"] = datetime.utcnow()
+            to_encode["jti"] = token_id
+            to_encode.setdefault("type", "access")
+        else:
+            to_encode = {
+                "user_id": user_id,
+                "email": email,
+                "username": username,
+                "roles": roles or [],
+                "exp": expire,
+                "iat": datetime.utcnow(),
+                "jti": token_id,
+                "type": "access",
+            }
+
+        # -----------------------------
+        # Encode token
+        # -----------------------------
+        encoded_jwt = jwt.encode(to_encode, JWT_SECRET_KEY, algorithm=JWT_ALGORITHM)
+
+        logger.info(
+            "JWT created successfully",
+            extra={
+                "user_id": user_id,
+                "token_id": token_id,
+                "expires_at": expire.isoformat(),
+            },
+        )
+
+        return encoded_jwt
+
+    except ValueError as ve:
+        logger.error(f"Token validation error: {ve}")
         raise
+
+    except Exception as e:
+        logger.exception("Unexpected error during JWT creation")
+        raise RuntimeError("Failed to create JWT token") from e
 
 
 def create_refresh_token(
@@ -204,45 +265,76 @@ def create_refresh_token(
     token_id: Optional[str] = None,
 ) -> str:
     """
-    Create a refresh token with longer expiration.
-    
-    Args:
-        user_id: User identifier
-        email: User email
-        username: Username
-        roles: User roles
-        token_id: Optional token ID
-    
-    Returns:
-        Encoded refresh token
+    Create refresh token with enterprise logging and error handling.
     """
-    expires_delta = timedelta(days=JWT_REFRESH_EXPIRATION_DAYS)
-    return create_access_token(
-        user_id=user_id,
-        email=email,
-        username=username,
-        roles=roles,
-        expires_delta=expires_delta,
-        token_id=token_id,
-    )
+
+    try:
+        # -----------------------------
+        # Validate configuration
+        # -----------------------------
+        if not JWT_SECRET_KEY:
+            logger.critical("JWT_SECRET_KEY missing in environment")
+            raise ValueError("JWT_SECRET_KEY must be configured")
+
+        if not user_id or not email or not username:
+            logger.error(
+                "Refresh token creation failed: missing required user fields",
+                extra={"user_id": user_id, "email": email, "username": username},
+            )
+            raise ValueError("user_id, email, and username are required")
+        
+        if not all([user_id, email, username]):
+            logger.error(
+                "Refresh token failed: missing user fields",
+                extra={"user_id": user_id, "email": email, "username": username},
+            )
+            raise ValueError("user_id, email, username required")
+
+        # -----------------------------
+        # Expiration time
+        # -----------------------------
+        expires_delta = timedelta(days=JWT_REFRESH_EXPIRATION_DAYS)
+
+        # -----------------------------
+        # Generate refresh token
+        # -----------------------------
+        token = create_access_token(
+            user_id=user_id,
+            email=email,
+            username=username,
+            roles=roles,
+            expires_delta=expires_delta,
+            token_id=token_id,
+            data={"type": "refresh"},
+        )
+
+        logger.info(
+            "Refresh token created successfully",
+            extra={
+                "user_id": user_id,
+                "expires_days": JWT_REFRESH_EXPIRATION_DAYS,
+            },
+        )
+
+        return token
+
+    except ValueError as ve:
+        logger.error(f"Refresh token validation error: {ve}")
+        raise
+
+    except Exception as e:
+        logger.exception("Unexpected error during refresh token creation")
+        raise RuntimeError("Failed to create refresh token") from e
 
 
 def decode_jwt(token: str) -> TokenData:
     """
     Decode and validate JWT token.
-    
-    Args:
-        token: JWT token string
-    
-    Returns:
-        TokenData object with decoded claims
-    
-    Raises:
-        HTTPException: If token is invalid or expired
     """
+
     try:
         payload = jwt.decode(token, JWT_SECRET_KEY, algorithms=[JWT_ALGORITHM])
-        
+
         # Extract required fields
         user_id: str = payload.get("user_id")
         email: str = payload.get("email")
@@ -251,16 +343,48 @@ def decode_jwt(token: str) -> TokenData:
         exp = payload.get("exp")
         iat = payload.get("iat")
         jti = payload.get("jti")
-        
+
         # Validate required fields
         if not all([user_id, email, username]):
-            logger.warning("Missing required fields in JWT payload")
+            logger.warning(
+                "JWT missing required fields",
+                extra={"user_id": user_id, "email": email},
+            )
             raise HTTPException(
                 status_code=status.HTTP_401_UNAUTHORIZED,
                 detail="Invalid token format",
                 headers={"WWW-Authenticate": "Bearer"},
             )
-        
+
+        # -----------------------------
+        # Expiration Check
+        # -----------------------------
+        try:
+            if exp:
+                # exp may be timestamp or datetime
+                if isinstance(exp, (int, float)):
+                    exp_time = datetime.utcfromtimestamp(exp)
+                else:
+                    exp_time = exp
+
+                if datetime.utcnow() > exp_time:
+                    logger.warning(
+                        "JWT expired",
+                        extra={"user_id": user_id, "expired_at": str(exp_time)},
+                    )
+                    raise HTTPException(
+                        status_code=status.HTTP_401_UNAUTHORIZED,
+                        detail="Token expired",
+                        headers={"WWW-Authenticate": "Bearer"},
+                    )
+        except Exception as e:
+            logger.error(f"JWT expiration validation error: {e}")
+            raise HTTPException(
+                status_code=status.HTTP_401_UNAUTHORIZED,
+                detail="Invalid token expiration",
+                headers={"WWW-Authenticate": "Bearer"},
+            )
+
         return TokenData(
             user_id=user_id,
             email=email,
@@ -270,7 +394,7 @@ def decode_jwt(token: str) -> TokenData:
             iat=iat,
             jti=jti,
         )
-    
+
     except JWTError as e:
         logger.warning(f"JWT decoding failed: {str(e)}")
         raise HTTPException(
@@ -278,6 +402,7 @@ def decode_jwt(token: str) -> TokenData:
             detail="Invalid authentication credentials",
             headers={"WWW-Authenticate": "Bearer"},
         )
+
     except ValidationError as e:
         logger.error(f"JWT validation error: {e}")
         raise HTTPException(

@@ -2303,3 +2303,370 @@
 2026-02-19 18:53:23.120 | INFO     | app.main:startup_event:76 | Vector collection ensured: rag_documents
 2026-02-19 18:53:23.131 | INFO     | app.main:startup_event:85 | Scheduler started successfully
 2026-02-19 18:58:46.373 | INFO     | app.main:shutdown_event:95 | AI RAG Sentiment Bot is shutting down...
+2026-02-20 09:44:31.175 | INFO     | app.core.logging:log_startup_info:157 | ================================================================================
+2026-02-20 09:44:31.178 | INFO     | app.core.logging:log_startup_info:158 | AI RAG Sentiment Bot - Startup
+2026-02-20 09:44:31.182 | INFO     | app.core.logging:log_startup_info:159 | ================================================================================
+2026-02-20 09:44:31.184 | INFO     | app.core.logging:log_startup_info:160 | Environment: dev
+2026-02-20 09:44:31.184 | INFO     | app.core.logging:log_startup_info:161 | Log Level: INFO
+2026-02-20 09:44:31.184 | INFO     | app.core.logging:log_startup_info:162 | Logs Directory: E:\MAHAVIR-GROUP-SOFTWARE-DEVELOPMENT\ai_rag_sentiment_bot\app\logs
+2026-02-20 09:44:31.186 | INFO     | app.core.logging:log_startup_info:163 | Timestamp: 2026-02-20T09:44:31.186849
+2026-02-20 09:44:31.188 | INFO     | app.core.logging:log_startup_info:164 | ================================================================================
+2026-02-20 09:44:33.533 | WARNING  | app.auth.jwt:<module>:36 | JWT_SECRET_KEY not configured in environment. Using default key. Change JWT_SECRET_KEY in production!
+2026-02-20 09:44:39.770 | INFO     | app.sentiment.strategies:__init__:137 | LexiconStrategy initialized
+2026-02-20 09:44:39.779 | INFO     | app.sentiment.strategies:__init__:190 | PatternStrategy initialized
+2026-02-20 09:44:39.786 | INFO     | app.sentiment.strategies:__init__:296 | StatisticalStrategy initialized
+2026-02-20 09:44:39.812 | INFO     | app.sentiment.rules:__init__:125 | SentimentRulesEngine initialized
+2026-02-20 09:44:39.819 | INFO     | app.sentiment.analyzer:__init__:37 | SentimentAnalyzer initialized
+2026-02-20 09:44:51.759 | INFO     | app.main:startup_event:63 | AI RAG Sentiment Bot is starting up...
+2026-02-20 09:44:51.762 | INFO     | app.db.vector:get_qdrant_client:37 | [QDRANT] Connecting to remote https://20fe8bad-755e-40cf-8283-8a26f0962bd6.eu-central-1-0.aws.cloud.qdrant.io:6333
+2026-02-20 09:44:57.464 | INFO     | app.db.vector:get_qdrant_client:49 | [QDRANT] Connection successful
+2026-02-20 09:44:57.637 | INFO     | app.main:startup_event:76 | Vector collection ensured: rag_documents
+2026-02-20 09:44:57.718 | INFO     | app.main:startup_event:85 | Scheduler started successfully
+2026-02-20 10:46:44.033 | INFO     | app.core.logging:log_startup_info:157 | ================================================================================
+2026-02-20 10:46:44.035 | INFO     | app.core.logging:log_startup_info:158 | AI RAG Sentiment Bot - Startup
+2026-02-20 10:46:44.035 | INFO     | app.core.logging:log_startup_info:159 | ================================================================================
+2026-02-20 10:46:44.035 | INFO     | app.core.logging:log_startup_info:160 | Environment: dev
+2026-02-20 10:46:44.035 | INFO     | app.core.logging:log_startup_info:161 | Log Level: INFO
+2026-02-20 10:46:44.036 | INFO     | app.core.logging:log_startup_info:162 | Logs Directory: E:\MAHAVIR-GROUP-SOFTWARE-DEVELOPMENT\ai_rag_sentiment_bot\app\logs
+2026-02-20 10:46:44.037 | INFO     | app.core.logging:log_startup_info:163 | Timestamp: 2026-02-20T10:46:44.037857
+2026-02-20 10:46:44.037 | INFO     | app.core.logging:log_startup_info:164 | ================================================================================
+2026-02-20 10:46:46.170 | WARNING  | app.auth.jwt:<module>:36 | JWT_SECRET_KEY not configured in environment. Using default key. Change JWT_SECRET_KEY in production!
+2026-02-20 10:46:52.088 | INFO     | app.sentiment.strategies:__init__:137 | LexiconStrategy initialized
+2026-02-20 10:46:52.093 | INFO     | app.sentiment.strategies:__init__:190 | PatternStrategy initialized
+2026-02-20 10:46:52.109 | INFO     | app.sentiment.strategies:__init__:296 | StatisticalStrategy initialized
+2026-02-20 10:46:52.152 | INFO     | app.sentiment.rules:__init__:125 | SentimentRulesEngine initialized
+2026-02-20 10:46:52.160 | INFO     | app.sentiment.analyzer:__init__:37 | SentimentAnalyzer initialized
+2026-02-20 10:47:10.904 | INFO     | app.main:startup_event:63 | AI RAG Sentiment Bot is starting up...
+2026-02-20 10:47:10.912 | INFO     | app.db.vector:get_qdrant_client:37 | [QDRANT] Connecting to remote https://20fe8bad-755e-40cf-8283-8a26f0962bd6.eu-central-1-0.aws.cloud.qdrant.io:6333
+2026-02-20 10:47:16.556 | INFO     | app.db.vector:get_qdrant_client:49 | [QDRANT] Connection successful
+2026-02-20 10:47:16.861 | INFO     | app.main:startup_event:76 | Vector collection ensured: rag_documents
+2026-02-20 10:47:16.953 | INFO     | app.main:startup_event:85 | Scheduler started successfully
+2026-02-20 10:52:23.843 | INFO     | app.main:shutdown_event:95 | AI RAG Sentiment Bot is shutting down...
+2026-02-20 12:00:48.737 | INFO     | app.core.logging:log_startup_info:157 | ================================================================================
+2026-02-20 12:00:48.738 | INFO     | app.core.logging:log_startup_info:158 | AI RAG Sentiment Bot - Startup
+2026-02-20 12:00:48.740 | INFO     | app.core.logging:log_startup_info:159 | ================================================================================
+2026-02-20 12:00:48.740 | INFO     | app.core.logging:log_startup_info:160 | Environment: dev
+2026-02-20 12:00:48.741 | INFO     | app.core.logging:log_startup_info:161 | Log Level: INFO
+2026-02-20 12:00:48.741 | INFO     | app.core.logging:log_startup_info:162 | Logs Directory: E:\MAHAVIR-GROUP-SOFTWARE-DEVELOPMENT\ai_rag_sentiment_bot\app\logs
+2026-02-20 12:00:48.742 | INFO     | app.core.logging:log_startup_info:163 | Timestamp: 2026-02-20T12:00:48.742408
+2026-02-20 12:00:48.742 | INFO     | app.core.logging:log_startup_info:164 | ================================================================================
+2026-02-20 12:00:49.907 | CRITICAL | app.auth.jwt:<module>:41 | JWT_SECRET_KEY not found in environment variables. Application cannot start securely.
+2026-02-20 12:05:16.469 | INFO     | app.core.logging:log_startup_info:157 | ================================================================================
+2026-02-20 12:05:16.469 | INFO     | app.core.logging:log_startup_info:158 | AI RAG Sentiment Bot - Startup
+2026-02-20 12:05:16.469 | INFO     | app.core.logging:log_startup_info:159 | ================================================================================
+2026-02-20 12:05:16.469 | INFO     | app.core.logging:log_startup_info:160 | Environment: dev
+2026-02-20 12:05:16.469 | INFO     | app.core.logging:log_startup_info:161 | Log Level: INFO
+2026-02-20 12:05:16.469 | INFO     | app.core.logging:log_startup_info:162 | Logs Directory: E:\MAHAVIR-GROUP-SOFTWARE-DEVELOPMENT\ai_rag_sentiment_bot\app\logs
+2026-02-20 12:05:16.469 | INFO     | app.core.logging:log_startup_info:163 | Timestamp: 2026-02-20T12:05:16.469837
+2026-02-20 12:05:16.469 | INFO     | app.core.logging:log_startup_info:164 | ================================================================================
+2026-02-20 12:05:16.600 | CRITICAL | app.auth.jwt:<module>:41 | JWT_SECRET_KEY not found in environment variables. Application cannot start securely.
+2026-02-20 12:06:33.613 | INFO     | app.core.logging:log_startup_info:157 | ================================================================================
+2026-02-20 12:06:33.613 | INFO     | app.core.logging:log_startup_info:158 | AI RAG Sentiment Bot - Startup
+2026-02-20 12:06:33.613 | INFO     | app.core.logging:log_startup_info:159 | ================================================================================
+2026-02-20 12:06:33.615 | INFO     | app.core.logging:log_startup_info:160 | Environment: dev
+2026-02-20 12:06:33.615 | INFO     | app.core.logging:log_startup_info:161 | Log Level: INFO
+2026-02-20 12:06:33.615 | INFO     | app.core.logging:log_startup_info:162 | Logs Directory: E:\MAHAVIR-GROUP-SOFTWARE-DEVELOPMENT\ai_rag_sentiment_bot\app\logs
+2026-02-20 12:06:33.615 | INFO     | app.core.logging:log_startup_info:163 | Timestamp: 2026-02-20T12:06:33.615590
+2026-02-20 12:06:33.615 | INFO     | app.core.logging:log_startup_info:164 | ================================================================================
+2026-02-20 12:06:33.772 | CRITICAL | app.auth.jwt:<module>:41 | JWT_SECRET_KEY not found in environment variables. Application cannot start securely.
+2026-02-20 12:06:55.395 | INFO     | app.core.logging:log_startup_info:157 | ================================================================================
+2026-02-20 12:06:55.415 | INFO     | app.core.logging:log_startup_info:158 | AI RAG Sentiment Bot - Startup
+2026-02-20 12:06:55.426 | INFO     | app.core.logging:log_startup_info:159 | ================================================================================
+2026-02-20 12:06:55.464 | INFO     | app.core.logging:log_startup_info:160 | Environment: dev
+2026-02-20 12:06:55.500 | INFO     | app.core.logging:log_startup_info:161 | Log Level: INFO
+2026-02-20 12:06:55.529 | INFO     | app.core.logging:log_startup_info:162 | Logs Directory: E:\MAHAVIR-GROUP-SOFTWARE-DEVELOPMENT\ai_rag_sentiment_bot\app\logs
+2026-02-20 12:06:55.541 | INFO     | app.core.logging:log_startup_info:163 | Timestamp: 2026-02-20T12:06:55.541899
+2026-02-20 12:06:55.576 | INFO     | app.core.logging:log_startup_info:164 | ================================================================================
+2026-02-20 12:06:55.823 | CRITICAL | app.auth.jwt:<module>:42 | JWT_SECRET_KEY not found in environment variables. Application cannot start securely.
+2026-02-20 12:06:57.419 | INFO     | app.core.logging:log_startup_info:157 | ================================================================================
+2026-02-20 12:06:57.422 | INFO     | app.core.logging:log_startup_info:158 | AI RAG Sentiment Bot - Startup
+2026-02-20 12:06:57.422 | INFO     | app.core.logging:log_startup_info:159 | ================================================================================
+2026-02-20 12:06:57.422 | INFO     | app.core.logging:log_startup_info:160 | Environment: dev
+2026-02-20 12:06:57.422 | INFO     | app.core.logging:log_startup_info:161 | Log Level: INFO
+2026-02-20 12:06:57.422 | INFO     | app.core.logging:log_startup_info:162 | Logs Directory: E:\MAHAVIR-GROUP-SOFTWARE-DEVELOPMENT\ai_rag_sentiment_bot\app\logs
+2026-02-20 12:06:57.422 | INFO     | app.core.logging:log_startup_info:163 | Timestamp: 2026-02-20T12:06:57.422780
+2026-02-20 12:06:57.422 | INFO     | app.core.logging:log_startup_info:164 | ================================================================================
+2026-02-20 12:06:58.387 | INFO     | app.sentiment.strategies:__init__:137 | LexiconStrategy initialized
+2026-02-20 12:06:58.393 | INFO     | app.sentiment.strategies:__init__:190 | PatternStrategy initialized
+2026-02-20 12:06:58.401 | INFO     | app.sentiment.strategies:__init__:296 | StatisticalStrategy initialized
+2026-02-20 12:06:58.417 | INFO     | app.sentiment.rules:__init__:125 | SentimentRulesEngine initialized
+2026-02-20 12:06:58.418 | INFO     | app.sentiment.analyzer:__init__:37 | SentimentAnalyzer initialized
+2026-02-20 12:07:06.922 | INFO     | app.main:startup_event:67 | AI RAG Sentiment Bot is starting up...
+2026-02-20 12:07:06.922 | INFO     | app.db.vector:get_qdrant_client:37 | [QDRANT] Connecting to remote https://20fe8bad-755e-40cf-8283-8a26f0962bd6.eu-central-1-0.aws.cloud.qdrant.io:6333
+2026-02-20 12:07:09.835 | INFO     | app.db.vector:get_qdrant_client:49 | [QDRANT] Connection successful
+2026-02-20 12:07:10.007 | INFO     | app.main:startup_event:80 | Vector collection ensured: rag_documents
+2026-02-20 12:07:10.088 | INFO     | app.main:startup_event:89 | Scheduler started successfully
+2026-02-20 12:08:34.933 | INFO     | app.main:shutdown_event:99 | AI RAG Sentiment Bot is shutting down...
+2026-02-20 12:08:50.216 | INFO     | app.core.logging:log_startup_info:157 | ================================================================================
+2026-02-20 12:08:50.216 | INFO     | app.core.logging:log_startup_info:158 | AI RAG Sentiment Bot - Startup
+2026-02-20 12:08:50.216 | INFO     | app.core.logging:log_startup_info:159 | ================================================================================
+2026-02-20 12:08:50.216 | INFO     | app.core.logging:log_startup_info:160 | Environment: dev
+2026-02-20 12:08:50.216 | INFO     | app.core.logging:log_startup_info:161 | Log Level: INFO
+2026-02-20 12:08:50.216 | INFO     | app.core.logging:log_startup_info:162 | Logs Directory: E:\MAHAVIR-GROUP-SOFTWARE-DEVELOPMENT\ai_rag_sentiment_bot\app\logs
+2026-02-20 12:08:50.216 | INFO     | app.core.logging:log_startup_info:163 | Timestamp: 2026-02-20T12:08:50.216399
+2026-02-20 12:08:50.216 | INFO     | app.core.logging:log_startup_info:164 | ================================================================================
+2026-02-20 12:08:51.243 | INFO     | app.sentiment.strategies:__init__:137 | LexiconStrategy initialized
+2026-02-20 12:08:51.247 | INFO     | app.sentiment.strategies:__init__:190 | PatternStrategy initialized
+2026-02-20 12:08:51.252 | INFO     | app.sentiment.strategies:__init__:296 | StatisticalStrategy initialized
+2026-02-20 12:08:51.264 | INFO     | app.sentiment.rules:__init__:125 | SentimentRulesEngine initialized
+2026-02-20 12:08:51.266 | INFO     | app.sentiment.analyzer:__init__:37 | SentimentAnalyzer initialized
+2026-02-20 12:08:53.364 | INFO     | app.main:startup_event:67 | AI RAG Sentiment Bot is starting up...
+2026-02-20 12:08:53.365 | INFO     | app.db.vector:get_qdrant_client:37 | [QDRANT] Connecting to remote https://20fe8bad-755e-40cf-8283-8a26f0962bd6.eu-central-1-0.aws.cloud.qdrant.io:6333
+2026-02-20 12:08:55.614 | INFO     | app.db.vector:get_qdrant_client:49 | [QDRANT] Connection successful
+2026-02-20 12:08:55.803 | INFO     | app.main:startup_event:80 | Vector collection ensured: rag_documents
+2026-02-20 12:08:55.810 | INFO     | app.main:startup_event:89 | Scheduler started successfully
+2026-02-20 12:09:28.542 | INFO     | app.main:shutdown_event:99 | AI RAG Sentiment Bot is shutting down...
+2026-02-20 14:37:59.056 | INFO     | app.core.logging:log_startup_info:157 | ================================================================================
+2026-02-20 14:37:59.059 | INFO     | app.core.logging:log_startup_info:158 | AI RAG Sentiment Bot - Startup
+2026-02-20 14:37:59.060 | INFO     | app.core.logging:log_startup_info:159 | ================================================================================
+2026-02-20 14:37:59.061 | INFO     | app.core.logging:log_startup_info:160 | Environment: dev
+2026-02-20 14:37:59.061 | INFO     | app.core.logging:log_startup_info:161 | Log Level: INFO
+2026-02-20 14:37:59.062 | INFO     | app.core.logging:log_startup_info:162 | Logs Directory: E:\MAHAVIR-GROUP-SOFTWARE-DEVELOPMENT\ai_rag_sentiment_bot\app\logs
+2026-02-20 14:37:59.062 | INFO     | app.core.logging:log_startup_info:163 | Timestamp: 2026-02-20T14:37:59.062176
+2026-02-20 14:37:59.062 | INFO     | app.core.logging:log_startup_info:164 | ================================================================================
+2026-02-20 14:38:00.176 | INFO     | app.sentiment.strategies:__init__:137 | LexiconStrategy initialized
+2026-02-20 14:38:00.178 | INFO     | app.sentiment.strategies:__init__:190 | PatternStrategy initialized
+2026-02-20 14:38:00.179 | INFO     | app.sentiment.strategies:__init__:296 | StatisticalStrategy initialized
+2026-02-20 14:38:00.182 | INFO     | app.sentiment.rules:__init__:125 | SentimentRulesEngine initialized
+2026-02-20 14:38:00.182 | INFO     | app.sentiment.analyzer:__init__:37 | SentimentAnalyzer initialized
+2026-02-20 14:38:03.017 | INFO     | app.main:startup_event:67 | AI RAG Sentiment Bot is starting up...
+2026-02-20 14:38:03.019 | INFO     | app.db.vector:get_qdrant_client:37 | [QDRANT] Connecting to remote https://20fe8bad-755e-40cf-8283-8a26f0962bd6.eu-central-1-0.aws.cloud.qdrant.io:6333
+2026-02-20 14:38:05.787 | INFO     | app.db.vector:get_qdrant_client:49 | [QDRANT] Connection successful
+2026-02-20 14:38:05.970 | INFO     | app.main:startup_event:80 | Vector collection ensured: rag_documents
+2026-02-20 14:38:05.992 | INFO     | app.main:startup_event:89 | Scheduler started successfully
+2026-02-20 14:46:59.040 | INFO     | app.main:shutdown_event:99 | AI RAG Sentiment Bot is shutting down...
+2026-02-20 14:47:10.851 | INFO     | app.core.logging:log_startup_info:157 | ================================================================================
+2026-02-20 14:47:10.851 | INFO     | app.core.logging:log_startup_info:158 | AI RAG Sentiment Bot - Startup
+2026-02-20 14:47:10.851 | INFO     | app.core.logging:log_startup_info:159 | ================================================================================
+2026-02-20 14:47:10.851 | INFO     | app.core.logging:log_startup_info:160 | Environment: dev
+2026-02-20 14:47:10.851 | INFO     | app.core.logging:log_startup_info:161 | Log Level: INFO
+2026-02-20 14:47:10.851 | INFO     | app.core.logging:log_startup_info:162 | Logs Directory: E:\MAHAVIR-GROUP-SOFTWARE-DEVELOPMENT\ai_rag_sentiment_bot\app\logs
+2026-02-20 14:47:10.851 | INFO     | app.core.logging:log_startup_info:163 | Timestamp: 2026-02-20T14:47:10.851994
+2026-02-20 14:47:10.851 | INFO     | app.core.logging:log_startup_info:164 | ================================================================================
+2026-02-20 14:47:11.678 | INFO     | app.sentiment.strategies:__init__:137 | LexiconStrategy initialized
+2026-02-20 14:47:11.678 | INFO     | app.sentiment.strategies:__init__:190 | PatternStrategy initialized
+2026-02-20 14:47:11.678 | INFO     | app.sentiment.strategies:__init__:296 | StatisticalStrategy initialized
+2026-02-20 14:47:11.683 | INFO     | app.sentiment.rules:__init__:125 | SentimentRulesEngine initialized
+2026-02-20 14:47:11.683 | INFO     | app.sentiment.analyzer:__init__:37 | SentimentAnalyzer initialized
+2026-02-20 14:47:13.932 | INFO     | app.main:startup_event:67 | AI RAG Sentiment Bot is starting up...
+2026-02-20 14:47:13.933 | INFO     | app.db.vector:get_qdrant_client:37 | [QDRANT] Connecting to remote https://20fe8bad-755e-40cf-8283-8a26f0962bd6.eu-central-1-0.aws.cloud.qdrant.io:6333
+2026-02-20 14:47:16.188 | INFO     | app.db.vector:get_qdrant_client:49 | [QDRANT] Connection successful
+2026-02-20 14:47:16.389 | INFO     | app.main:startup_event:80 | Vector collection ensured: rag_documents
+2026-02-20 14:47:16.415 | INFO     | app.main:startup_event:89 | Scheduler started successfully
+2026-02-20 14:59:43.081 | INFO     | app.main:shutdown_event:99 | AI RAG Sentiment Bot is shutting down...
+2026-02-20 17:51:03.492 | INFO     | app.core.logging:log_startup_info:157 | ================================================================================
+2026-02-20 17:51:03.493 | INFO     | app.core.logging:log_startup_info:158 | AI RAG Sentiment Bot - Startup
+2026-02-20 17:51:03.494 | INFO     | app.core.logging:log_startup_info:159 | ================================================================================
+2026-02-20 17:51:03.494 | INFO     | app.core.logging:log_startup_info:160 | Environment: dev
+2026-02-20 17:51:03.494 | INFO     | app.core.logging:log_startup_info:161 | Log Level: INFO
+2026-02-20 17:51:03.494 | INFO     | app.core.logging:log_startup_info:162 | Logs Directory: E:\MAHAVIR-GROUP-SOFTWARE-DEVELOPMENT\ai_rag_sentiment_bot\app\logs
+2026-02-20 17:51:03.495 | INFO     | app.core.logging:log_startup_info:163 | Timestamp: 2026-02-20T17:51:03.495730
+2026-02-20 17:51:03.495 | INFO     | app.core.logging:log_startup_info:164 | ================================================================================
+2026-02-20 17:52:48.985 | INFO     | app.core.logging:log_startup_info:157 | ================================================================================
+2026-02-20 17:52:48.987 | INFO     | app.core.logging:log_startup_info:158 | AI RAG Sentiment Bot - Startup
+2026-02-20 17:52:48.987 | INFO     | app.core.logging:log_startup_info:159 | ================================================================================
+2026-02-20 17:52:48.987 | INFO     | app.core.logging:log_startup_info:160 | Environment: dev
+2026-02-20 17:52:48.987 | INFO     | app.core.logging:log_startup_info:161 | Log Level: INFO
+2026-02-20 17:52:48.987 | INFO     | app.core.logging:log_startup_info:162 | Logs Directory: E:\MAHAVIR-GROUP-SOFTWARE-DEVELOPMENT\ai_rag_sentiment_bot\app\logs
+2026-02-20 17:52:48.987 | INFO     | app.core.logging:log_startup_info:163 | Timestamp: 2026-02-20T17:52:48.987860
+2026-02-20 17:52:48.987 | INFO     | app.core.logging:log_startup_info:164 | ================================================================================
+2026-02-20 17:57:46.920 | INFO     | app.core.logging:log_startup_info:157 | ================================================================================
+2026-02-20 17:57:46.927 | INFO     | app.core.logging:log_startup_info:158 | AI RAG Sentiment Bot - Startup
+2026-02-20 17:57:46.927 | INFO     | app.core.logging:log_startup_info:159 | ================================================================================
+2026-02-20 17:57:46.927 | INFO     | app.core.logging:log_startup_info:160 | Environment: dev
+2026-02-20 17:57:46.927 | INFO     | app.core.logging:log_startup_info:161 | Log Level: INFO
+2026-02-20 17:57:46.928 | INFO     | app.core.logging:log_startup_info:162 | Logs Directory: E:\MAHAVIR-GROUP-SOFTWARE-DEVELOPMENT\ai_rag_sentiment_bot\app\logs
+2026-02-20 17:57:46.928 | INFO     | app.core.logging:log_startup_info:163 | Timestamp: 2026-02-20T17:57:46.928780
+2026-02-20 17:57:46.929 | INFO     | app.core.logging:log_startup_info:164 | ================================================================================
+2026-02-20 18:00:25.147 | INFO     | app.core.logging:log_startup_info:157 | ================================================================================
+2026-02-20 18:00:25.149 | INFO     | app.core.logging:log_startup_info:158 | AI RAG Sentiment Bot - Startup
+2026-02-20 18:00:25.153 | INFO     | app.core.logging:log_startup_info:159 | ================================================================================
+2026-02-20 18:00:25.156 | INFO     | app.core.logging:log_startup_info:160 | Environment: dev
+2026-02-20 18:00:25.159 | INFO     | app.core.logging:log_startup_info:161 | Log Level: INFO
+2026-02-20 18:00:25.161 | INFO     | app.core.logging:log_startup_info:162 | Logs Directory: E:\MAHAVIR-GROUP-SOFTWARE-DEVELOPMENT\ai_rag_sentiment_bot\app\logs
+2026-02-20 18:00:25.161 | INFO     | app.core.logging:log_startup_info:163 | Timestamp: 2026-02-20T18:00:25.161780
+2026-02-20 18:00:25.161 | INFO     | app.core.logging:log_startup_info:164 | ================================================================================
+2026-02-20 18:00:49.134 | INFO     | app.core.logging:log_startup_info:157 | ================================================================================
+2026-02-20 18:00:49.137 | INFO     | app.core.logging:log_startup_info:158 | AI RAG Sentiment Bot - Startup
+2026-02-20 18:00:49.138 | INFO     | app.core.logging:log_startup_info:159 | ================================================================================
+2026-02-20 18:00:49.148 | INFO     | app.core.logging:log_startup_info:160 | Environment: dev
+2026-02-20 18:00:49.163 | INFO     | app.core.logging:log_startup_info:161 | Log Level: INFO
+2026-02-20 18:00:49.185 | INFO     | app.core.logging:log_startup_info:162 | Logs Directory: E:\MAHAVIR-GROUP-SOFTWARE-DEVELOPMENT\ai_rag_sentiment_bot\app\logs
+2026-02-20 18:00:49.193 | INFO     | app.core.logging:log_startup_info:163 | Timestamp: 2026-02-20T18:00:49.193058
+2026-02-20 18:00:49.237 | INFO     | app.core.logging:log_startup_info:164 | ================================================================================
+2026-02-20 18:01:01.645 | INFO     | app.core.logging:log_startup_info:157 | ================================================================================
+2026-02-20 18:01:01.648 | INFO     | app.core.logging:log_startup_info:158 | AI RAG Sentiment Bot - Startup
+2026-02-20 18:01:01.650 | INFO     | app.core.logging:log_startup_info:159 | ================================================================================
+2026-02-20 18:01:01.650 | INFO     | app.core.logging:log_startup_info:160 | Environment: dev
+2026-02-20 18:01:01.652 | INFO     | app.core.logging:log_startup_info:161 | Log Level: INFO
+2026-02-20 18:01:01.654 | INFO     | app.core.logging:log_startup_info:162 | Logs Directory: E:\MAHAVIR-GROUP-SOFTWARE-DEVELOPMENT\ai_rag_sentiment_bot\app\logs
+2026-02-20 18:01:01.655 | INFO     | app.core.logging:log_startup_info:163 | Timestamp: 2026-02-20T18:01:01.655576
+2026-02-20 18:01:01.655 | INFO     | app.core.logging:log_startup_info:164 | ================================================================================
+2026-02-20 18:01:15.448 | INFO     | app.core.logging:log_startup_info:157 | ================================================================================
+2026-02-20 18:01:15.448 | INFO     | app.core.logging:log_startup_info:158 | AI RAG Sentiment Bot - Startup
+2026-02-20 18:01:15.448 | INFO     | app.core.logging:log_startup_info:159 | ================================================================================
+2026-02-20 18:01:15.448 | INFO     | app.core.logging:log_startup_info:160 | Environment: dev
+2026-02-20 18:01:15.448 | INFO     | app.core.logging:log_startup_info:161 | Log Level: INFO
+2026-02-20 18:01:15.456 | INFO     | app.core.logging:log_startup_info:162 | Logs Directory: E:\MAHAVIR-GROUP-SOFTWARE-DEVELOPMENT\ai_rag_sentiment_bot\app\logs
+2026-02-20 18:01:15.456 | INFO     | app.core.logging:log_startup_info:163 | Timestamp: 2026-02-20T18:01:15.456880
+2026-02-20 18:01:15.456 | INFO     | app.core.logging:log_startup_info:164 | ================================================================================
+2026-02-20 18:02:29.449 | INFO     | app.core.logging:log_startup_info:157 | ================================================================================
+2026-02-20 18:02:29.452 | INFO     | app.core.logging:log_startup_info:158 | AI RAG Sentiment Bot - Startup
+2026-02-20 18:02:29.456 | INFO     | app.core.logging:log_startup_info:159 | ================================================================================
+2026-02-20 18:02:29.460 | INFO     | app.core.logging:log_startup_info:160 | Environment: dev
+2026-02-20 18:02:29.461 | INFO     | app.core.logging:log_startup_info:161 | Log Level: INFO
+2026-02-20 18:02:29.464 | INFO     | app.core.logging:log_startup_info:162 | Logs Directory: E:\MAHAVIR-GROUP-SOFTWARE-DEVELOPMENT\ai_rag_sentiment_bot\app\logs
+2026-02-20 18:02:29.470 | INFO     | app.core.logging:log_startup_info:163 | Timestamp: 2026-02-20T18:02:29.470533
+2026-02-20 18:02:29.471 | INFO     | app.core.logging:log_startup_info:164 | ================================================================================
+2026-02-20 18:02:30.208 | INFO     | app.sentiment.strategies:__init__:137 | LexiconStrategy initialized
+2026-02-20 18:02:30.208 | INFO     | app.sentiment.strategies:__init__:190 | PatternStrategy initialized
+2026-02-20 18:02:30.209 | INFO     | app.sentiment.strategies:__init__:296 | StatisticalStrategy initialized
+2026-02-20 18:02:30.212 | INFO     | app.sentiment.rules:__init__:125 | SentimentRulesEngine initialized
+2026-02-20 18:02:30.212 | INFO     | app.sentiment.analyzer:__init__:37 | SentimentAnalyzer initialized
+2026-02-20 18:02:45.114 | INFO     | app.core.logging:log_startup_info:157 | ================================================================================
+2026-02-20 18:02:45.122 | INFO     | app.core.logging:log_startup_info:158 | AI RAG Sentiment Bot - Startup
+2026-02-20 18:02:45.130 | INFO     | app.core.logging:log_startup_info:159 | ================================================================================
+2026-02-20 18:02:45.137 | INFO     | app.core.logging:log_startup_info:160 | Environment: dev
+2026-02-20 18:02:45.148 | INFO     | app.core.logging:log_startup_info:161 | Log Level: INFO
+2026-02-20 18:02:45.151 | INFO     | app.core.logging:log_startup_info:162 | Logs Directory: E:\MAHAVIR-GROUP-SOFTWARE-DEVELOPMENT\ai_rag_sentiment_bot\app\logs
+2026-02-20 18:02:45.154 | INFO     | app.core.logging:log_startup_info:163 | Timestamp: 2026-02-20T18:02:45.154825
+2026-02-20 18:02:45.160 | INFO     | app.core.logging:log_startup_info:164 | ================================================================================
+2026-02-20 18:02:45.873 | INFO     | app.sentiment.strategies:__init__:137 | LexiconStrategy initialized
+2026-02-20 18:02:45.873 | INFO     | app.sentiment.strategies:__init__:190 | PatternStrategy initialized
+2026-02-20 18:02:45.873 | INFO     | app.sentiment.strategies:__init__:296 | StatisticalStrategy initialized
+2026-02-20 18:02:45.873 | INFO     | app.sentiment.rules:__init__:125 | SentimentRulesEngine initialized
+2026-02-20 18:02:45.873 | INFO     | app.sentiment.analyzer:__init__:37 | SentimentAnalyzer initialized
+2026-02-20 18:02:53.716 | INFO     | app.core.logging:log_startup_info:157 | ================================================================================
+2026-02-20 18:02:53.718 | INFO     | app.core.logging:log_startup_info:158 | AI RAG Sentiment Bot - Startup
+2026-02-20 18:02:53.718 | INFO     | app.core.logging:log_startup_info:159 | ================================================================================
+2026-02-20 18:02:53.718 | INFO     | app.core.logging:log_startup_info:160 | Environment: dev
+2026-02-20 18:02:53.718 | INFO     | app.core.logging:log_startup_info:161 | Log Level: INFO
+2026-02-20 18:02:53.720 | INFO     | app.core.logging:log_startup_info:162 | Logs Directory: E:\MAHAVIR-GROUP-SOFTWARE-DEVELOPMENT\ai_rag_sentiment_bot\app\logs
+2026-02-20 18:02:53.720 | INFO     | app.core.logging:log_startup_info:163 | Timestamp: 2026-02-20T18:02:53.720558
+2026-02-20 18:02:53.720 | INFO     | app.core.logging:log_startup_info:164 | ================================================================================
+2026-02-20 18:02:54.373 | INFO     | app.sentiment.strategies:__init__:137 | LexiconStrategy initialized
+2026-02-20 18:02:54.373 | INFO     | app.sentiment.strategies:__init__:190 | PatternStrategy initialized
+2026-02-20 18:02:54.373 | INFO     | app.sentiment.strategies:__init__:296 | StatisticalStrategy initialized
+2026-02-20 18:02:54.375 | INFO     | app.sentiment.rules:__init__:125 | SentimentRulesEngine initialized
+2026-02-20 18:02:54.375 | INFO     | app.sentiment.analyzer:__init__:37 | SentimentAnalyzer initialized
+2026-02-20 18:03:22.478 | INFO     | app.core.logging:log_startup_info:157 | ================================================================================
+2026-02-20 18:03:22.485 | INFO     | app.core.logging:log_startup_info:158 | AI RAG Sentiment Bot - Startup
+2026-02-20 18:03:22.486 | INFO     | app.core.logging:log_startup_info:159 | ================================================================================
+2026-02-20 18:03:22.487 | INFO     | app.core.logging:log_startup_info:160 | Environment: dev
+2026-02-20 18:03:22.491 | INFO     | app.core.logging:log_startup_info:161 | Log Level: INFO
+2026-02-20 18:03:22.494 | INFO     | app.core.logging:log_startup_info:162 | Logs Directory: E:\MAHAVIR-GROUP-SOFTWARE-DEVELOPMENT\ai_rag_sentiment_bot\app\logs
+2026-02-20 18:03:22.498 | INFO     | app.core.logging:log_startup_info:163 | Timestamp: 2026-02-20T18:03:22.498027
+2026-02-20 18:03:22.501 | INFO     | app.core.logging:log_startup_info:164 | ================================================================================
+2026-02-20 18:03:23.157 | INFO     | app.sentiment.strategies:__init__:137 | LexiconStrategy initialized
+2026-02-20 18:03:23.162 | INFO     | app.sentiment.strategies:__init__:190 | PatternStrategy initialized
+2026-02-20 18:03:23.165 | INFO     | app.sentiment.strategies:__init__:296 | StatisticalStrategy initialized
+2026-02-20 18:03:23.173 | INFO     | app.sentiment.rules:__init__:125 | SentimentRulesEngine initialized
+2026-02-20 18:03:23.181 | INFO     | app.sentiment.analyzer:__init__:37 | SentimentAnalyzer initialized
+2026-02-20 18:03:27.419 | INFO     | app.core.logging:log_startup_info:157 | ================================================================================
+2026-02-20 18:03:27.419 | INFO     | app.core.logging:log_startup_info:158 | AI RAG Sentiment Bot - Startup
+2026-02-20 18:03:27.419 | INFO     | app.core.logging:log_startup_info:159 | ================================================================================
+2026-02-20 18:03:27.419 | INFO     | app.core.logging:log_startup_info:160 | Environment: dev
+2026-02-20 18:03:27.419 | INFO     | app.core.logging:log_startup_info:161 | Log Level: INFO
+2026-02-20 18:03:27.419 | INFO     | app.core.logging:log_startup_info:162 | Logs Directory: E:\MAHAVIR-GROUP-SOFTWARE-DEVELOPMENT\ai_rag_sentiment_bot\app\logs
+2026-02-20 18:03:27.419 | INFO     | app.core.logging:log_startup_info:163 | Timestamp: 2026-02-20T18:03:27.419719
+2026-02-20 18:03:27.419 | INFO     | app.core.logging:log_startup_info:164 | ================================================================================
+2026-02-20 18:03:28.073 | INFO     | app.sentiment.strategies:__init__:137 | LexiconStrategy initialized
+2026-02-20 18:03:28.073 | INFO     | app.sentiment.strategies:__init__:190 | PatternStrategy initialized
+2026-02-20 18:03:28.073 | INFO     | app.sentiment.strategies:__init__:296 | StatisticalStrategy initialized
+2026-02-20 18:03:28.076 | INFO     | app.sentiment.rules:__init__:125 | SentimentRulesEngine initialized
+2026-02-20 18:03:28.077 | INFO     | app.sentiment.analyzer:__init__:37 | SentimentAnalyzer initialized
+2026-02-20 18:04:09.831 | INFO     | app.core.logging:log_startup_info:157 | ================================================================================
+2026-02-20 18:04:09.834 | INFO     | app.core.logging:log_startup_info:158 | AI RAG Sentiment Bot - Startup
+2026-02-20 18:04:09.836 | INFO     | app.core.logging:log_startup_info:159 | ================================================================================
+2026-02-20 18:04:09.836 | INFO     | app.core.logging:log_startup_info:160 | Environment: dev
+2026-02-20 18:04:09.837 | INFO     | app.core.logging:log_startup_info:161 | Log Level: INFO
+2026-02-20 18:04:09.837 | INFO     | app.core.logging:log_startup_info:162 | Logs Directory: E:\MAHAVIR-GROUP-SOFTWARE-DEVELOPMENT\ai_rag_sentiment_bot\app\logs
+2026-02-20 18:04:09.837 | INFO     | app.core.logging:log_startup_info:163 | Timestamp: 2026-02-20T18:04:09.837218
+2026-02-20 18:04:09.838 | INFO     | app.core.logging:log_startup_info:164 | ================================================================================
+2026-02-20 18:04:10.876 | INFO     | app.sentiment.strategies:__init__:137 | LexiconStrategy initialized
+2026-02-20 18:04:10.879 | INFO     | app.sentiment.strategies:__init__:190 | PatternStrategy initialized
+2026-02-20 18:04:10.881 | INFO     | app.sentiment.strategies:__init__:296 | StatisticalStrategy initialized
+2026-02-20 18:04:10.894 | INFO     | app.sentiment.rules:__init__:125 | SentimentRulesEngine initialized
+2026-02-20 18:04:10.901 | INFO     | app.sentiment.analyzer:__init__:37 | SentimentAnalyzer initialized
+2026-02-20 18:07:23.813 | INFO     | app.core.logging:log_startup_info:157 | ================================================================================
+2026-02-20 18:07:23.820 | INFO     | app.core.logging:log_startup_info:158 | AI RAG Sentiment Bot - Startup
+2026-02-20 18:07:23.828 | INFO     | app.core.logging:log_startup_info:159 | ================================================================================
+2026-02-20 18:07:23.835 | INFO     | app.core.logging:log_startup_info:160 | Environment: dev
+2026-02-20 18:07:23.835 | INFO     | app.core.logging:log_startup_info:161 | Log Level: INFO
+2026-02-20 18:07:23.835 | INFO     | app.core.logging:log_startup_info:162 | Logs Directory: E:\MAHAVIR-GROUP-SOFTWARE-DEVELOPMENT\ai_rag_sentiment_bot\app\logs
+2026-02-20 18:07:23.836 | INFO     | app.core.logging:log_startup_info:163 | Timestamp: 2026-02-20T18:07:23.835062
+2026-02-20 18:07:23.836 | INFO     | app.core.logging:log_startup_info:164 | ================================================================================
+2026-02-20 18:07:24.745 | INFO     | app.sentiment.strategies:__init__:137 | LexiconStrategy initialized
+2026-02-20 18:07:24.745 | INFO     | app.sentiment.strategies:__init__:190 | PatternStrategy initialized
+2026-02-20 18:07:24.746 | INFO     | app.sentiment.strategies:__init__:296 | StatisticalStrategy initialized
+2026-02-20 18:07:24.747 | INFO     | app.sentiment.rules:__init__:125 | SentimentRulesEngine initialized
+2026-02-20 18:07:24.748 | INFO     | app.sentiment.analyzer:__init__:37 | SentimentAnalyzer initialized
+2026-02-20 18:08:39.301 | INFO     | app.core.logging:log_startup_info:157 | ================================================================================
+2026-02-20 18:08:39.317 | INFO     | app.core.logging:log_startup_info:158 | AI RAG Sentiment Bot - Startup
+2026-02-20 18:08:39.321 | INFO     | app.core.logging:log_startup_info:159 | ================================================================================
+2026-02-20 18:08:39.327 | INFO     | app.core.logging:log_startup_info:160 | Environment: dev
+2026-02-20 18:08:39.334 | INFO     | app.core.logging:log_startup_info:161 | Log Level: INFO
+2026-02-20 18:08:39.347 | INFO     | app.core.logging:log_startup_info:162 | Logs Directory: E:\MAHAVIR-GROUP-SOFTWARE-DEVELOPMENT\ai_rag_sentiment_bot\app\logs
+2026-02-20 18:08:39.364 | INFO     | app.core.logging:log_startup_info:163 | Timestamp: 2026-02-20T18:08:39.364134
+2026-02-20 18:08:39.368 | INFO     | app.core.logging:log_startup_info:164 | ================================================================================
+2026-02-20 18:08:54.086 | INFO     | app.core.logging:log_startup_info:157 | ================================================================================
+2026-02-20 18:08:54.090 | INFO     | app.core.logging:log_startup_info:158 | AI RAG Sentiment Bot - Startup
+2026-02-20 18:08:54.093 | INFO     | app.core.logging:log_startup_info:159 | ================================================================================
+2026-02-20 18:08:54.094 | INFO     | app.core.logging:log_startup_info:160 | Environment: dev
+2026-02-20 18:08:54.095 | INFO     | app.core.logging:log_startup_info:161 | Log Level: INFO
+2026-02-20 18:08:54.096 | INFO     | app.core.logging:log_startup_info:162 | Logs Directory: E:\MAHAVIR-GROUP-SOFTWARE-DEVELOPMENT\ai_rag_sentiment_bot\app\logs
+2026-02-20 18:08:54.096 | INFO     | app.core.logging:log_startup_info:163 | Timestamp: 2026-02-20T18:08:54.096939
+2026-02-20 18:08:54.096 | INFO     | app.core.logging:log_startup_info:164 | ================================================================================
+2026-02-20 18:11:27.070 | INFO     | app.core.logging:log_startup_info:157 | ================================================================================
+2026-02-20 18:11:27.072 | INFO     | app.core.logging:log_startup_info:158 | AI RAG Sentiment Bot - Startup
+2026-02-20 18:11:27.075 | INFO     | app.core.logging:log_startup_info:159 | ================================================================================
+2026-02-20 18:11:27.077 | INFO     | app.core.logging:log_startup_info:160 | Environment: dev
+2026-02-20 18:11:27.077 | INFO     | app.core.logging:log_startup_info:161 | Log Level: INFO
+2026-02-20 18:11:27.077 | INFO     | app.core.logging:log_startup_info:162 | Logs Directory: E:\MAHAVIR-GROUP-SOFTWARE-DEVELOPMENT\ai_rag_sentiment_bot\app\logs
+2026-02-20 18:11:27.077 | INFO     | app.core.logging:log_startup_info:163 | Timestamp: 2026-02-20T18:11:27.077339
+2026-02-20 18:11:27.077 | INFO     | app.core.logging:log_startup_info:164 | ================================================================================
+2026-02-20 18:11:33.910 | INFO     | app.core.logging:log_startup_info:157 | ================================================================================
+2026-02-20 18:11:33.910 | INFO     | app.core.logging:log_startup_info:158 | AI RAG Sentiment Bot - Startup
+2026-02-20 18:11:33.910 | INFO     | app.core.logging:log_startup_info:159 | ================================================================================
+2026-02-20 18:11:33.910 | INFO     | app.core.logging:log_startup_info:160 | Environment: dev
+2026-02-20 18:11:33.910 | INFO     | app.core.logging:log_startup_info:161 | Log Level: INFO
+2026-02-20 18:11:33.912 | INFO     | app.core.logging:log_startup_info:162 | Logs Directory: E:\MAHAVIR-GROUP-SOFTWARE-DEVELOPMENT\ai_rag_sentiment_bot\app\logs
+2026-02-20 18:11:33.912 | INFO     | app.core.logging:log_startup_info:163 | Timestamp: 2026-02-20T18:11:33.912891
+2026-02-20 18:11:33.913 | INFO     | app.core.logging:log_startup_info:164 | ================================================================================
+2026-02-20 18:13:06.329 | INFO     | app.core.logging:log_startup_info:157 | ================================================================================
+2026-02-20 18:13:06.337 | INFO     | app.core.logging:log_startup_info:158 | AI RAG Sentiment Bot - Startup
+2026-02-20 18:13:06.343 | INFO     | app.core.logging:log_startup_info:159 | ================================================================================
+2026-02-20 18:13:06.350 | INFO     | app.core.logging:log_startup_info:160 | Environment: dev
+2026-02-20 18:13:06.360 | INFO     | app.core.logging:log_startup_info:161 | Log Level: INFO
+2026-02-20 18:13:06.360 | INFO     | app.core.logging:log_startup_info:162 | Logs Directory: E:\MAHAVIR-GROUP-SOFTWARE-DEVELOPMENT\ai_rag_sentiment_bot\app\logs
+2026-02-20 18:13:06.360 | INFO     | app.core.logging:log_startup_info:163 | Timestamp: 2026-02-20T18:13:06.360285
+2026-02-20 18:13:06.360 | INFO     | app.core.logging:log_startup_info:164 | ================================================================================
+2026-02-20 18:13:10.351 | INFO     | app.sentiment.strategies:__init__:137 | LexiconStrategy initialized
+2026-02-20 18:13:10.355 | INFO     | app.sentiment.strategies:__init__:190 | PatternStrategy initialized
+2026-02-20 18:13:10.358 | INFO     | app.sentiment.strategies:__init__:296 | StatisticalStrategy initialized
+2026-02-20 18:13:10.369 | INFO     | app.sentiment.rules:__init__:125 | SentimentRulesEngine initialized
+2026-02-20 18:13:10.379 | INFO     | app.sentiment.analyzer:__init__:37 | SentimentAnalyzer initialized
+2026-02-20 18:13:15.046 | INFO     | app.main:startup_event:70 | AI RAG Sentiment Bot is starting up...
+2026-02-20 18:13:15.065 | INFO     | app.db.vector:get_qdrant_client:37 | [QDRANT] Connecting to remote https://20fe8bad-755e-40cf-8283-8a26f0962bd6.eu-central-1-0.aws.cloud.qdrant.io:6333
+2026-02-20 18:13:18.550 | INFO     | app.db.vector:get_qdrant_client:49 | [QDRANT] Connection successful
+2026-02-20 18:13:18.750 | INFO     | app.main:startup_event:83 | Vector collection ensured: rag_documents
+2026-02-20 18:13:19.121 | INFO     | app.main:startup_event:92 | Scheduler started successfully
+2026-02-21 10:33:32.169 | INFO     | app.core.logging:log_startup_info:157 | ================================================================================
+2026-02-21 10:33:32.169 | INFO     | app.core.logging:log_startup_info:158 | AI RAG Sentiment Bot - Startup
+2026-02-21 10:33:32.169 | INFO     | app.core.logging:log_startup_info:159 | ================================================================================
+2026-02-21 10:33:32.169 | INFO     | app.core.logging:log_startup_info:160 | Environment: dev
+2026-02-21 10:33:32.169 | INFO     | app.core.logging:log_startup_info:161 | Log Level: INFO
+2026-02-21 10:33:32.175 | INFO     | app.core.logging:log_startup_info:162 | Logs Directory: E:\MAHAVIR-GROUP-SOFTWARE-DEVELOPMENT\ai_rag_sentiment_bot\app\logs
+2026-02-21 10:33:32.175 | INFO     | app.core.logging:log_startup_info:163 | Timestamp: 2026-02-21T10:33:32.175955
+2026-02-21 10:33:32.175 | INFO     | app.core.logging:log_startup_info:164 | ================================================================================
+2026-02-21 10:33:39.724 | INFO     | app.sentiment.strategies:__init__:137 | LexiconStrategy initialized
+2026-02-21 10:33:39.724 | INFO     | app.sentiment.strategies:__init__:190 | PatternStrategy initialized
+2026-02-21 10:33:39.724 | INFO     | app.sentiment.strategies:__init__:296 | StatisticalStrategy initialized
+2026-02-21 10:33:39.737 | INFO     | app.sentiment.rules:__init__:125 | SentimentRulesEngine initialized
+2026-02-21 10:33:39.737 | INFO     | app.sentiment.analyzer:__init__:37 | SentimentAnalyzer initialized
+2026-02-21 10:33:54.267 | INFO     | app.main:startup_event:70 | AI RAG Sentiment Bot is starting up...
+2026-02-21 10:33:54.267 | INFO     | app.db.vector:get_qdrant_client:37 | [QDRANT] Connecting to remote https://20fe8bad-755e-40cf-8283-8a26f0962bd6.eu-central-1-0.aws.cloud.qdrant.io:6333
+2026-02-21 10:33:59.475 | INFO     | app.db.vector:get_qdrant_client:49 | [QDRANT] Connection successful
+2026-02-21 10:33:59.705 | INFO     | app.main:startup_event:83 | Vector collection ensured: rag_documents
+2026-02-21 10:34:00.164 | INFO     | app.main:startup_event:92 | Scheduler started successfully
+2026-02-21 10:34:00.342 | INFO     | app.main:shutdown_event:102 | AI RAG Sentiment Bot is shutting down...

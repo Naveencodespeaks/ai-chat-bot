@@ -13,7 +13,7 @@ from app.schemas.ticket import (
     TicketResponse,
     TicketUpdateRequest,
 )
-from app.actions.escalation import evaluate_escalation
+from app.actions.escalation import escalate_ticket
 
 
 router = APIRouter(prefix="/api/tickets", tags=["tickets"])

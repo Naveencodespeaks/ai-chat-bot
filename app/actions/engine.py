@@ -4,7 +4,7 @@ from app.models.conversation import Conversation
 from app.models.message import Message
 from app.models.enums import SenderType
 
-from app.actions.escalation import evaluate_escalation
+from app.actions.escalation import escalate_ticket
 from app.sentiment.analyzer import analyze_sentiment
 from app.rag.retriever import retrieve_context
 from app.llm.client import generate_response
@@ -80,10 +80,11 @@ def process_user_message(
     # -------------------------------------------------
     # 6️⃣ Escalation Check (Background Logic)
     # -------------------------------------------------
-    ticket = evaluate_escalation(
+    ticket = escalate_ticket(
         db=db,
-        conversation=conversation,
-        latest_message=user_message
+        conversation_id=conversation.id,
+        message_id=user_message.id,
+        sentiment_score=sentiment_score
     )
 
     # -------------------------------------------------

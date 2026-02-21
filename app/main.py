@@ -12,11 +12,17 @@ from app.api.sentiment import router as sentiment_router
 from app.api.users import router as users_router
 from app.api.tickets import router as tickets_router
 from app.api.health import router as health_router
+from app.routers.tickets import router as tickets_router
+
 
 # Vector DB
 from app.db.vector import get_qdrant_client, ensure_collection
 from app.core.config import settings
 from app.core.scheduler import start_scheduler
+from dotenv import load_dotenv
+load_dotenv()
+
+
 
 app = FastAPI(
     title="AI RAG Sentiment Bot",
@@ -48,6 +54,7 @@ app.include_router(sentiment_router)
 app.include_router(users_router)
 app.include_router(tickets_router)
 app.include_router(secure_router)
+app.include_router(tickets_router)
 
 
 @app.get("/")
